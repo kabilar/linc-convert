@@ -16,17 +16,17 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://convert.lincbrain.org/linc-convert/</loc>
+         <lastmod>2024-11-21</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://convert.lincbrain.org/start/</loc>
          <lastmod>2024-11-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://convert.lincbrain.org/upload/</loc>
-         <lastmod>2024-11-21</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://convert.lincbrain.org/reference/linc-convert/</loc>
          <lastmod>2024-11-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
