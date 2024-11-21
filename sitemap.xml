@@ -30,4 +30,9 @@
          <lastmod>2024-11-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
+    <url>
+         <loc>https://convert.lincbrain.org/api/SUMMARY/</loc>
+         <lastmod>2024-11-21</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
 </urlset>
