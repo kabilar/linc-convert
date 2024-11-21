@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+         <loc>https://convert.lincbrain.org/</loc>
+         <lastmod>2024-11-21</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://convert.lincbrain.org/about/</loc>
+         <lastmod>2024-11-21</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://convert.lincbrain.org/contribute/</loc>
+         <lastmod>2024-11-21</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://convert.lincbrain.org/start/</loc>
+         <lastmod>2024-11-21</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://convert.lincbrain.org/upload/</loc>
+         <lastmod>2024-11-21</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://convert.lincbrain.org/webknossos-add-dataset/</loc>
+         <lastmod>2024-11-21</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+</urlset>
