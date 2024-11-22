@@ -1,0 +1,1740 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://convert.lincbrain.org/docs/api/modalities/lsm/mosaic/">
+      
+      
+      
+      
+      <link rel="icon" href="../../../../../img/linc.logo.color+white.notext+square.png">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.15">
+    
+    
+      
+        <title>Mosaic - LINC Convert Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../../../assets/stylesheets/main.7e359304.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../../../assets/_mkdocstrings.css">
+    
+    <script>__md_scope=new URL("../../../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+  
+
+
+  
+  
+
+<script id="__analytics">function __md_analytics(){function n(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],n("js",new Date),n("config","G-RJKYSKFW0P"),document.addEventListener("DOMContentLoaded",function(){document.forms.search&&document.forms.search.query.addEventListener("blur",function(){this.value&&n("event","search",{search_term:this.value})}),document$.subscribe(function(){var a=document.forms.feedback;if(void 0!==a)for(var e of a.querySelectorAll("[type=submit]"))e.addEventListener("click",function(e){e.preventDefault();var t=document.location.pathname,e=this.getAttribute("data-md-value");n("event","feedback",{page:t,data:e}),a.firstElementChild.disabled=!0;e=a.querySelector(".md-feedback__note [data-md-value='"+e+"']");e&&(e.hidden=!1)}),a.hidden=!1}),location$.subscribe(function(e){n("config","G-RJKYSKFW0P",{page_path:e.pathname})})});var e=document.createElement("script");e.async=!0,e.src="https://www.googletagmanager.com/gtag/js?id=G-RJKYSKFW0P",document.getElementById("__analytics").insertAdjacentElement("afterEnd",e)}</script>
+  
+    <script>"undefined"!=typeof __md_analytics&&__md_analytics()</script>
+  
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="deep-purple" data-md-color-accent="purple">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#modalities.lsm.mosaic" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../../../.." title="LINC Convert Documentation" class="md-header__button md-logo" aria-label="LINC Convert Documentation" data-md-component="logo">
+      
+  <img src="../../../../../img/linc.logo.color+black.alpha.notext.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            LINC Convert Documentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Mosaic
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/lincbrain/linc-convert" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    lincbrain/linc-convert
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../../../.." title="LINC Convert Documentation" class="md-nav__button md-logo" aria-label="LINC Convert Documentation" data-md-component="logo">
+      
+  <img src="../../../../../img/linc.logo.color+black.alpha.notext.png" alt="logo">
+
+    </a>
+    LINC Convert Documentation
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/lincbrain/linc-convert" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    lincbrain/linc-convert
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Welcome
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    API
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            API
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../api/cli/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    cli
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    modalities
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            modalities
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../api/modalities/__init__/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+      init  
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_2_2" id="__nav_2_2_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    df
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_2_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            df
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../api/modalities/df/__init__/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+      init  
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../api/modalities/df/cli/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    cli
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../api/modalities/df/multi_slice/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    multi_slice
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../api/modalities/df/single_slice/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    single_slice
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_2_3" id="__nav_2_2_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    lsm
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_2_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2_3">
+            <span class="md-nav__icon md-icon"></span>
+            lsm
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../api/modalities/lsm/__init__/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+      init  
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../api/modalities/lsm/cli/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    cli
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../api/modalities/lsm/mosaic/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    mosaic
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_3" id="__nav_2_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    utils
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_3">
+            <span class="md-nav__icon md-icon"></span>
+            utils
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../api/utils/__init__/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+      init  
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../api/utils/j2k/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    j2k
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../api/utils/math/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    math
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../api/utils/orientation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    orientation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../api/utils/zarr/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    zarr
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../contribute/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Contribute documentation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../about/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    About this doc
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+  
+
+
+  <h1>Mosaic</h1>
+
+<div class="doc doc-object doc-module">
+
+
+
+<a id="modalities.lsm.mosaic"></a>
+    <div class="doc doc-contents first">
+
+        <p>Convert a collection of tiff files generated by the LSM pipeline into a Zarr.</p>
+<p>Example input files can be found at
+<a href="https://lincbrain.org/dandiset/000004/0.240319.1924/files?location=derivatives%2F">https://lincbrain.org/dandiset/000004/0.240319.1924/files?location=derivatives%2F</a></p>
+
+
+
+
+
+
+
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+
+
+<div class="doc doc-object doc-function">
+
+
+<h2 id="modalities.lsm.mosaic.convert" class="doc doc-heading">
+            <code class="highlight language-python"><span class="n">convert</span><span class="p">(</span><span class="n">inp</span><span class="p">,</span> <span class="n">out</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="o">*</span><span class="p">,</span> <span class="n">chunk</span><span class="o">=</span><span class="mi">128</span><span class="p">,</span> <span class="n">compressor</span><span class="o">=</span><span class="s1">&#39;blosc&#39;</span><span class="p">,</span> <span class="n">compressor_opt</span><span class="o">=</span><span class="s1">&#39;</span><span class="si">{}</span><span class="s1">&#39;</span><span class="p">,</span> <span class="n">max_load</span><span class="o">=</span><span class="mi">512</span><span class="p">,</span> <span class="n">nii</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">orientation</span><span class="o">=</span><span class="s1">&#39;coronal&#39;</span><span class="p">,</span> <span class="n">center</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">thickness</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">voxel_size</span><span class="o">=</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">))</span></code>
+
+<a href="#modalities.lsm.mosaic.convert" class="headerlink" title="Permanent link">&para;</a></h2>
+
+
+    <div class="doc doc-contents ">
+
+        <p>Convert a collection of tiff files generated by the LSM pipeline into ZARR.</p>
+<h4 id="modalities.lsm.mosaic.convert--orientation">Orientation<a class="headerlink" href="#modalities.lsm.mosaic.convert--orientation" title="Permanent link">&para;</a></h4>
+<p>The anatomical orientation of the slice is given in terms of RAS axes.</p>
+<p>It is a combination of two letters from the set
+<code>{"L", "R", "A", "P", "I", "S"}</code>, where</p>
+<ul>
+<li>the first letter corresponds to the horizontal dimension and
+    indicates the anatomical meaning of the <em>right</em> of the jp2 image,</li>
+<li>the second letter corresponds to the vertical dimension and
+    indicates the anatomical meaning of the <em>bottom</em> of the jp2 image.</li>
+</ul>
+<p>We also provide the aliases</p>
+<ul>
+<li><code>"coronal"</code> == <code>"LI"</code></li>
+<li><code>"axial"</code> == <code>"LP"</code></li>
+<li><code>"sagittal"</code> == <code>"PI"</code></li>
+</ul>
+<p>The orientation flag is only useful when converting to nifti-zarr.</p>
+<h4 id="modalities.lsm.mosaic.convert--parameters">Parameters<a class="headerlink" href="#modalities.lsm.mosaic.convert--parameters" title="Permanent link">&para;</a></h4>
+<p>inp
+    Path to the root directory, which contains a collection of
+    subfolders named <code>*_z{:02d}_y{:02d}*</code>, each containing a
+    collection of files named <code>*_plane{:03d}_c{:d}.tiff</code>.
+out
+    Path to the output Zarr directory [<INP>.ome.zarr]
+chunk
+    Output chunk size
+compressor : {blosc, zlib, raw}
+    Compression method
+compressor_opt
+    Compression options
+max_load
+    Maximum input chunk size when building pyramid
+nii
+    Convert to nifti-zarr. True if path ends in ".nii.zarr".
+orientation
+    Orientation of the slice
+center
+    Set RAS[0, 0, 0] at FOV center
+voxel_size
+    Voxel size along the X, Y and Z dimension, in micron.</p>
+
+            <details class="quote">
+              <summary>Source code in <code>linc_convert/modalities/lsm/mosaic.py</code></summary>
+              <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 31</span>
+<span class="normal"> 32</span>
+<span class="normal"> 33</span>
+<span class="normal"> 34</span>
+<span class="normal"> 35</span>
+<span class="normal"> 36</span>
+<span class="normal"> 37</span>
+<span class="normal"> 38</span>
+<span class="normal"> 39</span>
+<span class="normal"> 40</span>
+<span class="normal"> 41</span>
+<span class="normal"> 42</span>
+<span class="normal"> 43</span>
+<span class="normal"> 44</span>
+<span class="normal"> 45</span>
+<span class="normal"> 46</span>
+<span class="normal"> 47</span>
+<span class="normal"> 48</span>
+<span class="normal"> 49</span>
+<span class="normal"> 50</span>
+<span class="normal"> 51</span>
+<span class="normal"> 52</span>
+<span class="normal"> 53</span>
+<span class="normal"> 54</span>
+<span class="normal"> 55</span>
+<span class="normal"> 56</span>
+<span class="normal"> 57</span>
+<span class="normal"> 58</span>
+<span class="normal"> 59</span>
+<span class="normal"> 60</span>
+<span class="normal"> 61</span>
+<span class="normal"> 62</span>
+<span class="normal"> 63</span>
+<span class="normal"> 64</span>
+<span class="normal"> 65</span>
+<span class="normal"> 66</span>
+<span class="normal"> 67</span>
+<span class="normal"> 68</span>
+<span class="normal"> 69</span>
+<span class="normal"> 70</span>
+<span class="normal"> 71</span>
+<span class="normal"> 72</span>
+<span class="normal"> 73</span>
+<span class="normal"> 74</span>
+<span class="normal"> 75</span>
+<span class="normal"> 76</span>
+<span class="normal"> 77</span>
+<span class="normal"> 78</span>
+<span class="normal"> 79</span>
+<span class="normal"> 80</span>
+<span class="normal"> 81</span>
+<span class="normal"> 82</span>
+<span class="normal"> 83</span>
+<span class="normal"> 84</span>
+<span class="normal"> 85</span>
+<span class="normal"> 86</span>
+<span class="normal"> 87</span>
+<span class="normal"> 88</span>
+<span class="normal"> 89</span>
+<span class="normal"> 90</span>
+<span class="normal"> 91</span>
+<span class="normal"> 92</span>
+<span class="normal"> 93</span>
+<span class="normal"> 94</span>
+<span class="normal"> 95</span>
+<span class="normal"> 96</span>
+<span class="normal"> 97</span>
+<span class="normal"> 98</span>
+<span class="normal"> 99</span>
+<span class="normal">100</span>
+<span class="normal">101</span>
+<span class="normal">102</span>
+<span class="normal">103</span>
+<span class="normal">104</span>
+<span class="normal">105</span>
+<span class="normal">106</span>
+<span class="normal">107</span>
+<span class="normal">108</span>
+<span class="normal">109</span>
+<span class="normal">110</span>
+<span class="normal">111</span>
+<span class="normal">112</span>
+<span class="normal">113</span>
+<span class="normal">114</span>
+<span class="normal">115</span>
+<span class="normal">116</span>
+<span class="normal">117</span>
+<span class="normal">118</span>
+<span class="normal">119</span>
+<span class="normal">120</span>
+<span class="normal">121</span>
+<span class="normal">122</span>
+<span class="normal">123</span>
+<span class="normal">124</span>
+<span class="normal">125</span>
+<span class="normal">126</span>
+<span class="normal">127</span>
+<span class="normal">128</span>
+<span class="normal">129</span>
+<span class="normal">130</span>
+<span class="normal">131</span>
+<span class="normal">132</span>
+<span class="normal">133</span>
+<span class="normal">134</span>
+<span class="normal">135</span>
+<span class="normal">136</span>
+<span class="normal">137</span>
+<span class="normal">138</span>
+<span class="normal">139</span>
+<span class="normal">140</span>
+<span class="normal">141</span>
+<span class="normal">142</span>
+<span class="normal">143</span>
+<span class="normal">144</span>
+<span class="normal">145</span>
+<span class="normal">146</span>
+<span class="normal">147</span>
+<span class="normal">148</span>
+<span class="normal">149</span>
+<span class="normal">150</span>
+<span class="normal">151</span>
+<span class="normal">152</span>
+<span class="normal">153</span>
+<span class="normal">154</span>
+<span class="normal">155</span>
+<span class="normal">156</span>
+<span class="normal">157</span>
+<span class="normal">158</span>
+<span class="normal">159</span>
+<span class="normal">160</span>
+<span class="normal">161</span>
+<span class="normal">162</span>
+<span class="normal">163</span>
+<span class="normal">164</span>
+<span class="normal">165</span>
+<span class="normal">166</span>
+<span class="normal">167</span>
+<span class="normal">168</span>
+<span class="normal">169</span>
+<span class="normal">170</span>
+<span class="normal">171</span>
+<span class="normal">172</span>
+<span class="normal">173</span>
+<span class="normal">174</span>
+<span class="normal">175</span>
+<span class="normal">176</span>
+<span class="normal">177</span>
+<span class="normal">178</span>
+<span class="normal">179</span>
+<span class="normal">180</span>
+<span class="normal">181</span>
+<span class="normal">182</span>
+<span class="normal">183</span>
+<span class="normal">184</span>
+<span class="normal">185</span>
+<span class="normal">186</span>
+<span class="normal">187</span>
+<span class="normal">188</span>
+<span class="normal">189</span>
+<span class="normal">190</span>
+<span class="normal">191</span>
+<span class="normal">192</span>
+<span class="normal">193</span>
+<span class="normal">194</span>
+<span class="normal">195</span>
+<span class="normal">196</span>
+<span class="normal">197</span>
+<span class="normal">198</span>
+<span class="normal">199</span>
+<span class="normal">200</span>
+<span class="normal">201</span>
+<span class="normal">202</span>
+<span class="normal">203</span>
+<span class="normal">204</span>
+<span class="normal">205</span>
+<span class="normal">206</span>
+<span class="normal">207</span>
+<span class="normal">208</span>
+<span class="normal">209</span>
+<span class="normal">210</span>
+<span class="normal">211</span>
+<span class="normal">212</span>
+<span class="normal">213</span>
+<span class="normal">214</span>
+<span class="normal">215</span>
+<span class="normal">216</span>
+<span class="normal">217</span>
+<span class="normal">218</span>
+<span class="normal">219</span>
+<span class="normal">220</span>
+<span class="normal">221</span>
+<span class="normal">222</span>
+<span class="normal">223</span>
+<span class="normal">224</span>
+<span class="normal">225</span>
+<span class="normal">226</span>
+<span class="normal">227</span>
+<span class="normal">228</span>
+<span class="normal">229</span>
+<span class="normal">230</span>
+<span class="normal">231</span>
+<span class="normal">232</span>
+<span class="normal">233</span>
+<span class="normal">234</span>
+<span class="normal">235</span>
+<span class="normal">236</span>
+<span class="normal">237</span>
+<span class="normal">238</span>
+<span class="normal">239</span>
+<span class="normal">240</span>
+<span class="normal">241</span>
+<span class="normal">242</span>
+<span class="normal">243</span>
+<span class="normal">244</span>
+<span class="normal">245</span>
+<span class="normal">246</span>
+<span class="normal">247</span>
+<span class="normal">248</span>
+<span class="normal">249</span>
+<span class="normal">250</span>
+<span class="normal">251</span>
+<span class="normal">252</span>
+<span class="normal">253</span>
+<span class="normal">254</span>
+<span class="normal">255</span>
+<span class="normal">256</span>
+<span class="normal">257</span>
+<span class="normal">258</span>
+<span class="normal">259</span>
+<span class="normal">260</span>
+<span class="normal">261</span>
+<span class="normal">262</span>
+<span class="normal">263</span>
+<span class="normal">264</span>
+<span class="normal">265</span>
+<span class="normal">266</span>
+<span class="normal">267</span>
+<span class="normal">268</span>
+<span class="normal">269</span>
+<span class="normal">270</span>
+<span class="normal">271</span>
+<span class="normal">272</span>
+<span class="normal">273</span>
+<span class="normal">274</span>
+<span class="normal">275</span>
+<span class="normal">276</span>
+<span class="normal">277</span>
+<span class="normal">278</span>
+<span class="normal">279</span>
+<span class="normal">280</span>
+<span class="normal">281</span>
+<span class="normal">282</span>
+<span class="normal">283</span>
+<span class="normal">284</span>
+<span class="normal">285</span>
+<span class="normal">286</span>
+<span class="normal">287</span>
+<span class="normal">288</span>
+<span class="normal">289</span>
+<span class="normal">290</span>
+<span class="normal">291</span>
+<span class="normal">292</span>
+<span class="normal">293</span>
+<span class="normal">294</span>
+<span class="normal">295</span>
+<span class="normal">296</span>
+<span class="normal">297</span>
+<span class="normal">298</span>
+<span class="normal">299</span>
+<span class="normal">300</span>
+<span class="normal">301</span>
+<span class="normal">302</span>
+<span class="normal">303</span>
+<span class="normal">304</span>
+<span class="normal">305</span>
+<span class="normal">306</span>
+<span class="normal">307</span>
+<span class="normal">308</span>
+<span class="normal">309</span>
+<span class="normal">310</span>
+<span class="normal">311</span>
+<span class="normal">312</span>
+<span class="normal">313</span>
+<span class="normal">314</span>
+<span class="normal">315</span>
+<span class="normal">316</span>
+<span class="normal">317</span>
+<span class="normal">318</span>
+<span class="normal">319</span>
+<span class="normal">320</span>
+<span class="normal">321</span>
+<span class="normal">322</span>
+<span class="normal">323</span>
+<span class="normal">324</span>
+<span class="normal">325</span>
+<span class="normal">326</span>
+<span class="normal">327</span>
+<span class="normal">328</span>
+<span class="normal">329</span>
+<span class="normal">330</span>
+<span class="normal">331</span>
+<span class="normal">332</span>
+<span class="normal">333</span>
+<span class="normal">334</span>
+<span class="normal">335</span>
+<span class="normal">336</span>
+<span class="normal">337</span>
+<span class="normal">338</span>
+<span class="normal">339</span>
+<span class="normal">340</span>
+<span class="normal">341</span>
+<span class="normal">342</span>
+<span class="normal">343</span>
+<span class="normal">344</span>
+<span class="normal">345</span>
+<span class="normal">346</span>
+<span class="normal">347</span>
+<span class="normal">348</span>
+<span class="normal">349</span>
+<span class="normal">350</span>
+<span class="normal">351</span>
+<span class="normal">352</span>
+<span class="normal">353</span>
+<span class="normal">354</span>
+<span class="normal">355</span>
+<span class="normal">356</span>
+<span class="normal">357</span>
+<span class="normal">358</span>
+<span class="normal">359</span>
+<span class="normal">360</span>
+<span class="normal">361</span>
+<span class="normal">362</span>
+<span class="normal">363</span>
+<span class="normal">364</span>
+<span class="normal">365</span>
+<span class="normal">366</span>
+<span class="normal">367</span>
+<span class="normal">368</span>
+<span class="normal">369</span>
+<span class="normal">370</span>
+<span class="normal">371</span>
+<span class="normal">372</span>
+<span class="normal">373</span>
+<span class="normal">374</span>
+<span class="normal">375</span>
+<span class="normal">376</span>
+<span class="normal">377</span>
+<span class="normal">378</span>
+<span class="normal">379</span>
+<span class="normal">380</span>
+<span class="normal">381</span>
+<span class="normal">382</span>
+<span class="normal">383</span>
+<span class="normal">384</span>
+<span class="normal">385</span>
+<span class="normal">386</span>
+<span class="normal">387</span>
+<span class="normal">388</span>
+<span class="normal">389</span>
+<span class="normal">390</span>
+<span class="normal">391</span>
+<span class="normal">392</span>
+<span class="normal">393</span>
+<span class="normal">394</span>
+<span class="normal">395</span>
+<span class="normal">396</span>
+<span class="normal">397</span>
+<span class="normal">398</span>
+<span class="normal">399</span>
+<span class="normal">400</span>
+<span class="normal">401</span>
+<span class="normal">402</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="nd">@mosaic</span><span class="o">.</span><span class="n">default</span>
+<span class="k">def</span> <span class="nf">convert</span><span class="p">(</span>
+    <span class="n">inp</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
+    <span class="n">out</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+    <span class="o">*</span><span class="p">,</span>
+    <span class="n">chunk</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">128</span><span class="p">,</span>
+    <span class="n">compressor</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s2">&quot;blosc&quot;</span><span class="p">,</span>
+    <span class="n">compressor_opt</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s2">&quot;</span><span class="si">{}</span><span class="s2">&quot;</span><span class="p">,</span>
+    <span class="n">max_load</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">512</span><span class="p">,</span>
+    <span class="n">nii</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">False</span><span class="p">,</span>
+    <span class="n">orientation</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s2">&quot;coronal&quot;</span><span class="p">,</span>
+    <span class="n">center</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">True</span><span class="p">,</span>
+    <span class="n">thickness</span><span class="p">:</span> <span class="nb">float</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+    <span class="n">voxel_size</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="nb">float</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">),</span>
+<span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Convert a collection of tiff files generated by the LSM pipeline into ZARR.</span>
+
+<span class="sd">    Orientation</span>
+<span class="sd">    -----------</span>
+<span class="sd">    The anatomical orientation of the slice is given in terms of RAS axes.</span>
+
+<span class="sd">    It is a combination of two letters from the set</span>
+<span class="sd">    `{&quot;L&quot;, &quot;R&quot;, &quot;A&quot;, &quot;P&quot;, &quot;I&quot;, &quot;S&quot;}`, where</span>
+
+<span class="sd">    * the first letter corresponds to the horizontal dimension and</span>
+<span class="sd">        indicates the anatomical meaning of the _right_ of the jp2 image,</span>
+<span class="sd">    * the second letter corresponds to the vertical dimension and</span>
+<span class="sd">        indicates the anatomical meaning of the _bottom_ of the jp2 image.</span>
+
+<span class="sd">    We also provide the aliases</span>
+
+<span class="sd">    * `&quot;coronal&quot;` == `&quot;LI&quot;`</span>
+<span class="sd">    * `&quot;axial&quot;` == `&quot;LP&quot;`</span>
+<span class="sd">    * `&quot;sagittal&quot;` == `&quot;PI&quot;`</span>
+
+<span class="sd">    The orientation flag is only useful when converting to nifti-zarr.</span>
+
+<span class="sd">    Parameters</span>
+<span class="sd">    ----------</span>
+<span class="sd">    inp</span>
+<span class="sd">        Path to the root directory, which contains a collection of</span>
+<span class="sd">        subfolders named `*_z{:02d}_y{:02d}*`, each containing a</span>
+<span class="sd">        collection of files named `*_plane{:03d}_c{:d}.tiff`.</span>
+<span class="sd">    out</span>
+<span class="sd">        Path to the output Zarr directory [&lt;INP&gt;.ome.zarr]</span>
+<span class="sd">    chunk</span>
+<span class="sd">        Output chunk size</span>
+<span class="sd">    compressor : {blosc, zlib, raw}</span>
+<span class="sd">        Compression method</span>
+<span class="sd">    compressor_opt</span>
+<span class="sd">        Compression options</span>
+<span class="sd">    max_load</span>
+<span class="sd">        Maximum input chunk size when building pyramid</span>
+<span class="sd">    nii</span>
+<span class="sd">        Convert to nifti-zarr. True if path ends in &quot;.nii.zarr&quot;.</span>
+<span class="sd">    orientation</span>
+<span class="sd">        Orientation of the slice</span>
+<span class="sd">    center</span>
+<span class="sd">        Set RAS[0, 0, 0] at FOV center</span>
+<span class="sd">    voxel_size</span>
+<span class="sd">        Voxel size along the X, Y and Z dimension, in micron.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">compressor_opt</span><span class="p">,</span> <span class="nb">str</span><span class="p">):</span>
+        <span class="n">compressor_opt</span> <span class="o">=</span> <span class="n">ast</span><span class="o">.</span><span class="n">literal_eval</span><span class="p">(</span><span class="n">compressor_opt</span><span class="p">)</span>
+
+    <span class="k">if</span> <span class="n">max_load</span> <span class="o">%</span> <span class="mi">2</span><span class="p">:</span>
+        <span class="n">max_load</span> <span class="o">+=</span> <span class="mi">1</span>
+
+    <span class="n">CHUNK_PATTERN</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span>
+        <span class="sa">r</span><span class="s2">&quot;^(?P&lt;prefix&gt;\w*)&quot;</span> <span class="sa">r</span><span class="s2">&quot;_z(?P&lt;z&gt;[0-9]+)&quot;</span> <span class="sa">r</span><span class="s2">&quot;_y(?P&lt;y&gt;[0-9]+)&quot;</span> <span class="sa">r</span><span class="s2">&quot;(?P&lt;suffix&gt;\w*)$&quot;</span>
+    <span class="p">)</span>
+
+    <span class="n">all_chunks_dirnames</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">sorted</span><span class="p">(</span><span class="n">glob</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">inp</span><span class="p">,</span> <span class="s2">&quot;*_z*_y*&quot;</span><span class="p">))))</span>
+    <span class="n">all_chunks_info</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span>
+        <span class="n">dirname</span><span class="o">=</span><span class="p">[],</span>
+        <span class="n">prefix</span><span class="o">=</span><span class="p">[],</span>
+        <span class="n">suffix</span><span class="o">=</span><span class="p">[],</span>
+        <span class="n">z</span><span class="o">=</span><span class="p">[],</span>
+        <span class="n">y</span><span class="o">=</span><span class="p">[],</span>
+        <span class="n">planes</span><span class="o">=</span><span class="p">[</span>
+            <span class="nb">dict</span><span class="p">(</span>
+                <span class="n">fname</span><span class="o">=</span><span class="p">[],</span>
+                <span class="n">z</span><span class="o">=</span><span class="p">[],</span>
+                <span class="n">c</span><span class="o">=</span><span class="p">[],</span>
+                <span class="n">yx_shape</span><span class="o">=</span><span class="p">[],</span>
+            <span class="p">)</span>
+            <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">all_chunks_dirnames</span><span class="p">))</span>
+        <span class="p">],</span>
+    <span class="p">)</span>
+
+    <span class="c1"># parse all directory names</span>
+    <span class="k">for</span> <span class="n">dirname</span> <span class="ow">in</span> <span class="n">all_chunks_dirnames</span><span class="p">:</span>
+        <span class="n">parsed</span> <span class="o">=</span> <span class="n">CHUNK_PATTERN</span><span class="o">.</span><span class="n">fullmatch</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">basename</span><span class="p">(</span><span class="n">dirname</span><span class="p">))</span>
+        <span class="n">all_chunks_info</span><span class="p">[</span><span class="s2">&quot;dirname&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">dirname</span><span class="p">)</span>
+        <span class="n">all_chunks_info</span><span class="p">[</span><span class="s2">&quot;prefix&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">parsed</span><span class="o">.</span><span class="n">group</span><span class="p">(</span><span class="s2">&quot;prefix&quot;</span><span class="p">))</span>
+        <span class="n">all_chunks_info</span><span class="p">[</span><span class="s2">&quot;suffix&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">parsed</span><span class="o">.</span><span class="n">group</span><span class="p">(</span><span class="s2">&quot;suffix&quot;</span><span class="p">))</span>
+        <span class="n">all_chunks_info</span><span class="p">[</span><span class="s2">&quot;z&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="n">parsed</span><span class="o">.</span><span class="n">group</span><span class="p">(</span><span class="s2">&quot;z&quot;</span><span class="p">)))</span>
+        <span class="n">all_chunks_info</span><span class="p">[</span><span class="s2">&quot;y&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="n">parsed</span><span class="o">.</span><span class="n">group</span><span class="p">(</span><span class="s2">&quot;y&quot;</span><span class="p">)))</span>
+
+    <span class="c1"># default output name</span>
+    <span class="k">if</span> <span class="ow">not</span> <span class="n">out</span><span class="p">:</span>
+        <span class="n">out</span> <span class="o">=</span> <span class="n">all_chunks_info</span><span class="p">[</span><span class="s2">&quot;prefix&quot;</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span> <span class="o">+</span> <span class="n">all_chunks_info</span><span class="p">[</span><span class="s2">&quot;suffix&quot;</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span>
+        <span class="n">out</span> <span class="o">+=</span> <span class="s2">&quot;.nii.zarr&quot;</span> <span class="k">if</span> <span class="n">nii</span> <span class="k">else</span> <span class="s2">&quot;.ome.zarr&quot;</span>
+    <span class="n">nii</span> <span class="o">=</span> <span class="n">nii</span> <span class="ow">or</span> <span class="n">out</span><span class="o">.</span><span class="n">endswith</span><span class="p">(</span><span class="s2">&quot;.nii.zarr&quot;</span><span class="p">)</span>
+
+    <span class="c1"># parse all individual file names</span>
+    <span class="n">nchunkz</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span><span class="n">all_chunks_info</span><span class="p">[</span><span class="s2">&quot;z&quot;</span><span class="p">])</span>
+    <span class="n">nchunky</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span><span class="n">all_chunks_info</span><span class="p">[</span><span class="s2">&quot;y&quot;</span><span class="p">])</span>
+    <span class="n">allshapes</span> <span class="o">=</span> <span class="p">[[(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span> <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">nchunky</span><span class="p">)]</span> <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">nchunkz</span><span class="p">)]</span>
+    <span class="n">nchannels</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="n">dtype</span> <span class="o">=</span> <span class="kc">None</span>
+    <span class="k">for</span> <span class="n">zchunk</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">nchunkz</span><span class="p">):</span>
+        <span class="k">for</span> <span class="n">ychunk</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">nchunky</span><span class="p">):</span>
+            <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">all_chunks_info</span><span class="p">[</span><span class="s2">&quot;dirname&quot;</span><span class="p">])):</span>
+                <span class="k">if</span> <span class="p">(</span>
+                    <span class="n">all_chunks_info</span><span class="p">[</span><span class="s2">&quot;z&quot;</span><span class="p">][</span><span class="n">i</span><span class="p">]</span> <span class="o">==</span> <span class="n">zchunk</span> <span class="o">+</span> <span class="mi">1</span>
+                    <span class="ow">and</span> <span class="n">all_chunks_info</span><span class="p">[</span><span class="s2">&quot;y&quot;</span><span class="p">][</span><span class="n">i</span><span class="p">]</span> <span class="o">==</span> <span class="n">ychunk</span> <span class="o">+</span> <span class="mi">1</span>
+                <span class="p">):</span>
+                    <span class="k">break</span>
+            <span class="n">dirname</span> <span class="o">=</span> <span class="n">all_chunks_info</span><span class="p">[</span><span class="s2">&quot;dirname&quot;</span><span class="p">][</span><span class="n">i</span><span class="p">]</span>
+            <span class="n">planes_filenames</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">sorted</span><span class="p">(</span><span class="n">glob</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">dirname</span><span class="p">,</span> <span class="s2">&quot;*.tiff&quot;</span><span class="p">))))</span>
+
+            <span class="n">PLANE_PATTERN</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span>
+                <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">basename</span><span class="p">(</span><span class="n">dirname</span><span class="p">)</span> <span class="o">+</span> <span class="sa">r</span><span class="s2">&quot;_plane(?P&lt;z&gt;[0-9]+)&quot;</span>
+                <span class="sa">r</span><span class="s2">&quot;_c(?P&lt;c&gt;[0-9]+)&quot;</span>
+                <span class="sa">r</span><span class="s2">&quot;.tiff$&quot;</span>
+            <span class="p">)</span>
+
+            <span class="k">for</span> <span class="n">fname</span> <span class="ow">in</span> <span class="n">planes_filenames</span><span class="p">:</span>
+                <span class="n">parsed</span> <span class="o">=</span> <span class="n">PLANE_PATTERN</span><span class="o">.</span><span class="n">fullmatch</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">basename</span><span class="p">(</span><span class="n">fname</span><span class="p">))</span>
+                <span class="n">all_chunks_info</span><span class="p">[</span><span class="s2">&quot;planes&quot;</span><span class="p">][</span><span class="n">i</span><span class="p">][</span><span class="s2">&quot;fname&quot;</span><span class="p">]</span> <span class="o">+=</span> <span class="p">[</span><span class="n">fname</span><span class="p">]</span>
+                <span class="n">all_chunks_info</span><span class="p">[</span><span class="s2">&quot;planes&quot;</span><span class="p">][</span><span class="n">i</span><span class="p">][</span><span class="s2">&quot;z&quot;</span><span class="p">]</span> <span class="o">+=</span> <span class="p">[</span><span class="nb">int</span><span class="p">(</span><span class="n">parsed</span><span class="o">.</span><span class="n">group</span><span class="p">(</span><span class="s2">&quot;z&quot;</span><span class="p">))]</span>
+                <span class="n">all_chunks_info</span><span class="p">[</span><span class="s2">&quot;planes&quot;</span><span class="p">][</span><span class="n">i</span><span class="p">][</span><span class="s2">&quot;c&quot;</span><span class="p">]</span> <span class="o">+=</span> <span class="p">[</span><span class="nb">int</span><span class="p">(</span><span class="n">parsed</span><span class="o">.</span><span class="n">group</span><span class="p">(</span><span class="s2">&quot;c&quot;</span><span class="p">))]</span>
+
+                <span class="n">f</span> <span class="o">=</span> <span class="n">TiffFile</span><span class="p">(</span><span class="n">fname</span><span class="p">)</span>
+                <span class="n">dtype</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="n">pages</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">dtype</span>
+                <span class="n">yx_shape</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="n">pages</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">shape</span>
+                <span class="n">all_chunks_info</span><span class="p">[</span><span class="s2">&quot;planes&quot;</span><span class="p">][</span><span class="n">i</span><span class="p">][</span><span class="s2">&quot;yx_shape&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">yx_shape</span><span class="p">)</span>
+
+            <span class="n">nplanes</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span><span class="n">all_chunks_info</span><span class="p">[</span><span class="s2">&quot;planes&quot;</span><span class="p">][</span><span class="n">i</span><span class="p">][</span><span class="s2">&quot;z&quot;</span><span class="p">])</span>
+            <span class="n">nchannels</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span><span class="n">nchannels</span><span class="p">,</span> <span class="nb">max</span><span class="p">(</span><span class="n">all_chunks_info</span><span class="p">[</span><span class="s2">&quot;planes&quot;</span><span class="p">][</span><span class="n">i</span><span class="p">][</span><span class="s2">&quot;c&quot;</span><span class="p">]))</span>
+
+            <span class="n">yx_shape</span> <span class="o">=</span> <span class="nb">set</span><span class="p">(</span><span class="n">all_chunks_info</span><span class="p">[</span><span class="s2">&quot;planes&quot;</span><span class="p">][</span><span class="n">i</span><span class="p">][</span><span class="s2">&quot;yx_shape&quot;</span><span class="p">])</span>
+            <span class="k">if</span> <span class="ow">not</span> <span class="nb">len</span><span class="p">(</span><span class="n">yx_shape</span><span class="p">)</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>
+                <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">&quot;Incompatible chunk shapes&quot;</span><span class="p">)</span>
+            <span class="n">yx_shape</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">yx_shape</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span>
+            <span class="n">allshapes</span><span class="p">[</span><span class="n">zchunk</span><span class="p">][</span><span class="n">ychunk</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span><span class="n">nplanes</span><span class="p">,</span> <span class="o">*</span><span class="n">yx_shape</span><span class="p">)</span>
+
+    <span class="c1"># check that all chink shapes are compatible</span>
+    <span class="k">for</span> <span class="n">zchunk</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">nchunkz</span><span class="p">):</span>
+        <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="nb">set</span><span class="p">(</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="k">for</span> <span class="n">shape</span> <span class="ow">in</span> <span class="n">allshapes</span><span class="p">[</span><span class="n">zchunk</span><span class="p">]))</span> <span class="o">!=</span> <span class="mi">1</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">&quot;Incompatible Y shapes&quot;</span><span class="p">)</span>
+    <span class="k">for</span> <span class="n">ychunk</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">nchunky</span><span class="p">):</span>
+        <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="nb">set</span><span class="p">(</span><span class="n">shape</span><span class="p">[</span><span class="n">ychunk</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span> <span class="k">for</span> <span class="n">shape</span> <span class="ow">in</span> <span class="n">allshapes</span><span class="p">))</span> <span class="o">!=</span> <span class="mi">1</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">&quot;Incompatible Z shapes&quot;</span><span class="p">)</span>
+    <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="nb">set</span><span class="p">(</span><span class="n">shape</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="k">for</span> <span class="n">subshapes</span> <span class="ow">in</span> <span class="n">allshapes</span> <span class="k">for</span> <span class="n">shape</span> <span class="ow">in</span> <span class="n">subshapes</span><span class="p">))</span> <span class="o">!=</span> <span class="mi">1</span><span class="p">:</span>
+        <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">&quot;Incompatible X shapes&quot;</span><span class="p">)</span>
+
+    <span class="c1"># compute full shape</span>
+    <span class="n">fullshape</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">]</span>
+    <span class="n">fullshape</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="nb">sum</span><span class="p">(</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span> <span class="k">for</span> <span class="n">shape</span> <span class="ow">in</span> <span class="n">allshapes</span><span class="p">)</span>
+    <span class="n">fullshape</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="nb">sum</span><span class="p">(</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="k">for</span> <span class="n">shape</span> <span class="ow">in</span> <span class="n">allshapes</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+    <span class="n">fullshape</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="o">=</span> <span class="n">allshapes</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">][</span><span class="mi">2</span><span class="p">]</span>
+
+    <span class="c1"># Prepare Zarr group</span>
+    <span class="n">omz</span> <span class="o">=</span> <span class="n">zarr</span><span class="o">.</span><span class="n">storage</span><span class="o">.</span><span class="n">DirectoryStore</span><span class="p">(</span><span class="n">out</span><span class="p">)</span>
+    <span class="n">omz</span> <span class="o">=</span> <span class="n">zarr</span><span class="o">.</span><span class="n">group</span><span class="p">(</span><span class="n">store</span><span class="o">=</span><span class="n">omz</span><span class="p">,</span> <span class="n">overwrite</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+    <span class="c1"># Prepare chunking options</span>
+    <span class="n">opt</span> <span class="o">=</span> <span class="p">{</span>
+        <span class="s2">&quot;chunks&quot;</span><span class="p">:</span> <span class="p">[</span><span class="n">nchannels</span><span class="p">]</span> <span class="o">+</span> <span class="p">[</span><span class="n">chunk</span><span class="p">]</span> <span class="o">*</span> <span class="mi">3</span><span class="p">,</span>
+        <span class="s2">&quot;dimension_separator&quot;</span><span class="p">:</span> <span class="sa">r</span><span class="s2">&quot;/&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;order&quot;</span><span class="p">:</span> <span class="s2">&quot;F&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;dtype&quot;</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">dtype</span><span class="p">(</span><span class="n">dtype</span><span class="p">)</span><span class="o">.</span><span class="n">str</span><span class="p">,</span>
+        <span class="s2">&quot;fill_value&quot;</span><span class="p">:</span> <span class="kc">None</span><span class="p">,</span>
+        <span class="s2">&quot;compressor&quot;</span><span class="p">:</span> <span class="n">make_compressor</span><span class="p">(</span><span class="n">compressor</span><span class="p">,</span> <span class="o">**</span><span class="n">compressor_opt</span><span class="p">),</span>
+    <span class="p">}</span>
+
+    <span class="c1"># write first level</span>
+    <span class="n">omz</span><span class="o">.</span><span class="n">create_dataset</span><span class="p">(</span><span class="s2">&quot;0&quot;</span><span class="p">,</span> <span class="n">shape</span><span class="o">=</span><span class="p">[</span><span class="n">nchannels</span><span class="p">,</span> <span class="o">*</span><span class="n">fullshape</span><span class="p">],</span> <span class="o">**</span><span class="n">opt</span><span class="p">)</span>
+    <span class="n">array</span> <span class="o">=</span> <span class="n">omz</span><span class="p">[</span><span class="s2">&quot;0&quot;</span><span class="p">]</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Write level 0 with shape&quot;</span><span class="p">,</span> <span class="p">[</span><span class="n">nchannels</span><span class="p">,</span> <span class="o">*</span><span class="n">fullshape</span><span class="p">])</span>
+    <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">dirname</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">all_chunks_info</span><span class="p">[</span><span class="s2">&quot;dirname&quot;</span><span class="p">]):</span>
+        <span class="n">chunkz</span> <span class="o">=</span> <span class="n">all_chunks_info</span><span class="p">[</span><span class="s2">&quot;z&quot;</span><span class="p">][</span><span class="n">i</span><span class="p">]</span> <span class="o">-</span> <span class="mi">1</span>
+        <span class="n">chunky</span> <span class="o">=</span> <span class="n">all_chunks_info</span><span class="p">[</span><span class="s2">&quot;y&quot;</span><span class="p">][</span><span class="n">i</span><span class="p">]</span> <span class="o">-</span> <span class="mi">1</span>
+        <span class="n">planes</span> <span class="o">=</span> <span class="n">all_chunks_info</span><span class="p">[</span><span class="s2">&quot;planes&quot;</span><span class="p">][</span><span class="n">i</span><span class="p">]</span>
+        <span class="k">for</span> <span class="n">j</span><span class="p">,</span> <span class="n">fname</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">planes</span><span class="p">[</span><span class="s2">&quot;fname&quot;</span><span class="p">]):</span>
+            <span class="n">subz</span> <span class="o">=</span> <span class="n">planes</span><span class="p">[</span><span class="s2">&quot;z&quot;</span><span class="p">][</span><span class="n">j</span><span class="p">]</span> <span class="o">-</span> <span class="mi">1</span>
+            <span class="n">subc</span> <span class="o">=</span> <span class="n">planes</span><span class="p">[</span><span class="s2">&quot;c&quot;</span><span class="p">][</span><span class="n">j</span><span class="p">]</span> <span class="o">-</span> <span class="mi">1</span>
+            <span class="n">yx_shape</span> <span class="o">=</span> <span class="n">planes</span><span class="p">[</span><span class="s2">&quot;yx_shape&quot;</span><span class="p">][</span><span class="n">j</span><span class="p">]</span>
+
+            <span class="n">zstart</span> <span class="o">=</span> <span class="nb">sum</span><span class="p">(</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span> <span class="k">for</span> <span class="n">shape</span> <span class="ow">in</span> <span class="n">allshapes</span><span class="p">[:</span><span class="n">chunkz</span><span class="p">])</span>
+            <span class="n">ystart</span> <span class="o">=</span> <span class="nb">sum</span><span class="p">(</span>
+                <span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="k">for</span> <span class="n">subshapes</span> <span class="ow">in</span> <span class="n">allshapes</span> <span class="k">for</span> <span class="n">shape</span> <span class="ow">in</span> <span class="n">subshapes</span><span class="p">[:</span><span class="n">chunky</span><span class="p">]</span>
+            <span class="p">)</span>
+            <span class="nb">print</span><span class="p">(</span>
+                <span class="sa">f</span><span class="s2">&quot;Write plane &quot;</span>
+                <span class="sa">f</span><span class="s2">&quot;(</span><span class="si">{</span><span class="n">subc</span><span class="si">}</span><span class="s2">, </span><span class="si">{</span><span class="n">zstart</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">subz</span><span class="si">}</span><span class="s2">, </span><span class="si">{</span><span class="n">ystart</span><span class="si">}</span><span class="s2">:</span><span class="si">{</span><span class="n">ystart</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">yx_shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="si">}</span><span class="s2">)&quot;</span><span class="p">,</span>
+                <span class="n">end</span><span class="o">=</span><span class="s2">&quot;</span><span class="se">\r</span><span class="s2">&quot;</span><span class="p">,</span>
+            <span class="p">)</span>
+            <span class="n">slicer</span> <span class="o">=</span> <span class="p">(</span>
+                <span class="n">subc</span><span class="p">,</span>
+                <span class="n">zstart</span> <span class="o">+</span> <span class="n">subz</span><span class="p">,</span>
+                <span class="nb">slice</span><span class="p">(</span><span class="n">ystart</span><span class="p">,</span> <span class="n">ystart</span> <span class="o">+</span> <span class="n">yx_shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]),</span>
+                <span class="nb">slice</span><span class="p">(</span><span class="kc">None</span><span class="p">),</span>
+            <span class="p">)</span>
+
+            <span class="n">f</span> <span class="o">=</span> <span class="n">TiffFile</span><span class="p">(</span><span class="n">fname</span><span class="p">)</span>
+            <span class="n">array</span><span class="p">[</span><span class="n">slicer</span><span class="p">]</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="n">asarray</span><span class="p">()</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="p">)</span>
+
+    <span class="c1"># build pyramid using median windows</span>
+    <span class="n">level</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="k">while</span> <span class="nb">any</span><span class="p">(</span><span class="n">x</span> <span class="o">&gt;</span> <span class="mi">1</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">omz</span><span class="p">[</span><span class="nb">str</span><span class="p">(</span><span class="n">level</span><span class="p">)]</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="o">-</span><span class="mi">3</span><span class="p">:]):</span>
+        <span class="n">prev_array</span> <span class="o">=</span> <span class="n">omz</span><span class="p">[</span><span class="nb">str</span><span class="p">(</span><span class="n">level</span><span class="p">)]</span>
+        <span class="n">prev_shape</span> <span class="o">=</span> <span class="n">prev_array</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="o">-</span><span class="mi">3</span><span class="p">:]</span>
+        <span class="n">level</span> <span class="o">+=</span> <span class="mi">1</span>
+
+        <span class="n">new_shape</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">map</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="nb">max</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">x</span> <span class="o">//</span> <span class="mi">2</span><span class="p">),</span> <span class="n">prev_shape</span><span class="p">))</span>
+        <span class="k">if</span> <span class="nb">all</span><span class="p">(</span><span class="n">x</span> <span class="o">&lt;</span> <span class="n">chunk</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">new_shape</span><span class="p">):</span>
+            <span class="k">break</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Compute level&quot;</span><span class="p">,</span> <span class="n">level</span><span class="p">,</span> <span class="s2">&quot;with shape&quot;</span><span class="p">,</span> <span class="n">new_shape</span><span class="p">)</span>
+        <span class="n">omz</span><span class="o">.</span><span class="n">create_dataset</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">level</span><span class="p">),</span> <span class="n">shape</span><span class="o">=</span><span class="p">[</span><span class="n">nchannels</span><span class="p">,</span> <span class="o">*</span><span class="n">new_shape</span><span class="p">],</span> <span class="o">**</span><span class="n">opt</span><span class="p">)</span>
+        <span class="n">new_array</span> <span class="o">=</span> <span class="n">omz</span><span class="p">[</span><span class="nb">str</span><span class="p">(</span><span class="n">level</span><span class="p">)]</span>
+
+        <span class="n">nz</span><span class="p">,</span> <span class="n">ny</span><span class="p">,</span> <span class="n">nx</span> <span class="o">=</span> <span class="n">prev_array</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="o">-</span><span class="mi">3</span><span class="p">:]</span>
+        <span class="n">ncz</span> <span class="o">=</span> <span class="n">ceildiv</span><span class="p">(</span><span class="n">nz</span><span class="p">,</span> <span class="n">max_load</span><span class="p">)</span>
+        <span class="n">ncy</span> <span class="o">=</span> <span class="n">ceildiv</span><span class="p">(</span><span class="n">ny</span><span class="p">,</span> <span class="n">max_load</span><span class="p">)</span>
+        <span class="n">ncx</span> <span class="o">=</span> <span class="n">ceildiv</span><span class="p">(</span><span class="n">nx</span><span class="p">,</span> <span class="n">max_load</span><span class="p">)</span>
+
+        <span class="k">for</span> <span class="n">cz</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">ncz</span><span class="p">):</span>
+            <span class="k">for</span> <span class="n">cy</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">ncy</span><span class="p">):</span>
+                <span class="k">for</span> <span class="n">cx</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">ncx</span><span class="p">):</span>
+                    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;chunk (</span><span class="si">{</span><span class="n">cz</span><span class="si">}</span><span class="s2">, </span><span class="si">{</span><span class="n">cy</span><span class="si">}</span><span class="s2">, </span><span class="si">{</span><span class="n">cx</span><span class="si">}</span><span class="s2">) / (</span><span class="si">{</span><span class="n">ncz</span><span class="si">}</span><span class="s2">, </span><span class="si">{</span><span class="n">ncy</span><span class="si">}</span><span class="s2">, </span><span class="si">{</span><span class="n">ncx</span><span class="si">}</span><span class="s2">)&quot;</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s2">&quot;</span><span class="se">\r</span><span class="s2">&quot;</span><span class="p">)</span>
+
+                    <span class="n">dat</span> <span class="o">=</span> <span class="n">prev_array</span><span class="p">[</span>
+                        <span class="o">...</span><span class="p">,</span>
+                        <span class="n">cz</span> <span class="o">*</span> <span class="n">max_load</span> <span class="p">:</span> <span class="p">(</span><span class="n">cz</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span> <span class="o">*</span> <span class="n">max_load</span><span class="p">,</span>
+                        <span class="n">cy</span> <span class="o">*</span> <span class="n">max_load</span> <span class="p">:</span> <span class="p">(</span><span class="n">cy</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span> <span class="o">*</span> <span class="n">max_load</span><span class="p">,</span>
+                        <span class="n">cx</span> <span class="o">*</span> <span class="n">max_load</span> <span class="p">:</span> <span class="p">(</span><span class="n">cx</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span> <span class="o">*</span> <span class="n">max_load</span><span class="p">,</span>
+                    <span class="p">]</span>
+                    <span class="n">crop</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span> <span class="k">if</span> <span class="n">x</span> <span class="o">==</span> <span class="mi">1</span> <span class="k">else</span> <span class="n">x</span> <span class="o">%</span> <span class="mi">2</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">dat</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="o">-</span><span class="mi">3</span><span class="p">:]]</span>
+                    <span class="n">slicer</span> <span class="o">=</span> <span class="p">[</span><span class="nb">slice</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span> <span class="k">if</span> <span class="n">x</span> <span class="k">else</span> <span class="nb">slice</span><span class="p">(</span><span class="kc">None</span><span class="p">)</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">crop</span><span class="p">]</span>
+                    <span class="n">dat</span> <span class="o">=</span> <span class="n">dat</span><span class="p">[(</span><span class="bp">Ellipsis</span><span class="p">,</span> <span class="o">*</span><span class="n">slicer</span><span class="p">)]</span>
+                    <span class="n">pz</span><span class="p">,</span> <span class="n">py</span><span class="p">,</span> <span class="n">px</span> <span class="o">=</span> <span class="n">dat</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="o">-</span><span class="mi">3</span><span class="p">:]</span>
+
+                    <span class="n">dat</span> <span class="o">=</span> <span class="n">dat</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span>
+                        <span class="p">[</span>
+                            <span class="n">nchannels</span><span class="p">,</span>
+                            <span class="nb">max</span><span class="p">(</span><span class="n">pz</span> <span class="o">//</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">),</span>
+                            <span class="nb">min</span><span class="p">(</span><span class="n">pz</span><span class="p">,</span> <span class="mi">2</span><span class="p">),</span>
+                            <span class="nb">max</span><span class="p">(</span><span class="n">py</span> <span class="o">//</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">),</span>
+                            <span class="nb">min</span><span class="p">(</span><span class="n">py</span><span class="p">,</span> <span class="mi">2</span><span class="p">),</span>
+                            <span class="nb">max</span><span class="p">(</span><span class="n">px</span> <span class="o">//</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">),</span>
+                            <span class="nb">min</span><span class="p">(</span><span class="n">px</span><span class="p">,</span> <span class="mi">2</span><span class="p">),</span>
+                        <span class="p">]</span>
+                    <span class="p">)</span>
+                    <span class="n">dat</span> <span class="o">=</span> <span class="n">dat</span><span class="o">.</span><span class="n">transpose</span><span class="p">([</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">6</span><span class="p">])</span>
+                    <span class="n">dat</span> <span class="o">=</span> <span class="n">dat</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span>
+                        <span class="p">[</span>
+                            <span class="n">nchannels</span><span class="p">,</span>
+                            <span class="nb">max</span><span class="p">(</span><span class="n">pz</span> <span class="o">//</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">),</span>
+                            <span class="nb">max</span><span class="p">(</span><span class="n">py</span> <span class="o">//</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">),</span>
+                            <span class="nb">max</span><span class="p">(</span><span class="n">px</span> <span class="o">//</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">),</span>
+                            <span class="o">-</span><span class="mi">1</span><span class="p">,</span>
+                        <span class="p">]</span>
+                    <span class="p">)</span>
+                    <span class="n">dat</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">median</span><span class="p">(</span><span class="n">dat</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">)</span>
+
+                    <span class="n">new_array</span><span class="p">[</span>
+                        <span class="o">...</span><span class="p">,</span>
+                        <span class="n">cz</span> <span class="o">*</span> <span class="n">max_load</span> <span class="o">//</span> <span class="mi">2</span> <span class="p">:</span> <span class="p">(</span><span class="n">cz</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span> <span class="o">*</span> <span class="n">max_load</span> <span class="o">//</span> <span class="mi">2</span><span class="p">,</span>
+                        <span class="n">cy</span> <span class="o">*</span> <span class="n">max_load</span> <span class="o">//</span> <span class="mi">2</span> <span class="p">:</span> <span class="p">(</span><span class="n">cy</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span> <span class="o">*</span> <span class="n">max_load</span> <span class="o">//</span> <span class="mi">2</span><span class="p">,</span>
+                        <span class="n">cx</span> <span class="o">*</span> <span class="n">max_load</span> <span class="o">//</span> <span class="mi">2</span> <span class="p">:</span> <span class="p">(</span><span class="n">cx</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span> <span class="o">*</span> <span class="n">max_load</span> <span class="o">//</span> <span class="mi">2</span><span class="p">,</span>
+                    <span class="p">]</span> <span class="o">=</span> <span class="n">dat</span>
+
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="p">)</span>
+    <span class="n">nblevel</span> <span class="o">=</span> <span class="n">level</span>
+
+    <span class="c1"># Write OME-Zarr multiscale metadata</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Write metadata&quot;</span><span class="p">)</span>
+    <span class="n">multiscales</span> <span class="o">=</span> <span class="p">[</span>
+        <span class="p">{</span>
+            <span class="s2">&quot;version&quot;</span><span class="p">:</span> <span class="s2">&quot;0.4&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;axes&quot;</span><span class="p">:</span> <span class="p">[</span>
+                <span class="p">{</span><span class="s2">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;z&quot;</span><span class="p">,</span> <span class="s2">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;space&quot;</span><span class="p">,</span> <span class="s2">&quot;unit&quot;</span><span class="p">:</span> <span class="s2">&quot;micrometer&quot;</span><span class="p">},</span>
+                <span class="p">{</span><span class="s2">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;y&quot;</span><span class="p">,</span> <span class="s2">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;space&quot;</span><span class="p">,</span> <span class="s2">&quot;unit&quot;</span><span class="p">:</span> <span class="s2">&quot;micrometer&quot;</span><span class="p">},</span>
+                <span class="p">{</span><span class="s2">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;x&quot;</span><span class="p">,</span> <span class="s2">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;space&quot;</span><span class="p">,</span> <span class="s2">&quot;unit&quot;</span><span class="p">:</span> <span class="s2">&quot;micrometer&quot;</span><span class="p">},</span>
+            <span class="p">],</span>
+            <span class="s2">&quot;datasets&quot;</span><span class="p">:</span> <span class="p">[],</span>
+            <span class="s2">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;median window 2x2x2&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
+        <span class="p">}</span>
+    <span class="p">]</span>
+    <span class="n">multiscales</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="s2">&quot;axes&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="p">{</span><span class="s2">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;c&quot;</span><span class="p">,</span> <span class="s2">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;channel&quot;</span><span class="p">})</span>
+
+    <span class="n">voxel_size</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">map</span><span class="p">(</span><span class="nb">float</span><span class="p">,</span> <span class="nb">reversed</span><span class="p">(</span><span class="n">voxel_size</span><span class="p">)))</span>
+    <span class="n">factor</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">*</span> <span class="mi">3</span>
+    <span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">nblevel</span><span class="p">):</span>
+        <span class="n">shape</span> <span class="o">=</span> <span class="n">omz</span><span class="p">[</span><span class="nb">str</span><span class="p">(</span><span class="n">n</span><span class="p">)]</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="o">-</span><span class="mi">3</span><span class="p">:]</span>
+        <span class="n">multiscales</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="s2">&quot;datasets&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">append</span><span class="p">({})</span>
+        <span class="n">level</span> <span class="o">=</span> <span class="n">multiscales</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="s2">&quot;datasets&quot;</span><span class="p">][</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+        <span class="n">level</span><span class="p">[</span><span class="s2">&quot;path&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">n</span><span class="p">)</span>
+
+        <span class="c1"># We made sure that the downsampling level is exactly 2</span>
+        <span class="c1"># However, once a dimension has size 1, we stop downsampling.</span>
+        <span class="k">if</span> <span class="n">n</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="n">shape_prev</span> <span class="o">=</span> <span class="n">omz</span><span class="p">[</span><span class="nb">str</span><span class="p">(</span><span class="n">n</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)]</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="o">-</span><span class="mi">3</span><span class="p">:]</span>
+            <span class="k">if</span> <span class="n">shape_prev</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">!=</span> <span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]:</span>
+                <span class="n">factor</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">*=</span> <span class="mi">2</span>
+            <span class="k">if</span> <span class="n">shape_prev</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">!=</span> <span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">]:</span>
+                <span class="n">factor</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">*=</span> <span class="mi">2</span>
+            <span class="k">if</span> <span class="n">shape_prev</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="o">!=</span> <span class="n">shape</span><span class="p">[</span><span class="mi">2</span><span class="p">]:</span>
+                <span class="n">factor</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="o">*=</span> <span class="mi">2</span>
+
+        <span class="n">level</span><span class="p">[</span><span class="s2">&quot;coordinateTransformations&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span>
+            <span class="p">{</span>
+                <span class="s2">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;scale&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;scale&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mf">1.0</span><span class="p">]</span>
+                <span class="o">+</span> <span class="p">[</span>
+                    <span class="n">factor</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">*</span> <span class="n">voxel_size</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span>
+                    <span class="n">factor</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">*</span> <span class="n">voxel_size</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span>
+                    <span class="n">factor</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="o">*</span> <span class="n">voxel_size</span><span class="p">[</span><span class="mi">2</span><span class="p">],</span>
+                <span class="p">],</span>
+            <span class="p">},</span>
+            <span class="p">{</span>
+                <span class="s2">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;translation&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;translation&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mf">0.0</span><span class="p">]</span>
+                <span class="o">+</span> <span class="p">[</span>
+                    <span class="p">(</span><span class="n">factor</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span> <span class="o">*</span> <span class="n">voxel_size</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">*</span> <span class="mf">0.5</span><span class="p">,</span>
+                    <span class="p">(</span><span class="n">factor</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span> <span class="o">*</span> <span class="n">voxel_size</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">*</span> <span class="mf">0.5</span><span class="p">,</span>
+                    <span class="p">(</span><span class="n">factor</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span> <span class="o">*</span> <span class="n">voxel_size</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="o">*</span> <span class="mf">0.5</span><span class="p">,</span>
+                <span class="p">],</span>
+            <span class="p">},</span>
+        <span class="p">]</span>
+    <span class="n">multiscales</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="s2">&quot;coordinateTransformations&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span>
+        <span class="p">{</span><span class="s2">&quot;scale&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mf">1.0</span><span class="p">]</span> <span class="o">*</span> <span class="mi">4</span><span class="p">,</span> <span class="s2">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;scale&quot;</span><span class="p">}</span>
+    <span class="p">]</span>
+    <span class="n">omz</span><span class="o">.</span><span class="n">attrs</span><span class="p">[</span><span class="s2">&quot;multiscales&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">multiscales</span>
+
+    <span class="k">if</span> <span class="ow">not</span> <span class="n">nii</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;done.&quot;</span><span class="p">)</span>
+        <span class="k">return</span>
+
+    <span class="c1"># Write NIfTI-Zarr header</span>
+    <span class="c1"># NOTE: we use nifti2 because dimensions typically do not fit in a short</span>
+    <span class="c1"># TODO: we do not write the json zattrs, but it should be added in</span>
+    <span class="c1">#       once the nifti-zarr package is released</span>
+    <span class="n">shape</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">reversed</span><span class="p">(</span><span class="n">omz</span><span class="p">[</span><span class="s2">&quot;0&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">shape</span><span class="p">))</span>
+    <span class="n">shape</span> <span class="o">=</span> <span class="n">shape</span><span class="p">[:</span><span class="mi">3</span><span class="p">]</span> <span class="o">+</span> <span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">+</span> <span class="n">shape</span><span class="p">[</span><span class="mi">3</span><span class="p">:]</span>  <span class="c1"># insert time dimension</span>
+    <span class="n">affine</span> <span class="o">=</span> <span class="n">orientation_to_affine</span><span class="p">(</span><span class="n">orientation</span><span class="p">,</span> <span class="o">*</span><span class="n">voxel_size</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">center</span><span class="p">:</span>
+        <span class="n">affine</span> <span class="o">=</span> <span class="n">center_affine</span><span class="p">(</span><span class="n">affine</span><span class="p">,</span> <span class="n">shape</span><span class="p">[:</span><span class="mi">3</span><span class="p">])</span>
+    <span class="n">header</span> <span class="o">=</span> <span class="n">nib</span><span class="o">.</span><span class="n">Nifti2Header</span><span class="p">()</span>
+    <span class="n">header</span><span class="o">.</span><span class="n">set_data_shape</span><span class="p">(</span><span class="n">shape</span><span class="p">)</span>
+    <span class="n">header</span><span class="o">.</span><span class="n">set_data_dtype</span><span class="p">(</span><span class="n">omz</span><span class="p">[</span><span class="s2">&quot;0&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">dtype</span><span class="p">)</span>
+    <span class="n">header</span><span class="o">.</span><span class="n">set_qform</span><span class="p">(</span><span class="n">affine</span><span class="p">)</span>
+    <span class="n">header</span><span class="o">.</span><span class="n">set_sform</span><span class="p">(</span><span class="n">affine</span><span class="p">)</span>
+    <span class="n">header</span><span class="o">.</span><span class="n">set_xyzt_units</span><span class="p">(</span><span class="n">nib</span><span class="o">.</span><span class="n">nifti1</span><span class="o">.</span><span class="n">unit_codes</span><span class="o">.</span><span class="n">code</span><span class="p">[</span><span class="s2">&quot;micron&quot;</span><span class="p">])</span>
+    <span class="n">header</span><span class="o">.</span><span class="n">structarr</span><span class="p">[</span><span class="s2">&quot;magic&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="sa">b</span><span class="s2">&quot;nz2</span><span class="se">\0</span><span class="s2">&quot;</span>
+    <span class="n">header</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">frombuffer</span><span class="p">(</span><span class="n">header</span><span class="o">.</span><span class="n">structarr</span><span class="o">.</span><span class="n">tobytes</span><span class="p">(),</span> <span class="n">dtype</span><span class="o">=</span><span class="s2">&quot;u1&quot;</span><span class="p">)</span>
+    <span class="n">opt</span> <span class="o">=</span> <span class="p">{</span>
+        <span class="s2">&quot;chunks&quot;</span><span class="p">:</span> <span class="p">[</span><span class="nb">len</span><span class="p">(</span><span class="n">header</span><span class="p">)],</span>
+        <span class="s2">&quot;dimension_separator&quot;</span><span class="p">:</span> <span class="sa">r</span><span class="s2">&quot;/&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;order&quot;</span><span class="p">:</span> <span class="s2">&quot;F&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;dtype&quot;</span><span class="p">:</span> <span class="s2">&quot;|u1&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;fill_value&quot;</span><span class="p">:</span> <span class="kc">None</span><span class="p">,</span>
+        <span class="s2">&quot;compressor&quot;</span><span class="p">:</span> <span class="kc">None</span><span class="p">,</span>
+    <span class="p">}</span>
+    <span class="n">omz</span><span class="o">.</span><span class="n">create_dataset</span><span class="p">(</span><span class="s2">&quot;nifti&quot;</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="n">header</span><span class="p">,</span> <span class="n">shape</span><span class="o">=</span><span class="n">shape</span><span class="p">,</span> <span class="o">**</span><span class="n">opt</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;done.&quot;</span><span class="p">)</span>
+</code></pre></div></td></tr></table></div>
+            </details>
+    </div>
+
+</div>
+
+
+
+  </div>
+
+    </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      CC-BY 4.0
+    </div>
+  
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    
+    
+    <a href="https://connects.mgh.harvard.edu/" target="_blank" rel="noopener" title="Homepage" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8h5Z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+    <a href="https://mit-lincbrain.slack.com/" target="_blank" rel="noopener" title="Slack" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M94.12 315.1c0 25.9-21.16 47.06-47.06 47.06S0 341 0 315.1c0-25.9 21.16-47.06 47.06-47.06h47.06v47.06zm23.72 0c0-25.9 21.16-47.06 47.06-47.06s47.06 21.16 47.06 47.06v117.84c0 25.9-21.16 47.06-47.06 47.06s-47.06-21.16-47.06-47.06V315.1zm47.06-188.98c-25.9 0-47.06-21.16-47.06-47.06S139 32 164.9 32s47.06 21.16 47.06 47.06v47.06H164.9zm0 23.72c25.9 0 47.06 21.16 47.06 47.06s-21.16 47.06-47.06 47.06H47.06C21.16 243.96 0 222.8 0 196.9s21.16-47.06 47.06-47.06H164.9zm188.98 47.06c0-25.9 21.16-47.06 47.06-47.06 25.9 0 47.06 21.16 47.06 47.06s-21.16 47.06-47.06 47.06h-47.06V196.9zm-23.72 0c0 25.9-21.16 47.06-47.06 47.06-25.9 0-47.06-21.16-47.06-47.06V79.06c0-25.9 21.16-47.06 47.06-47.06 25.9 0 47.06 21.16 47.06 47.06V196.9zM283.1 385.88c25.9 0 47.06 21.16 47.06 47.06 0 25.9-21.16 47.06-47.06 47.06-25.9 0-47.06-21.16-47.06-47.06v-47.06h47.06zm0-23.72c-25.9 0-47.06-21.16-47.06-47.06 0-25.9 21.16-47.06 47.06-47.06h117.84c25.9 0 47.06 21.16 47.06 47.06 0 25.9-21.16 47.06-47.06 47.06H283.1z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+    <a href="https://github.com/lincbrain" target="_blank" rel="noopener" title="GitHub" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../../../../..", "features": ["toc.integrate"], "search": "../../../../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../../../../assets/javascripts/bundle.bd41221c.min.js"></script>
+      
+        <script src="../../../../../js/open_in_new_tab.js"></script>
+      
+    
+  </body>
+</html>
