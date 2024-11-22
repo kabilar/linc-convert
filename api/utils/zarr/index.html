@@ -781,14 +781,20 @@
     </span>
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
+    <nav class="md-nav" aria-label="zarr">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
   <a href="#linc_convert.utils.zarr.make_compressor" class="md-nav__link">
     <span class="md-ellipsis">
       make_compressor
     </span>
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -880,7 +886,12 @@
 
 
 
-<a id="linc_convert.utils.zarr"></a>
+<h2 id="linc_convert.utils.zarr" class="doc doc-heading">
+            <span class="doc doc-object-name doc-module-name">linc_convert.utils.zarr</span>
+
+
+<a href="#linc_convert.utils.zarr" class="headerlink" title="Permanent link">&para;</a></h2>
+
     <div class="doc doc-contents first">
 
         <p>Zarr utilities.</p>
@@ -905,45 +916,18 @@
 <div class="doc doc-object doc-function">
 
 
-<h2 id="linc_convert.utils.zarr.make_compressor" class="doc doc-heading">
-            <code class="highlight language-python"><span class="n">make_compressor</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="o">**</span><span class="n">prm</span><span class="p">)</span></code>
+<h3 id="linc_convert.utils.zarr.make_compressor" class="doc doc-heading">
+            <span class="doc doc-object-name doc-function-name">make_compressor</span>
 
-<a href="#linc_convert.utils.zarr.make_compressor" class="headerlink" title="Permanent link">&para;</a></h2>
 
+<a href="#linc_convert.utils.zarr.make_compressor" class="headerlink" title="Permanent link">&para;</a></h3>
+<div class="doc-signature highlight"><pre><span></span><code><span class="nf">make_compressor</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="o">**</span><span class="n">prm</span><span class="p">)</span>
+</code></pre></div>
 
     <div class="doc doc-contents ">
 
         <p>Build compressor object from name and options.</p>
 
-            <details class="quote">
-              <summary>Source code in <code>linc_convert/utils/zarr.py</code></summary>
-              <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 7</span>
-<span class="normal"> 8</span>
-<span class="normal"> 9</span>
-<span class="normal">10</span>
-<span class="normal">11</span>
-<span class="normal">12</span>
-<span class="normal">13</span>
-<span class="normal">14</span>
-<span class="normal">15</span>
-<span class="normal">16</span>
-<span class="normal">17</span>
-<span class="normal">18</span>
-<span class="normal">19</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">make_compressor</span><span class="p">(</span><span class="n">name</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="o">**</span><span class="n">prm</span><span class="p">:</span> <span class="nb">dict</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">numcodecs</span><span class="o">.</span><span class="n">abc</span><span class="o">.</span><span class="n">Codec</span><span class="p">:</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot;Build compressor object from name and options.&quot;&quot;&quot;</span>
-    <span class="c1"># TODO: we should use `numcodecs.get_codec` instead`</span>
-    <span class="k">if</span> <span class="ow">not</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="nb">str</span><span class="p">):</span>
-        <span class="k">return</span> <span class="n">name</span>
-    <span class="n">name</span> <span class="o">=</span> <span class="n">name</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span>
-    <span class="k">if</span> <span class="n">name</span> <span class="o">==</span> <span class="s2">&quot;blosc&quot;</span><span class="p">:</span>
-        <span class="n">Compressor</span> <span class="o">=</span> <span class="n">numcodecs</span><span class="o">.</span><span class="n">Blosc</span>
-    <span class="k">elif</span> <span class="n">name</span> <span class="o">==</span> <span class="s2">&quot;zlib&quot;</span><span class="p">:</span>
-        <span class="n">Compressor</span> <span class="o">=</span> <span class="n">numcodecs</span><span class="o">.</span><span class="n">Zlib</span>
-    <span class="k">else</span><span class="p">:</span>
-        <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">&quot;Unknown compressor&quot;</span><span class="p">,</span> <span class="n">name</span><span class="p">)</span>
-    <span class="k">return</span> <span class="n">Compressor</span><span class="p">(</span><span class="o">**</span><span class="n">prm</span><span class="p">)</span>
-</code></pre></div></td></tr></table></div>
-            </details>
     </div>
 
 </div>

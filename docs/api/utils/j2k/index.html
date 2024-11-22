@@ -818,7 +818,12 @@
 
 
 
-<a id="utils.j2k"></a>
+<h2 id="utils.j2k" class="doc doc-heading">
+            <span class="doc doc-object-name doc-module-name">utils.j2k</span>
+
+
+<a href="#utils.j2k" class="headerlink" title="Permanent link">&para;</a></h2>
+
     <div class="doc doc-contents first">
 
         <p>Utilities for JPEG2000 files.</p>
@@ -843,16 +848,17 @@
 
 
 
-<h2 id="utils.j2k.WrappedJ2K" class="doc doc-heading">
-            <code>WrappedJ2K</code>
+<h3 id="utils.j2k.WrappedJ2K" class="doc doc-heading">
+            <span class="doc doc-object-name doc-class-name">WrappedJ2K</span>
 
 
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-dataclass"><code>dataclass</code></small>
   </span>
 
-<a href="#utils.j2k.WrappedJ2K" class="headerlink" title="Permanent link">&para;</a></h2>
-
+<a href="#utils.j2k.WrappedJ2K" class="headerlink" title="Permanent link">&para;</a></h3>
+<div class="doc-signature highlight"><pre><span></span><code><span class="nf">WrappedJ2K</span><span class="p">(</span><span class="n">j2k</span><span class="p">,</span> <span class="n">level</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">channel_first</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</code></pre></div>
 
     <div class="doc doc-contents ">
 
@@ -864,219 +870,76 @@ with virtual transposition of the axes into [C, H, W] order.</p>
 (dropping axes using integer indices or adding axes using <code>None</code>
 indices is forbidden).</p>
 <p>The point is to ensure that the zarr writer only loads chunk-sized data.</p>
-<h4 id="utils.j2k.WrappedJ2K--parameters">Parameters<a class="headerlink" href="#utils.j2k.WrappedJ2K--parameters" title="Permanent link">&para;</a></h4>
-<p>j2k : glymur.Jp2k
-    The JPEG2000 object.
-level : int
-    Resolution level to map (highest resolution = 0).
-channel_first : bool
-    Return an array with shape (C, H, W) instead of (H, W, C)
-    when there is a channel dimension.</p>
+
+
+<p><span class="doc-section-title">Parameters:</span></p>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Type</th>
+          <th>Description</th>
+          <th>Default</th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr class="doc-section-item">
+            <td>
+                <code>j2k</code>
+            </td>
+            <td>
+                  <code><span title="glymur.Jp2k">Jp2k</span></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>The JPEG2000 object.</p>
+              </div>
+            </td>
+            <td>
+                <em>required</em>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td>
+                <code>level</code>
+            </td>
+            <td>
+                  <code>int</code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Resolution level to map (highest resolution = 0).</p>
+              </div>
+            </td>
+            <td>
+                  <code>0</code>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td>
+                <code>channel_first</code>
+            </td>
+            <td>
+                  <code>bool</code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Return an array with shape (C, H, W) instead of (H, W, C)
+when there is a channel dimension.</p>
+              </div>
+            </td>
+            <td>
+                  <code>True</code>
+            </td>
+          </tr>
+      </tbody>
+    </table>
 
 
 
 
 
 
-              <details class="quote">
-                <summary>Source code in <code>linc_convert/utils/j2k.py</code></summary>
-                <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 38</span>
-<span class="normal"> 39</span>
-<span class="normal"> 40</span>
-<span class="normal"> 41</span>
-<span class="normal"> 42</span>
-<span class="normal"> 43</span>
-<span class="normal"> 44</span>
-<span class="normal"> 45</span>
-<span class="normal"> 46</span>
-<span class="normal"> 47</span>
-<span class="normal"> 48</span>
-<span class="normal"> 49</span>
-<span class="normal"> 50</span>
-<span class="normal"> 51</span>
-<span class="normal"> 52</span>
-<span class="normal"> 53</span>
-<span class="normal"> 54</span>
-<span class="normal"> 55</span>
-<span class="normal"> 56</span>
-<span class="normal"> 57</span>
-<span class="normal"> 58</span>
-<span class="normal"> 59</span>
-<span class="normal"> 60</span>
-<span class="normal"> 61</span>
-<span class="normal"> 62</span>
-<span class="normal"> 63</span>
-<span class="normal"> 64</span>
-<span class="normal"> 65</span>
-<span class="normal"> 66</span>
-<span class="normal"> 67</span>
-<span class="normal"> 68</span>
-<span class="normal"> 69</span>
-<span class="normal"> 70</span>
-<span class="normal"> 71</span>
-<span class="normal"> 72</span>
-<span class="normal"> 73</span>
-<span class="normal"> 74</span>
-<span class="normal"> 75</span>
-<span class="normal"> 76</span>
-<span class="normal"> 77</span>
-<span class="normal"> 78</span>
-<span class="normal"> 79</span>
-<span class="normal"> 80</span>
-<span class="normal"> 81</span>
-<span class="normal"> 82</span>
-<span class="normal"> 83</span>
-<span class="normal"> 84</span>
-<span class="normal"> 85</span>
-<span class="normal"> 86</span>
-<span class="normal"> 87</span>
-<span class="normal"> 88</span>
-<span class="normal"> 89</span>
-<span class="normal"> 90</span>
-<span class="normal"> 91</span>
-<span class="normal"> 92</span>
-<span class="normal"> 93</span>
-<span class="normal"> 94</span>
-<span class="normal"> 95</span>
-<span class="normal"> 96</span>
-<span class="normal"> 97</span>
-<span class="normal"> 98</span>
-<span class="normal"> 99</span>
-<span class="normal">100</span>
-<span class="normal">101</span>
-<span class="normal">102</span>
-<span class="normal">103</span>
-<span class="normal">104</span>
-<span class="normal">105</span>
-<span class="normal">106</span>
-<span class="normal">107</span>
-<span class="normal">108</span>
-<span class="normal">109</span>
-<span class="normal">110</span>
-<span class="normal">111</span>
-<span class="normal">112</span>
-<span class="normal">113</span>
-<span class="normal">114</span>
-<span class="normal">115</span>
-<span class="normal">116</span>
-<span class="normal">117</span>
-<span class="normal">118</span>
-<span class="normal">119</span>
-<span class="normal">120</span>
-<span class="normal">121</span>
-<span class="normal">122</span>
-<span class="normal">123</span>
-<span class="normal">124</span>
-<span class="normal">125</span>
-<span class="normal">126</span>
-<span class="normal">127</span>
-<span class="normal">128</span>
-<span class="normal">129</span>
-<span class="normal">130</span>
-<span class="normal">131</span>
-<span class="normal">132</span>
-<span class="normal">133</span>
-<span class="normal">134</span>
-<span class="normal">135</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="nd">@dataclass</span>
-<span class="k">class</span> <span class="nc">WrappedJ2K</span><span class="p">:</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">    Array-like wrapper around a JPEG2000 object.</span>
-
-<span class="sd">    A wrapper around the J2K object at any resolution level, and</span>
-<span class="sd">    with virtual transposition of the axes into [C, H, W] order.</span>
-
-<span class="sd">    The resulting object can be sliced, but each index must be a `slice`</span>
-<span class="sd">    (dropping axes using integer indices or adding axes using `None`</span>
-<span class="sd">    indices is forbidden).</span>
-
-<span class="sd">    The point is to ensure that the zarr writer only loads chunk-sized data.</span>
-
-<span class="sd">    Parameters</span>
-<span class="sd">    ----------</span>
-<span class="sd">    j2k : glymur.Jp2k</span>
-<span class="sd">        The JPEG2000 object.</span>
-<span class="sd">    level : int</span>
-<span class="sd">        Resolution level to map (highest resolution = 0).</span>
-<span class="sd">    channel_first : bool</span>
-<span class="sd">        Return an array with shape (C, H, W) instead of (H, W, C)</span>
-<span class="sd">        when there is a channel dimension.</span>
-<span class="sd">    &quot;&quot;&quot;</span>
-
-    <span class="n">j2k</span><span class="p">:</span> <span class="n">Jp2k</span>
-    <span class="n">level</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">0</span>
-    <span class="n">channel_first</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">True</span>
-
-    <span class="nd">@property</span>
-    <span class="k">def</span> <span class="nf">shape</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">tuple</span><span class="p">[</span><span class="nb">int</span><span class="p">]:</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;Shape of the current level.&quot;&quot;&quot;</span>
-        <span class="n">channel</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">j2k</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">2</span><span class="p">:])</span>
-        <span class="n">shape</span> <span class="o">=</span> <span class="p">[</span><span class="n">ceildiv</span><span class="p">(</span><span class="n">s</span><span class="p">,</span> <span class="mi">2</span><span class="o">**</span><span class="bp">self</span><span class="o">.</span><span class="n">level</span><span class="p">)</span> <span class="k">for</span> <span class="n">s</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">j2k</span><span class="o">.</span><span class="n">shape</span><span class="p">[:</span><span class="mi">2</span><span class="p">]]</span>
-        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">channel_first</span><span class="p">:</span>
-            <span class="n">shape</span> <span class="o">=</span> <span class="n">channel</span> <span class="o">+</span> <span class="n">shape</span>
-        <span class="k">else</span><span class="p">:</span>
-            <span class="n">shape</span> <span class="o">+=</span> <span class="n">channel</span>
-        <span class="k">return</span> <span class="nb">tuple</span><span class="p">(</span><span class="n">shape</span><span class="p">)</span>
-
-    <span class="nd">@property</span>
-    <span class="k">def</span> <span class="nf">dtype</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">np</span><span class="o">.</span><span class="n">dtype</span><span class="p">:</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;Data type of the wrapped image.&quot;&quot;&quot;</span>
-        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">j2k</span><span class="o">.</span><span class="n">dtype</span>
-
-    <span class="k">def</span> <span class="fm">__getitem__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">index</span><span class="p">:</span> <span class="nb">tuple</span><span class="p">[</span><span class="nb">slice</span><span class="p">]</span> <span class="o">|</span> <span class="nb">slice</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span><span class="p">:</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;Multidimensional slicing of the wrapped array.&quot;&quot;&quot;</span>
-        <span class="k">if</span> <span class="ow">not</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">index</span><span class="p">,</span> <span class="nb">tuple</span><span class="p">):</span>
-            <span class="n">index</span> <span class="o">=</span> <span class="p">(</span><span class="n">index</span><span class="p">,)</span>
-        <span class="k">if</span> <span class="bp">Ellipsis</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">index</span><span class="p">:</span>
-            <span class="n">index</span> <span class="o">+=</span> <span class="p">(</span><span class="bp">Ellipsis</span><span class="p">,)</span>
-        <span class="k">if</span> <span class="nb">any</span><span class="p">(</span><span class="n">idx</span> <span class="ow">is</span> <span class="kc">None</span> <span class="k">for</span> <span class="n">idx</span> <span class="ow">in</span> <span class="n">index</span><span class="p">):</span>
-            <span class="k">raise</span> <span class="ne">TypeError</span><span class="p">(</span><span class="s2">&quot;newaxis not supported&quot;</span><span class="p">)</span>
-
-        <span class="c1"># substitute ellipses</span>
-        <span class="n">new_index</span> <span class="o">=</span> <span class="p">[]</span>
-        <span class="n">has_seen_ellipsis</span> <span class="o">=</span> <span class="kc">False</span>
-        <span class="n">last_was_ellipsis</span> <span class="o">=</span> <span class="kc">False</span>
-        <span class="n">nb_ellipsis</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">j2k</span><span class="o">.</span><span class="n">ndim</span> <span class="o">+</span> <span class="mi">1</span> <span class="o">-</span> <span class="nb">len</span><span class="p">(</span><span class="n">index</span><span class="p">))</span>
-        <span class="k">for</span> <span class="n">idx</span> <span class="ow">in</span> <span class="n">index</span><span class="p">:</span>
-            <span class="k">if</span> <span class="n">idx</span> <span class="ow">is</span> <span class="bp">Ellipsis</span><span class="p">:</span>
-                <span class="k">if</span> <span class="ow">not</span> <span class="n">has_seen_ellipsis</span><span class="p">:</span>
-                    <span class="n">new_index</span> <span class="o">+=</span> <span class="p">[</span><span class="nb">slice</span><span class="p">(</span><span class="kc">None</span><span class="p">)]</span> <span class="o">*</span> <span class="n">nb_ellipsis</span>
-                <span class="k">elif</span> <span class="ow">not</span> <span class="n">last_was_ellipsis</span><span class="p">:</span>
-                    <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">&quot;Multiple ellipses should be contiguous&quot;</span><span class="p">)</span>
-                <span class="n">has_seen_ellipsis</span> <span class="o">=</span> <span class="kc">True</span>
-                <span class="n">last_was_ellipsis</span> <span class="o">=</span> <span class="kc">True</span>
-            <span class="k">elif</span> <span class="ow">not</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">idx</span><span class="p">,</span> <span class="nb">slice</span><span class="p">):</span>
-                <span class="k">raise</span> <span class="ne">TypeError</span><span class="p">(</span><span class="s2">&quot;Only slices are supported&quot;</span><span class="p">)</span>
-            <span class="k">elif</span> <span class="n">idx</span><span class="o">.</span><span class="n">step</span> <span class="ow">not</span> <span class="ow">in</span> <span class="p">(</span><span class="kc">None</span><span class="p">,</span> <span class="mi">1</span><span class="p">):</span>
-                <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">&quot;Striding not supported&quot;</span><span class="p">)</span>
-            <span class="k">else</span><span class="p">:</span>
-                <span class="n">last_was_ellipsis</span> <span class="o">=</span> <span class="kc">False</span>
-                <span class="n">new_index</span> <span class="o">+=</span> <span class="p">[</span><span class="n">idx</span><span class="p">]</span>
-        <span class="n">index</span> <span class="o">=</span> <span class="n">new_index</span>
-
-        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">channel_first</span><span class="p">:</span>
-            <span class="o">*</span><span class="n">cidx</span><span class="p">,</span> <span class="n">hidx</span><span class="p">,</span> <span class="n">widx</span> <span class="o">=</span> <span class="n">index</span>
-        <span class="k">else</span><span class="p">:</span>
-            <span class="n">hidx</span><span class="p">,</span> <span class="n">widx</span><span class="p">,</span> <span class="o">*</span><span class="n">cidx</span> <span class="o">=</span> <span class="n">index</span>
-        <span class="n">hstart</span><span class="p">,</span> <span class="n">hstop</span> <span class="o">=</span> <span class="n">hidx</span><span class="o">.</span><span class="n">start</span> <span class="ow">or</span> <span class="mi">0</span><span class="p">,</span> <span class="n">hidx</span><span class="o">.</span><span class="n">stop</span> <span class="ow">or</span> <span class="mi">0</span>
-        <span class="n">wstart</span><span class="p">,</span> <span class="n">wstop</span> <span class="o">=</span> <span class="n">widx</span><span class="o">.</span><span class="n">start</span> <span class="ow">or</span> <span class="mi">0</span><span class="p">,</span> <span class="n">widx</span><span class="o">.</span><span class="n">stop</span> <span class="ow">or</span> <span class="mi">0</span>
-
-        <span class="c1"># convert to level 0 indices</span>
-        <span class="n">hstart</span> <span class="o">*=</span> <span class="mi">2</span><span class="o">**</span><span class="bp">self</span><span class="o">.</span><span class="n">level</span>
-        <span class="n">hstop</span> <span class="o">*=</span> <span class="mi">2</span><span class="o">**</span><span class="bp">self</span><span class="o">.</span><span class="n">level</span>
-        <span class="n">wstart</span> <span class="o">*=</span> <span class="mi">2</span><span class="o">**</span><span class="bp">self</span><span class="o">.</span><span class="n">level</span>
-        <span class="n">wstop</span> <span class="o">*=</span> <span class="mi">2</span><span class="o">**</span><span class="bp">self</span><span class="o">.</span><span class="n">level</span>
-        <span class="n">hstop</span> <span class="o">=</span> <span class="nb">min</span><span class="p">(</span><span class="n">hstop</span> <span class="ow">or</span> <span class="bp">self</span><span class="o">.</span><span class="n">j2k</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="bp">self</span><span class="o">.</span><span class="n">j2k</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
-        <span class="n">wstop</span> <span class="o">=</span> <span class="nb">min</span><span class="p">(</span><span class="n">wstop</span> <span class="ow">or</span> <span class="bp">self</span><span class="o">.</span><span class="n">j2k</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="bp">self</span><span class="o">.</span><span class="n">j2k</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
-        <span class="n">area</span> <span class="o">=</span> <span class="p">(</span><span class="n">hstart</span><span class="p">,</span> <span class="n">wstart</span><span class="p">,</span> <span class="n">hstop</span><span class="p">,</span> <span class="n">wstop</span><span class="p">)</span>
-
-        <span class="n">data</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">j2k</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="n">rlevel</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">level</span><span class="p">,</span> <span class="n">area</span><span class="o">=</span><span class="n">area</span><span class="p">)</span>
-        <span class="k">if</span> <span class="n">cidx</span><span class="p">:</span>
-            <span class="n">data</span> <span class="o">=</span> <span class="n">data</span><span class="p">[:,</span> <span class="p">:,</span> <span class="n">cidx</span><span class="p">[</span><span class="mi">0</span><span class="p">]]</span>
-            <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">channel_first</span><span class="p">:</span>
-                <span class="n">data</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">transpose</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">])</span>
-        <span class="k">return</span> <span class="n">data</span>
-</code></pre></div></td></tr></table></div>
-              </details>
 
 
 
@@ -1092,19 +955,21 @@ channel_first : bool
 
 
 
-<h3 id="utils.j2k.WrappedJ2K.dtype" class="doc doc-heading">
-            <code class="highlight language-python"><span class="n">dtype</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">dtype</span></code>
+<h4 id="utils.j2k.WrappedJ2K.shape" class="doc doc-heading">
+            <span class="doc doc-object-name doc-attribute-name">shape</span>
+
 
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-property"><code>property</code></small>
   </span>
 
-<a href="#utils.j2k.WrappedJ2K.dtype" class="headerlink" title="Permanent link">&para;</a></h3>
-
+<a href="#utils.j2k.WrappedJ2K.shape" class="headerlink" title="Permanent link">&para;</a></h4>
+<div class="doc-signature highlight"><pre><span></span><code><span class="n">shape</span>
+</code></pre></div>
 
     <div class="doc doc-contents ">
 
-        <p>Data type of the wrapped image.</p>
+        <p>Shape of the current level.</p>
     </div>
 
 </div>
@@ -1113,19 +978,21 @@ channel_first : bool
 
 
 
-<h3 id="utils.j2k.WrappedJ2K.shape" class="doc doc-heading">
-            <code class="highlight language-python"><span class="n">shape</span><span class="p">:</span> <span class="nb">tuple</span><span class="p">[</span><span class="nb">int</span><span class="p">]</span></code>
+<h4 id="utils.j2k.WrappedJ2K.dtype" class="doc doc-heading">
+            <span class="doc doc-object-name doc-attribute-name">dtype</span>
+
 
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-property"><code>property</code></small>
   </span>
 
-<a href="#utils.j2k.WrappedJ2K.shape" class="headerlink" title="Permanent link">&para;</a></h3>
-
+<a href="#utils.j2k.WrappedJ2K.dtype" class="headerlink" title="Permanent link">&para;</a></h4>
+<div class="doc-signature highlight"><pre><span></span><code><span class="n">dtype</span>
+</code></pre></div>
 
     <div class="doc doc-contents ">
 
-        <p>Shape of the current level.</p>
+        <p>Data type of the wrapped image.</p>
     </div>
 
 </div>
@@ -1135,125 +1002,18 @@ channel_first : bool
 <div class="doc doc-object doc-function">
 
 
-<h3 id="utils.j2k.WrappedJ2K.__getitem__" class="doc doc-heading">
-            <code class="highlight language-python"><span class="fm">__getitem__</span><span class="p">(</span><span class="n">index</span><span class="p">)</span></code>
+<h4 id="utils.j2k.WrappedJ2K.__getitem__" class="doc doc-heading">
+            <span class="doc doc-object-name doc-function-name">__getitem__</span>
 
-<a href="#utils.j2k.WrappedJ2K.__getitem__" class="headerlink" title="Permanent link">&para;</a></h3>
 
+<a href="#utils.j2k.WrappedJ2K.__getitem__" class="headerlink" title="Permanent link">&para;</a></h4>
+<div class="doc-signature highlight"><pre><span></span><code><span class="fm">__getitem__</span><span class="p">(</span><span class="nf">index</span><span class="p">)</span>
+</code></pre></div>
 
     <div class="doc doc-contents ">
 
         <p>Multidimensional slicing of the wrapped array.</p>
 
-            <details class="quote">
-              <summary>Source code in <code>linc_convert/utils/j2k.py</code></summary>
-              <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 83</span>
-<span class="normal"> 84</span>
-<span class="normal"> 85</span>
-<span class="normal"> 86</span>
-<span class="normal"> 87</span>
-<span class="normal"> 88</span>
-<span class="normal"> 89</span>
-<span class="normal"> 90</span>
-<span class="normal"> 91</span>
-<span class="normal"> 92</span>
-<span class="normal"> 93</span>
-<span class="normal"> 94</span>
-<span class="normal"> 95</span>
-<span class="normal"> 96</span>
-<span class="normal"> 97</span>
-<span class="normal"> 98</span>
-<span class="normal"> 99</span>
-<span class="normal">100</span>
-<span class="normal">101</span>
-<span class="normal">102</span>
-<span class="normal">103</span>
-<span class="normal">104</span>
-<span class="normal">105</span>
-<span class="normal">106</span>
-<span class="normal">107</span>
-<span class="normal">108</span>
-<span class="normal">109</span>
-<span class="normal">110</span>
-<span class="normal">111</span>
-<span class="normal">112</span>
-<span class="normal">113</span>
-<span class="normal">114</span>
-<span class="normal">115</span>
-<span class="normal">116</span>
-<span class="normal">117</span>
-<span class="normal">118</span>
-<span class="normal">119</span>
-<span class="normal">120</span>
-<span class="normal">121</span>
-<span class="normal">122</span>
-<span class="normal">123</span>
-<span class="normal">124</span>
-<span class="normal">125</span>
-<span class="normal">126</span>
-<span class="normal">127</span>
-<span class="normal">128</span>
-<span class="normal">129</span>
-<span class="normal">130</span>
-<span class="normal">131</span>
-<span class="normal">132</span>
-<span class="normal">133</span>
-<span class="normal">134</span>
-<span class="normal">135</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="fm">__getitem__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">index</span><span class="p">:</span> <span class="nb">tuple</span><span class="p">[</span><span class="nb">slice</span><span class="p">]</span> <span class="o">|</span> <span class="nb">slice</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span><span class="p">:</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot;Multidimensional slicing of the wrapped array.&quot;&quot;&quot;</span>
-    <span class="k">if</span> <span class="ow">not</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">index</span><span class="p">,</span> <span class="nb">tuple</span><span class="p">):</span>
-        <span class="n">index</span> <span class="o">=</span> <span class="p">(</span><span class="n">index</span><span class="p">,)</span>
-    <span class="k">if</span> <span class="bp">Ellipsis</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">index</span><span class="p">:</span>
-        <span class="n">index</span> <span class="o">+=</span> <span class="p">(</span><span class="bp">Ellipsis</span><span class="p">,)</span>
-    <span class="k">if</span> <span class="nb">any</span><span class="p">(</span><span class="n">idx</span> <span class="ow">is</span> <span class="kc">None</span> <span class="k">for</span> <span class="n">idx</span> <span class="ow">in</span> <span class="n">index</span><span class="p">):</span>
-        <span class="k">raise</span> <span class="ne">TypeError</span><span class="p">(</span><span class="s2">&quot;newaxis not supported&quot;</span><span class="p">)</span>
-
-    <span class="c1"># substitute ellipses</span>
-    <span class="n">new_index</span> <span class="o">=</span> <span class="p">[]</span>
-    <span class="n">has_seen_ellipsis</span> <span class="o">=</span> <span class="kc">False</span>
-    <span class="n">last_was_ellipsis</span> <span class="o">=</span> <span class="kc">False</span>
-    <span class="n">nb_ellipsis</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">j2k</span><span class="o">.</span><span class="n">ndim</span> <span class="o">+</span> <span class="mi">1</span> <span class="o">-</span> <span class="nb">len</span><span class="p">(</span><span class="n">index</span><span class="p">))</span>
-    <span class="k">for</span> <span class="n">idx</span> <span class="ow">in</span> <span class="n">index</span><span class="p">:</span>
-        <span class="k">if</span> <span class="n">idx</span> <span class="ow">is</span> <span class="bp">Ellipsis</span><span class="p">:</span>
-            <span class="k">if</span> <span class="ow">not</span> <span class="n">has_seen_ellipsis</span><span class="p">:</span>
-                <span class="n">new_index</span> <span class="o">+=</span> <span class="p">[</span><span class="nb">slice</span><span class="p">(</span><span class="kc">None</span><span class="p">)]</span> <span class="o">*</span> <span class="n">nb_ellipsis</span>
-            <span class="k">elif</span> <span class="ow">not</span> <span class="n">last_was_ellipsis</span><span class="p">:</span>
-                <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">&quot;Multiple ellipses should be contiguous&quot;</span><span class="p">)</span>
-            <span class="n">has_seen_ellipsis</span> <span class="o">=</span> <span class="kc">True</span>
-            <span class="n">last_was_ellipsis</span> <span class="o">=</span> <span class="kc">True</span>
-        <span class="k">elif</span> <span class="ow">not</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">idx</span><span class="p">,</span> <span class="nb">slice</span><span class="p">):</span>
-            <span class="k">raise</span> <span class="ne">TypeError</span><span class="p">(</span><span class="s2">&quot;Only slices are supported&quot;</span><span class="p">)</span>
-        <span class="k">elif</span> <span class="n">idx</span><span class="o">.</span><span class="n">step</span> <span class="ow">not</span> <span class="ow">in</span> <span class="p">(</span><span class="kc">None</span><span class="p">,</span> <span class="mi">1</span><span class="p">):</span>
-            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">&quot;Striding not supported&quot;</span><span class="p">)</span>
-        <span class="k">else</span><span class="p">:</span>
-            <span class="n">last_was_ellipsis</span> <span class="o">=</span> <span class="kc">False</span>
-            <span class="n">new_index</span> <span class="o">+=</span> <span class="p">[</span><span class="n">idx</span><span class="p">]</span>
-    <span class="n">index</span> <span class="o">=</span> <span class="n">new_index</span>
-
-    <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">channel_first</span><span class="p">:</span>
-        <span class="o">*</span><span class="n">cidx</span><span class="p">,</span> <span class="n">hidx</span><span class="p">,</span> <span class="n">widx</span> <span class="o">=</span> <span class="n">index</span>
-    <span class="k">else</span><span class="p">:</span>
-        <span class="n">hidx</span><span class="p">,</span> <span class="n">widx</span><span class="p">,</span> <span class="o">*</span><span class="n">cidx</span> <span class="o">=</span> <span class="n">index</span>
-    <span class="n">hstart</span><span class="p">,</span> <span class="n">hstop</span> <span class="o">=</span> <span class="n">hidx</span><span class="o">.</span><span class="n">start</span> <span class="ow">or</span> <span class="mi">0</span><span class="p">,</span> <span class="n">hidx</span><span class="o">.</span><span class="n">stop</span> <span class="ow">or</span> <span class="mi">0</span>
-    <span class="n">wstart</span><span class="p">,</span> <span class="n">wstop</span> <span class="o">=</span> <span class="n">widx</span><span class="o">.</span><span class="n">start</span> <span class="ow">or</span> <span class="mi">0</span><span class="p">,</span> <span class="n">widx</span><span class="o">.</span><span class="n">stop</span> <span class="ow">or</span> <span class="mi">0</span>
-
-    <span class="c1"># convert to level 0 indices</span>
-    <span class="n">hstart</span> <span class="o">*=</span> <span class="mi">2</span><span class="o">**</span><span class="bp">self</span><span class="o">.</span><span class="n">level</span>
-    <span class="n">hstop</span> <span class="o">*=</span> <span class="mi">2</span><span class="o">**</span><span class="bp">self</span><span class="o">.</span><span class="n">level</span>
-    <span class="n">wstart</span> <span class="o">*=</span> <span class="mi">2</span><span class="o">**</span><span class="bp">self</span><span class="o">.</span><span class="n">level</span>
-    <span class="n">wstop</span> <span class="o">*=</span> <span class="mi">2</span><span class="o">**</span><span class="bp">self</span><span class="o">.</span><span class="n">level</span>
-    <span class="n">hstop</span> <span class="o">=</span> <span class="nb">min</span><span class="p">(</span><span class="n">hstop</span> <span class="ow">or</span> <span class="bp">self</span><span class="o">.</span><span class="n">j2k</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="bp">self</span><span class="o">.</span><span class="n">j2k</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
-    <span class="n">wstop</span> <span class="o">=</span> <span class="nb">min</span><span class="p">(</span><span class="n">wstop</span> <span class="ow">or</span> <span class="bp">self</span><span class="o">.</span><span class="n">j2k</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="bp">self</span><span class="o">.</span><span class="n">j2k</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
-    <span class="n">area</span> <span class="o">=</span> <span class="p">(</span><span class="n">hstart</span><span class="p">,</span> <span class="n">wstart</span><span class="p">,</span> <span class="n">hstop</span><span class="p">,</span> <span class="n">wstop</span><span class="p">)</span>
-
-    <span class="n">data</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">j2k</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="n">rlevel</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">level</span><span class="p">,</span> <span class="n">area</span><span class="o">=</span><span class="n">area</span><span class="p">)</span>
-    <span class="k">if</span> <span class="n">cidx</span><span class="p">:</span>
-        <span class="n">data</span> <span class="o">=</span> <span class="n">data</span><span class="p">[:,</span> <span class="p">:,</span> <span class="n">cidx</span><span class="p">[</span><span class="mi">0</span><span class="p">]]</span>
-        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">channel_first</span><span class="p">:</span>
-            <span class="n">data</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">transpose</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">])</span>
-    <span class="k">return</span> <span class="n">data</span>
-</code></pre></div></td></tr></table></div>
-            </details>
     </div>
 
 </div>
@@ -1270,61 +1030,18 @@ channel_first : bool
 <div class="doc doc-object doc-function">
 
 
-<h2 id="utils.j2k.get_pixelsize" class="doc doc-heading">
-            <code class="highlight language-python"><span class="n">get_pixelsize</span><span class="p">(</span><span class="n">j2k</span><span class="p">)</span></code>
+<h3 id="utils.j2k.get_pixelsize" class="doc doc-heading">
+            <span class="doc doc-object-name doc-function-name">get_pixelsize</span>
 
-<a href="#utils.j2k.get_pixelsize" class="headerlink" title="Permanent link">&para;</a></h2>
 
+<a href="#utils.j2k.get_pixelsize" class="headerlink" title="Permanent link">&para;</a></h3>
+<div class="doc-signature highlight"><pre><span></span><code><span class="nf">get_pixelsize</span><span class="p">(</span><span class="n">j2k</span><span class="p">)</span>
+</code></pre></div>
 
     <div class="doc doc-contents ">
 
         <p>Read pixelsize from the JPEG2000 file.</p>
 
-            <details class="quote">
-              <summary>Source code in <code>linc_convert/utils/j2k.py</code></summary>
-              <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">15</span>
-<span class="normal">16</span>
-<span class="normal">17</span>
-<span class="normal">18</span>
-<span class="normal">19</span>
-<span class="normal">20</span>
-<span class="normal">21</span>
-<span class="normal">22</span>
-<span class="normal">23</span>
-<span class="normal">24</span>
-<span class="normal">25</span>
-<span class="normal">26</span>
-<span class="normal">27</span>
-<span class="normal">28</span>
-<span class="normal">29</span>
-<span class="normal">30</span>
-<span class="normal">31</span>
-<span class="normal">32</span>
-<span class="normal">33</span>
-<span class="normal">34</span>
-<span class="normal">35</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">get_pixelsize</span><span class="p">(</span><span class="n">j2k</span><span class="p">:</span> <span class="n">Jp2k</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">tuple</span><span class="p">[</span><span class="nb">float</span><span class="p">,</span> <span class="nb">float</span><span class="p">]:</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot;Read pixelsize from the JPEG2000 file.&quot;&quot;&quot;</span>
-    <span class="c1"># Adobe XMP metadata</span>
-    <span class="c1"># https://en.wikipedia.org/wiki/Extensible_Metadata_Platform</span>
-    <span class="n">XMP_UUID</span> <span class="o">=</span> <span class="s2">&quot;BE7ACFCB97A942E89C71999491E3AFAC&quot;</span>
-    <span class="n">TAG_Images</span> <span class="o">=</span> <span class="s2">&quot;{http://ns.adobe.com/xap/1.0/}Images&quot;</span>
-    <span class="n">Tag_Desc</span> <span class="o">=</span> <span class="s2">&quot;{http://www.w3.org/1999/02/22-rdf-syntax-ns#}Description&quot;</span>
-    <span class="n">Tag_PixelWidth</span> <span class="o">=</span> <span class="s2">&quot;{http://ns.adobe.com/xap/1.0/}PixelWidth&quot;</span>
-    <span class="n">Tag_PixelHeight</span> <span class="o">=</span> <span class="s2">&quot;{http://ns.adobe.com/xap/1.0/}PixelHeight&quot;</span>
-
-    <span class="n">vxw</span> <span class="o">=</span> <span class="n">vxh</span> <span class="o">=</span> <span class="mf">1.0</span>
-    <span class="k">for</span> <span class="n">box</span> <span class="ow">in</span> <span class="n">j2k</span><span class="o">.</span><span class="n">box</span><span class="p">:</span>
-        <span class="k">if</span> <span class="nb">getattr</span><span class="p">(</span><span class="n">box</span><span class="p">,</span> <span class="s2">&quot;uuid&quot;</span><span class="p">,</span> <span class="kc">None</span><span class="p">)</span> <span class="o">==</span> <span class="n">uuid</span><span class="o">.</span><span class="n">UUID</span><span class="p">(</span><span class="n">XMP_UUID</span><span class="p">):</span>
-            <span class="k">try</span><span class="p">:</span>
-                <span class="n">images</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">box</span><span class="o">.</span><span class="n">data</span><span class="o">.</span><span class="n">iter</span><span class="p">(</span><span class="n">TAG_Images</span><span class="p">))[</span><span class="mi">0</span><span class="p">]</span>
-                <span class="n">desc</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">images</span><span class="o">.</span><span class="n">iter</span><span class="p">(</span><span class="n">Tag_Desc</span><span class="p">))[</span><span class="mi">0</span><span class="p">]</span>
-                <span class="n">vxw</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">desc</span><span class="o">.</span><span class="n">attrib</span><span class="p">[</span><span class="n">Tag_PixelWidth</span><span class="p">])</span>
-                <span class="n">vxh</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">desc</span><span class="o">.</span><span class="n">attrib</span><span class="p">[</span><span class="n">Tag_PixelHeight</span><span class="p">])</span>
-            <span class="k">except</span> <span class="ne">Exception</span><span class="p">:</span>
-                <span class="k">pass</span>
-    <span class="k">return</span> <span class="n">vxw</span><span class="p">,</span> <span class="n">vxh</span>
-</code></pre></div></td></tr></table></div>
-            </details>
     </div>
 
 </div>
