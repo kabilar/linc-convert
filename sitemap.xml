@@ -2,92 +2,212 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://convert.lincbrain.org/</loc>
-         <lastmod>2024-11-22</lastmod>
+         <lastmod>2025-01-14</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://convert.lincbrain.org/about/</loc>
-         <lastmod>2024-11-22</lastmod>
+         <lastmod>2025-01-14</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://convert.lincbrain.org/contribute/</loc>
-         <lastmod>2024-11-22</lastmod>
+         <lastmod>2025-01-14</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://convert.lincbrain.org/Users/kabilar/Documents/GitHub/linc-convert/docs/api/cli/</loc>
-         <lastmod>2024-11-22</lastmod>
+         <lastmod>2025-01-14</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://convert.lincbrain.org/Users/kabilar/Documents/GitHub/linc-convert/docs/api/navigation/</loc>
-         <lastmod>2024-11-22</lastmod>
+         <lastmod>2025-01-14</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://convert.lincbrain.org/Users/kabilar/Documents/GitHub/linc-convert/docs/api/modalities/__init__/</loc>
-         <lastmod>2024-11-22</lastmod>
+         <lastmod>2025-01-14</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://convert.lincbrain.org/Users/kabilar/Documents/GitHub/linc-convert/docs/api/modalities/df/__init__/</loc>
-         <lastmod>2024-11-22</lastmod>
+         <lastmod>2025-01-14</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://convert.lincbrain.org/Users/kabilar/Documents/GitHub/linc-convert/docs/api/modalities/df/cli/</loc>
-         <lastmod>2024-11-22</lastmod>
+         <lastmod>2025-01-14</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://convert.lincbrain.org/Users/kabilar/Documents/GitHub/linc-convert/docs/api/modalities/df/multi_slice/</loc>
-         <lastmod>2024-11-22</lastmod>
+         <lastmod>2025-01-14</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://convert.lincbrain.org/Users/kabilar/Documents/GitHub/linc-convert/docs/api/modalities/df/single_slice/</loc>
-         <lastmod>2024-11-22</lastmod>
+         <lastmod>2025-01-14</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://convert.lincbrain.org/Users/kabilar/Documents/GitHub/linc-convert/docs/api/modalities/lsm/__init__/</loc>
-         <lastmod>2024-11-22</lastmod>
+         <lastmod>2025-01-14</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://convert.lincbrain.org/Users/kabilar/Documents/GitHub/linc-convert/docs/api/modalities/lsm/cli/</loc>
-         <lastmod>2024-11-22</lastmod>
+         <lastmod>2025-01-14</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://convert.lincbrain.org/Users/kabilar/Documents/GitHub/linc-convert/docs/api/modalities/lsm/mosaic/</loc>
-         <lastmod>2024-11-22</lastmod>
+         <lastmod>2025-01-14</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://convert.lincbrain.org/Users/kabilar/Documents/GitHub/linc-convert/docs/api/modalities/psoct/__init__/</loc>
+         <lastmod>2025-01-14</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://convert.lincbrain.org/Users/kabilar/Documents/GitHub/linc-convert/docs/api/modalities/psoct/_utils/</loc>
+         <lastmod>2025-01-14</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://convert.lincbrain.org/Users/kabilar/Documents/GitHub/linc-convert/docs/api/modalities/psoct/cli/</loc>
+         <lastmod>2025-01-14</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://convert.lincbrain.org/Users/kabilar/Documents/GitHub/linc-convert/docs/api/modalities/psoct/multi_slice/</loc>
+         <lastmod>2025-01-14</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://convert.lincbrain.org/Users/kabilar/Documents/GitHub/linc-convert/docs/api/modalities/psoct/single_volume/</loc>
+         <lastmod>2025-01-14</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://convert.lincbrain.org/Users/kabilar/Documents/GitHub/linc-convert/docs/api/modalities/wk/__init__/</loc>
+         <lastmod>2025-01-14</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://convert.lincbrain.org/Users/kabilar/Documents/GitHub/linc-convert/docs/api/modalities/wk/cli/</loc>
+         <lastmod>2025-01-14</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://convert.lincbrain.org/Users/kabilar/Documents/GitHub/linc-convert/docs/api/modalities/wk/webknossos_annotation/</loc>
+         <lastmod>2025-01-14</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://convert.lincbrain.org/Users/kabilar/Documents/GitHub/linc-convert/docs/api/utils/__init__/</loc>
-         <lastmod>2024-11-22</lastmod>
+         <lastmod>2025-01-14</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://convert.lincbrain.org/Users/kabilar/Documents/GitHub/linc-convert/docs/api/utils/j2k/</loc>
-         <lastmod>2024-11-22</lastmod>
+         <lastmod>2025-01-14</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://convert.lincbrain.org/Users/kabilar/Documents/GitHub/linc-convert/docs/api/utils/math/</loc>
-         <lastmod>2024-11-22</lastmod>
+         <lastmod>2025-01-14</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://convert.lincbrain.org/Users/kabilar/Documents/GitHub/linc-convert/docs/api/utils/orientation/</loc>
-         <lastmod>2024-11-22</lastmod>
+         <lastmod>2025-01-14</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://convert.lincbrain.org/Users/kabilar/Documents/GitHub/linc-convert/docs/api/utils/unit/</loc>
+         <lastmod>2025-01-14</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://convert.lincbrain.org/Users/kabilar/Documents/GitHub/linc-convert/docs/api/utils/zarr/</loc>
-         <lastmod>2024-11-22</lastmod>
+         <lastmod>2025-01-14</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://convert.lincbrain.org/api/cli/</loc>
+         <lastmod>2025-01-14</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://convert.lincbrain.org/api/navigation/</loc>
+         <lastmod>2025-01-14</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://convert.lincbrain.org/api/modalities/__init__/</loc>
+         <lastmod>2025-01-14</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://convert.lincbrain.org/api/modalities/df/__init__/</loc>
+         <lastmod>2025-01-14</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://convert.lincbrain.org/api/modalities/df/cli/</loc>
+         <lastmod>2025-01-14</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://convert.lincbrain.org/api/modalities/df/multi_slice/</loc>
+         <lastmod>2025-01-14</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://convert.lincbrain.org/api/modalities/df/single_slice/</loc>
+         <lastmod>2025-01-14</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://convert.lincbrain.org/api/modalities/lsm/__init__/</loc>
+         <lastmod>2025-01-14</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://convert.lincbrain.org/api/modalities/lsm/cli/</loc>
+         <lastmod>2025-01-14</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://convert.lincbrain.org/api/modalities/lsm/mosaic/</loc>
+         <lastmod>2025-01-14</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://convert.lincbrain.org/api/utils/__init__/</loc>
+         <lastmod>2025-01-14</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://convert.lincbrain.org/api/utils/j2k/</loc>
+         <lastmod>2025-01-14</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://convert.lincbrain.org/api/utils/math/</loc>
+         <lastmod>2025-01-14</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://convert.lincbrain.org/api/utils/orientation/</loc>
+         <lastmod>2025-01-14</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://convert.lincbrain.org/api/utils/zarr/</loc>
+         <lastmod>2025-01-14</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>
