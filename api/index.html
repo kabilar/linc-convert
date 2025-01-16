@@ -8,13 +8,9 @@
       
       
       
-        <link rel="canonical" href="https://docs.lincbrain.org/linc-convert/contribute/">
+        <link rel="canonical" href="https://docs.lincbrain.org/linc-convert/api/">
       
       
-        <link rel="prev" href="..">
-      
-      
-        <link rel="next" href="../about/">
       
       
       <link rel="icon" href="../img/linc.logo.color+white.notext+square.png">
@@ -22,7 +18,7 @@
     
     
       
-        <title>Contribute documentation - LINC Convert</title>
+        <title>Api - LINC Convert</title>
       
     
     
@@ -85,11 +81,6 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
-        
-        <a href="#contribute-to-this-documentation" class="md-skip">
-          Skip to content
-        </a>
-      
     </div>
     <div data-md-component="announce">
       
@@ -121,7 +112,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Contribute documentation
+              Api
             
           </span>
         </div>
@@ -282,19 +273,10 @@
       
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../contribute/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -303,7 +285,6 @@
   
 
       </a>
-      
     </li>
   
 
@@ -335,7 +316,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../api" class="md-nav__link">
+      <a href="../." class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -366,16 +347,45 @@
   
 
 
-<h1 id="contribute-to-this-documentation">Contribute to this documentation<a class="headerlink" href="#contribute-to-this-documentation" title="Permanent link">&para;</a></h1>
-<p>If you find an issue with this documentation please file an issue or submit a pull request on the <a href="https://github.com/lincbrain/linc-convert">linc-convert</a> repository.</p>
-<p>If you would like to contribute to the LINC documentation and render the documentation locally as you make edits, please follow the steps below:</p>
-<ol>
-<li>Fork the <a href="https://github.com/lincbrain/linc-convert">linc-convert</a> repository and clone it to your computer.</li>
-<li>Set up a Python environment with the dependencies in the <a href="https://github.com/lincbrain/linc-convert/blob/main/requirements.txt">requirements.txt</a> file.</li>
-<li>Within the Python environment, run <code>mkdocs serve</code>.  This will build the website and start a local webserver (e.g. at <a href="http://127.0.0.1:8000">http://127.0.0.1:8000</a>) with your documentation.</li>
-<li>As you continue to edit the markdown files or configuration file, your documentation will be automatically re-built and rendered locally.</li>
-<li>Commit your changes and submit a pull request.</li>
-</ol>
+  <h1>Api</h1>
+
+<ul>
+<li><a href="cli/">cli</a></li>
+<li><a href="modalities/__init__/">modalities</a><ul>
+<li><a href="modalities/df/__init__/">df</a><ul>
+<li><a href="modalities/df/cli/">cli</a></li>
+<li><a href="modalities/df/multi_slice/">multi_slice</a></li>
+<li><a href="modalities/df/single_slice/">single_slice</a></li>
+</ul>
+</li>
+<li><a href="modalities/lsm/__init__/">lsm</a><ul>
+<li><a href="modalities/lsm/cli/">cli</a></li>
+<li><a href="modalities/lsm/mosaic/">mosaic</a></li>
+</ul>
+</li>
+<li><a href="modalities/psoct/__init__/">psoct</a><ul>
+<li><a href="modalities/psoct/_utils/">_utils</a></li>
+<li><a href="modalities/psoct/cli/">cli</a></li>
+<li><a href="modalities/psoct/multi_slice/">multi_slice</a></li>
+<li><a href="modalities/psoct/single_volume/">single_volume</a></li>
+</ul>
+</li>
+<li><a href="modalities/wk/__init__/">wk</a><ul>
+<li><a href="modalities/wk/cli/">cli</a></li>
+<li><a href="modalities/wk/webknossos_annotation/">webknossos_annotation</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="utils/__init__/">utils</a><ul>
+<li><a href="utils/j2k/">j2k</a></li>
+<li><a href="utils/math/">math</a></li>
+<li><a href="utils/orientation/">orientation</a></li>
+<li><a href="utils/unit/">unit</a></li>
+<li><a href="utils/zarr/">zarr</a></li>
+</ul>
+</li>
+</ul>
 
 
 
