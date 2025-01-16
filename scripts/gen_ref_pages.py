@@ -9,6 +9,8 @@ nav = mkdocs_gen_files.Nav()
 root = Path(__file__).parent.parent.parent
 src = root / "linc_convert"
 
+nav['api']='api/api.md'
+
 for path in sorted(src.rglob("*.py")):
     module_path = path.relative_to(src).with_suffix("")
     doc_path = "api" / path.relative_to(src).with_suffix(".md")
