@@ -27,7 +27,7 @@ for path in sorted(src.rglob("*.py")):
 
     if parts:
         print(Path(doc_path).as_posix(), parts)
-        parts_modified = ('api',) + parts
+        parts_modified = ('API',) + parts
         print(Path(doc_path).as_posix(), parts_modified)
         nav[parts_modified] = Path(doc_path).as_posix()
         with mkdocs_gen_files.open(full_doc_path, "w") as fd:
