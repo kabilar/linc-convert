@@ -9,9 +9,9 @@ nav = mkdocs_gen_files.Nav()
 root = Path(__file__).parent.parent.parent
 src = root / "linc_convert"
 
-nav['welcome']='index.md'
-nav['contribute']='contribute.md'
-nav['about']='about.md'
+nav['Welcome']='index.md'
+nav['Contribute']='contribute.md'
+nav['About']='about.md'
 # nav['api']='api/'
 
 for path in sorted(src.rglob("*.py")):
@@ -26,7 +26,7 @@ for path in sorted(src.rglob("*.py")):
         continue
 
     if parts:
-        nav[parts] = Path(doc_path).as_posix()
+        nav[parts] = Path(path.relative_to(src).with_suffix(".md")).as_posix()
         with mkdocs_gen_files.open(full_doc_path, "w") as fd:
             ident = ".".join(parts)
             fd.write(f"::: linc_convert.{ident}")
