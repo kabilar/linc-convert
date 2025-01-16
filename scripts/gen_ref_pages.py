@@ -12,23 +12,20 @@ src = root / "linc_convert"
 nav['Welcome']='index.md'
 nav['Contribute']='contribute.md'
 nav['About']='about.md'
-# nav['api']='api/'
 
 for path in sorted(src.rglob("*.py")):
     doc_path = "api" / path.relative_to(src).with_suffix(".md")
     full_doc_path = Path(root, "docs", doc_path)
     module_path = path.relative_to(src).with_suffix("")
     parts = tuple(module_path.parts)
-    print(parts, module_path, doc_path, full_doc_path)
+
     if parts[-1] == "__init__":
         parts = parts[:-1]
     elif parts[-1] == "__main__":
         continue
 
     if parts:
-        print(Path(doc_path).as_posix(), parts)
         parts_modified = ('API',) + parts
-        print(Path(doc_path).as_posix(), parts_modified)
         nav[parts_modified] = Path(doc_path).as_posix()
         with mkdocs_gen_files.open(full_doc_path, "w") as fd:
             ident = ".".join(parts)
