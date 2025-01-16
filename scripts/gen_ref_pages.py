@@ -11,7 +11,7 @@ src = root / "linc_convert"
 print(root, src)
 for path in sorted(src.rglob("*.py")):
     module_path = path.relative_to(src).with_suffix("")
-    doc_path = "api" / path.relative_to(src).with_suffix(".md")
+    doc_path =path.relative_to(src).with_suffix(".md")# "api" / 
     full_doc_path = Path(root, "docs", doc_path)
     parts = tuple(module_path.parts)
     print(module_path,doc_path,full_doc_path,parts)
