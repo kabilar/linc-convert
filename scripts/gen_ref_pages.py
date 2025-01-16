@@ -22,12 +22,17 @@ for path in sorted(src.rglob("*.py")):
 
     if parts:
         nav[parts] = Path(doc_path).as_posix()
+        print(Path(doc_path).as_posix())
         with mkdocs_gen_files.open(full_doc_path, "w") as fd:
             ident = ".".join(parts)
             fd.write(f"::: linc_convert.{ident}")
 
         mkdocs_gen_files.set_edit_path(full_doc_path, path.relative_to(root))
 
-with mkdocs_gen_files.open(root / "docs/api/navigation.md", "w") as nav_file: 
+with mkdocs_gen_files.open(root / "docs/api/navigation.md", "w") as nav_file:
+    print(nav.build_literate_nav())
     nav_file.writelines(nav.build_literate_nav())
     
+with open(root / "docs/api/navigation.md", "r") as f:
+    contents = f.read()
+    print(contents)
