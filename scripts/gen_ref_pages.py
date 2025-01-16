@@ -15,11 +15,11 @@ nav['About']='about.md'
 # nav['api']='api/'
 
 for path in sorted(src.rglob("*.py")):
-    module_path = path.relative_to(src).with_suffix("")
     doc_path = "api" / path.relative_to(src).with_suffix(".md")
     full_doc_path = Path(root, "docs", doc_path)
+    module_path = path.relative_to(src).with_suffix("")
     parts = tuple(module_path.parts)
-
+    print(parts, module_path, doc_path, full_doc_path)
     if parts[-1] == "__init__":
         parts = parts[:-1]
     elif parts[-1] == "__main__":
