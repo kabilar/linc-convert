@@ -9,15 +9,11 @@
          <lastmod>2025-01-16</lastmod>
     </url>
     <url>
-         <loc>https://docs.lincbrain.org/linc-convert/api/</loc>
-         <lastmod>2025-01-16</lastmod>
-    </url>
-    <url>
          <loc>https://docs.lincbrain.org/linc-convert/contribute/</loc>
          <lastmod>2025-01-16</lastmod>
     </url>
     <url>
-         <loc>https://docs.lincbrain.org/Users/kabilar/Documents/GitHub/linc-convert/docs/api/</loc>
+         <loc>https://docs.lincbrain.org/Users/kabilar/Documents/GitHub/linc-convert/docs/api/api/</loc>
          <lastmod>2025-01-16</lastmod>
     </url>
     <url>
@@ -110,98 +106,6 @@
     </url>
     <url>
          <loc>https://docs.lincbrain.org/Users/kabilar/Documents/GitHub/linc-convert/docs/api/utils/zarr/</loc>
-         <lastmod>2025-01-16</lastmod>
-    </url>
-    <url>
-         <loc>https://docs.lincbrain.org/linc-convert/api/cli/</loc>
-         <lastmod>2025-01-16</lastmod>
-    </url>
-    <url>
-         <loc>https://docs.lincbrain.org/linc-convert/api/modalities/__init__/</loc>
-         <lastmod>2025-01-16</lastmod>
-    </url>
-    <url>
-         <loc>https://docs.lincbrain.org/linc-convert/api/modalities/df/__init__/</loc>
-         <lastmod>2025-01-16</lastmod>
-    </url>
-    <url>
-         <loc>https://docs.lincbrain.org/linc-convert/api/modalities/df/cli/</loc>
-         <lastmod>2025-01-16</lastmod>
-    </url>
-    <url>
-         <loc>https://docs.lincbrain.org/linc-convert/api/modalities/df/multi_slice/</loc>
-         <lastmod>2025-01-16</lastmod>
-    </url>
-    <url>
-         <loc>https://docs.lincbrain.org/linc-convert/api/modalities/df/single_slice/</loc>
-         <lastmod>2025-01-16</lastmod>
-    </url>
-    <url>
-         <loc>https://docs.lincbrain.org/linc-convert/api/modalities/lsm/__init__/</loc>
-         <lastmod>2025-01-16</lastmod>
-    </url>
-    <url>
-         <loc>https://docs.lincbrain.org/linc-convert/api/modalities/lsm/cli/</loc>
-         <lastmod>2025-01-16</lastmod>
-    </url>
-    <url>
-         <loc>https://docs.lincbrain.org/linc-convert/api/modalities/lsm/mosaic/</loc>
-         <lastmod>2025-01-16</lastmod>
-    </url>
-    <url>
-         <loc>https://docs.lincbrain.org/linc-convert/api/modalities/psoct/__init__/</loc>
-         <lastmod>2025-01-16</lastmod>
-    </url>
-    <url>
-         <loc>https://docs.lincbrain.org/linc-convert/api/modalities/psoct/_utils/</loc>
-         <lastmod>2025-01-16</lastmod>
-    </url>
-    <url>
-         <loc>https://docs.lincbrain.org/linc-convert/api/modalities/psoct/cli/</loc>
-         <lastmod>2025-01-16</lastmod>
-    </url>
-    <url>
-         <loc>https://docs.lincbrain.org/linc-convert/api/modalities/psoct/multi_slice/</loc>
-         <lastmod>2025-01-16</lastmod>
-    </url>
-    <url>
-         <loc>https://docs.lincbrain.org/linc-convert/api/modalities/psoct/single_volume/</loc>
-         <lastmod>2025-01-16</lastmod>
-    </url>
-    <url>
-         <loc>https://docs.lincbrain.org/linc-convert/api/modalities/wk/__init__/</loc>
-         <lastmod>2025-01-16</lastmod>
-    </url>
-    <url>
-         <loc>https://docs.lincbrain.org/linc-convert/api/modalities/wk/cli/</loc>
-         <lastmod>2025-01-16</lastmod>
-    </url>
-    <url>
-         <loc>https://docs.lincbrain.org/linc-convert/api/modalities/wk/webknossos_annotation/</loc>
-         <lastmod>2025-01-16</lastmod>
-    </url>
-    <url>
-         <loc>https://docs.lincbrain.org/linc-convert/api/utils/__init__/</loc>
-         <lastmod>2025-01-16</lastmod>
-    </url>
-    <url>
-         <loc>https://docs.lincbrain.org/linc-convert/api/utils/j2k/</loc>
-         <lastmod>2025-01-16</lastmod>
-    </url>
-    <url>
-         <loc>https://docs.lincbrain.org/linc-convert/api/utils/math/</loc>
-         <lastmod>2025-01-16</lastmod>
-    </url>
-    <url>
-         <loc>https://docs.lincbrain.org/linc-convert/api/utils/orientation/</loc>
-         <lastmod>2025-01-16</lastmod>
-    </url>
-    <url>
-         <loc>https://docs.lincbrain.org/linc-convert/api/utils/unit/</loc>
-         <lastmod>2025-01-16</lastmod>
-    </url>
-    <url>
-         <loc>https://docs.lincbrain.org/linc-convert/api/utils/zarr/</loc>
          <lastmod>2025-01-16</lastmod>
     </url>
 </urlset>
