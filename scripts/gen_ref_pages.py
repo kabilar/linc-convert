@@ -10,6 +10,9 @@ root = Path(__file__).parent.parent.parent
 src = root / "linc_convert"
 
 nav['api']='api/api.md'
+nav['api']='index.md'
+nav['api']='contribute.md'
+nav['api']='about.md'
 
 for path in sorted(src.rglob("*.py")):
     module_path = path.relative_to(src).with_suffix("")
