@@ -26,7 +26,8 @@ for path in sorted(src.rglob("*.py")):
         continue
 
     if parts:
-        nav[parts] = Path(path.relative_to(src).with_suffix(".md")).as_posix()
+        print(Path(doc_path).as_posix(), parts)
+        nav[parts] = Path(doc_path).as_posix()
         with mkdocs_gen_files.open(full_doc_path, "w") as fd:
             ident = ".".join(parts)
             fd.write(f"::: linc_convert.{ident}")
