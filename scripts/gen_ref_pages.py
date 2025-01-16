@@ -12,7 +12,7 @@ src = root / "linc_convert"
 nav['welcome']='index.md'
 nav['contribute']='contribute.md'
 nav['about']='about.md'
-nav['api']=''
+nav['api']='api/'
 
 for path in sorted(src.rglob("*.py")):
     module_path = path.relative_to(src).with_suffix("")
