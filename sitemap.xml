@@ -9,6 +9,10 @@
          <lastmod>2025-09-30</lastmod>
     </url>
     <url>
+         <loc>https://docs.lincbrain.org/linc-convert/api/</loc>
+         <lastmod>2025-09-30</lastmod>
+    </url>
+    <url>
          <loc>https://docs.lincbrain.org/linc-convert/basic-usage/</loc>
          <lastmod>2025-09-30</lastmod>
     </url>
@@ -22,10 +26,6 @@
     </url>
     <url>
          <loc>https://docs.lincbrain.org/linc-convert/notebooks/psoct_single_volume_demo/</loc>
-         <lastmod>2025-09-30</lastmod>
-    </url>
-    <url>
-         <loc>https://docs.lincbrain.org/linc-convert/reference/SUMMARY/</loc>
          <lastmod>2025-09-30</lastmod>
     </url>
 </urlset>
