@@ -8,9 +8,13 @@
       
       
       
-        <link rel="canonical" href="https://docs.lincbrain.org/linc-convert/api/">
+        <link rel="canonical" href="https://docs.lincbrain.org/linc-convert/basic-usage/">
       
       
+        <link rel="prev" href="../installation/">
+      
+      
+        <link rel="next" href="../notebooks/psoct_single_volume_demo/">
       
       
       <link rel="icon" href="../img/linc.logo.color+white.notext+square.png">
@@ -18,7 +22,7 @@
     
     
       
-        <title>Api - LINC Convert</title>
+        <title>Basic Usage Guide - LINC Convert</title>
       
     
     
@@ -81,6 +85,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#basic-usage-guide" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -112,7 +121,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Api
+              Basic Usage Guide
             
           </span>
         </div>
@@ -300,6 +309,82 @@
       
   
   
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Basic Usage Guide
+    
+  </span>
+  
+
+      </a>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../notebooks/psoct_single_volume_demo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    PS-OCT Single Volume Demo
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../reference/SUMMARY/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    API
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
   
   
     <li class="md-nav__item">
@@ -359,51 +444,30 @@
   
 
 
-  <h1>Api</h1>
-
-<ul>
-<li><a href="../">Welcome</a></li>
-<li><a href="../contribute/">Contribute</a></li>
-<li><a href="../about/">About</a></li>
-<li>API<ul>
-<li><a href="cli/">cli</a></li>
-<li><a href="modalities/__init__/">modalities</a><ul>
-<li><a href="modalities/df/__init__/">df</a><ul>
-<li><a href="modalities/df/cli/">cli</a></li>
-<li><a href="modalities/df/multi_slice/">multi_slice</a></li>
-<li><a href="modalities/df/single_slice/">single_slice</a></li>
-</ul>
-</li>
-<li><a href="modalities/lsm/__init__/">lsm</a><ul>
-<li><a href="modalities/lsm/cli/">cli</a></li>
-<li><a href="modalities/lsm/mosaic/">mosaic</a></li>
-</ul>
-</li>
-<li><a href="modalities/psoct/__init__/">psoct</a><ul>
-<li><a href="modalities/psoct/_utils/">_utils</a></li>
-<li><a href="modalities/psoct/cli/">cli</a></li>
-<li><a href="modalities/psoct/multi_slice/">multi_slice</a></li>
-<li><a href="modalities/psoct/single_volume/">single_volume</a></li>
-</ul>
-</li>
-<li><a href="modalities/wk/__init__/">wk</a><ul>
-<li><a href="modalities/wk/cli/">cli</a></li>
-<li><a href="modalities/wk/webknossos_annotation/">webknossos_annotation</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li><a href="utils/__init__/">utils</a><ul>
-<li><a href="utils/j2k/">j2k</a></li>
-<li><a href="utils/math/">math</a></li>
-<li><a href="utils/orientation/">orientation</a></li>
-<li><a href="utils/unit/">unit</a></li>
-<li><a href="utils/zarr/">zarr</a></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
+<h1 id="basic-usage-guide">Basic Usage Guide<a class="headerlink" href="#basic-usage-guide" title="Permanent link">&para;</a></h1>
+<ol>
+<li>Basic usage pattern
+    <div class="highlight"><pre><span></span><code>linc-convert<span class="w"> </span>&lt;MODALITY&gt;<span class="w"> </span>&lt;PIPELINE&gt;<span class="w"> </span><span class="o">[</span>ARGS<span class="o">]</span><span class="w"> </span><span class="o">[</span>OPTIONS<span class="o">]</span>
+</code></pre></div></li>
+<li>The top-level help lists all modalities (data families) and global flags.
+    <div class="highlight"><pre><span></span><code>linc-convert<span class="w"> </span>--help
+</code></pre></div></li>
+<li>Each modality contains one or more pipelines (subcommands).
+    <div class="highlight"><pre><span></span><code>linc-convert<span class="w"> </span>psoct<span class="w"> </span>--help
+</code></pre></div></li>
+<li>Show the detailed help for a pipeline, including the input, output, chunking, sharding and additional flags.
+    <div class="highlight"><pre><span></span><code>linc-convert<span class="w"> </span>psoct<span class="w"> </span>single_volume<span class="w"> </span>--help
+</code></pre></div></li>
+<li>Basic conversion example
+    <div class="highlight"><pre><span></span><code>linc-convert<span class="w"> </span>psoct<span class="w"> </span>single_volume<span class="w"> </span>IN.mat<span class="w"> </span>-o<span class="w"> </span>OUT.zarr
+</code></pre></div></li>
+<li>Convert to NIfTI-Zarr and provide the custom key for the MATLAB array
+    <div class="highlight"><pre><span></span><code>linc-convert<span class="w"> </span>psoct<span class="w"> </span>single_volume<span class="w"> </span>IN.mat<span class="w"> </span>--key<span class="w"> </span>Psi_ObsLSQ<span class="w"> </span>-o<span class="w"> </span>OUT.nii.zarr
+</code></pre></div></li>
+<li>Convert to Zarr version 3 with sharding
+    <div class="highlight"><pre><span></span><code>linc-convert<span class="w"> </span>psoct<span class="w"> </span>single_volume<span class="w"> </span>IN.mat<span class="w"> </span>-o<span class="w"> </span>OUT.zarr<span class="w"> </span>--zarr-version<span class="w"> </span><span class="m">3</span><span class="w"> </span>--shard<span class="w"> </span><span class="m">1024</span>
+</code></pre></div></li>
+</ol>
 
 
 

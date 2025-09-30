@@ -325,6 +325,15 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#basic-usage-pattern" class="md-nav__link">
+    <span class="md-ellipsis">
+      Basic Usage Pattern
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#support" class="md-nav__link">
     <span class="md-ellipsis">
       Support
@@ -354,6 +363,72 @@
   
   <span class="md-ellipsis">
     Installation
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="basic-usage/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Basic Usage Guide
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="notebooks/psoct_single_volume_demo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    PS-OCT Single Volume Demo
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="reference/SUMMARY/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    API
     
   </span>
   
@@ -431,10 +506,24 @@
 <p><img alt="diagram" src="img/linc-convert.png" /></p>
 <h2 id="quick-links">Quick Links<a class="headerlink" href="#quick-links" title="Permanent link">&para;</a></h2>
 <ul>
-<li><a href="./getting_start.md">Getting Started</a></li>
+<li><a href="installation/">Installation</a></li>
 <li><a href="https://github.com/lincbrain/linc-convert">LINC data conversion code on GitHub</a></li>
 <li><a href="https://connects.mgh.harvard.edu/">LINC Homepage</a></li>
 </ul>
+<h2 id="basic-usage-pattern">Basic Usage Pattern<a class="headerlink" href="#basic-usage-pattern" title="Permanent link">&para;</a></h2>
+<p><code>linc-convert &lt;MODALITY&gt; &lt;PIPELINE&gt; [ARGS] [OPTIONS]</code></p>
+<p>Examples:</p>
+<div class="highlight"><pre><span></span><code># List pipelines for a modality
+linc-convert psoct --help
+
+# Show help for a pipeline
+linc-convert psoct single_volume --help
+
+# Run a conversion
+linc-convert psoct single_volume /path/input.mat \
+  --key Psi_ObsLSQ \
+  --out /path/output.nii.zarr
+</code></pre></div>
 <h2 id="support">Support<a class="headerlink" href="#support" title="Permanent link">&para;</a></h2>
 <p>For questions, bug reports, and feature requests, please file an issue on the <a href="https://github.com/lincbrain/linc-convert">linc-convert</a> repository.</p>
 
