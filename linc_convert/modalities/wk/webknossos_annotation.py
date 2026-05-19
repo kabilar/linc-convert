@@ -1,38 +1,38 @@
 """Convert annotation downloaded from webknossos into ome.zarr format."""
 
 # stdlib
-import ast
 import json
 import os
-import shutil
 
 import cyclopts
 import numpy as np
-
-# externals
 import wkw
 import zarr
 
 # internals
 from linc_convert.modalities.wk.cli import wk
+from linc_convert.utils.io.zarr import from_config
 from linc_convert.utils.math import ceildiv
-from linc_convert.utils.zarr.compressor import make_compressor
+from linc_convert.utils.zarr_config import (
+    GeneralConfig,
+    NiftiConfig,
+    ZarrConfig,
+    autoconfig,
+)
 
 webknossos = cyclopts.App(name="webknossos", help_format="markdown")
 wk.command(webknossos)
 
 
 @webknossos.default
+@autoconfig
 def convert(
     wkw_dir: str = None,
     ome_dir: str = None,
-    out: str = None,
     dic: str = None,
-    *,
-    chunk: int = 1024,
-    compressor: str = "blosc",
-    compressor_opt: str = "{}",
-    max_load: int = 16384,
+    general_config: GeneralConfig = None,
+    zarr_config: ZarrConfig = None,
+    nii_config: NiftiConfig = None,
 ) -> None:
     """
     Convert annotations (in .wkw format) from webknossos to ome.zarr format.
@@ -48,10 +48,6 @@ def convert(
         in .wkw format. For example: .../annotation_folder/data_Volume.
     ome_dir : str
         Path to the underlying ome.zarr dataset, following the BIDS naming standard.
-    out : str
-        Path to the output directory for saving the converted ome.zarr.
-        The ome.zarr file name is generated automatically based on ome_dir
-        and the initials of the annotator.
     dic : dict
         A dictionary mapping annotation values to the following standard values
         if annotation doesn't match the standard.
@@ -66,6 +62,12 @@ def convert(
         - 5: Moderate Terminal
         - 6: Dense Terminal
         - 7: Single Fiber
+    general_config
+        General configuration
+    zarr_config
+        Zarr related configuration
+    nii_config
+        NIfTI header related configuration
     """
     dic = json.loads(dic)
     dic = {int(key): int(value) for key, value in dic.items()}
@@ -77,7 +79,7 @@ def convert(
     wkw_dataset = wkw.Dataset.open(wkw_dataset_path)
 
     low_res_offsets = []
-    omz_res = omz_data[nblevel - 1]
+    omz_res = omz_data[str(nblevel - 1)]
     n = omz_res.shape[1]
     size = omz_res.shape[-2:]
     for idx in range(n):
@@ -90,42 +92,22 @@ def convert(
         [t0, b0, l0, r0] = find_borders(data)
         low_res_offsets.append([t0, b0, l0, r0])
 
-    # setup save info
-    basename = os.path.basename(ome_dir)[:-9]
-    initials = wkw_dir.split("/")[-2][:2]
-    out = os.path.join(out, basename + "_dsec_" + initials + ".ome.zarr")
-    if os.path.exists(out):
-        shutil.rmtree(out)
-    os.makedirs(out, exist_ok=True)
-
-    if isinstance(compressor_opt, str):
-        compressor_opt = ast.literal_eval(compressor_opt)
-
     # Prepare Zarr group
-    store = zarr.storage.DirectoryStore(out)
-    omz = zarr.group(store=store, overwrite=True)
-
-    # Prepare chunking options
-    opt = {
-        "chunks": [1, 1] + [chunk, chunk],
-        "dimension_separator": r"/",
-        "order": "F",
-        "dtype": "uint8",
-        "fill_value": None,
-        "compressor": make_compressor(compressor, **compressor_opt),
-    }
-    print(opt)
+    omz = from_config(general_config.out, zarr_config)
+    max_load = general_config.max_load
 
     # Write each level
     for level in range(nblevel):
-        omz_res = omz_data[level]
+        omz_res = omz_data[str(level)]
         size = omz_res.shape[-2:]
         shape = [1, n] + [i for i in size]
 
         wkw_dataset_path = os.path.join(wkw_dir, get_mask_name(level))
         wkw_dataset = wkw.Dataset.open(wkw_dataset_path)
 
-        omz.create_dataset(f"{level}", shape=shape, **opt)
+        omz.create_array(
+            f"{level}", shape=shape, dtype="uint8", zarr_config=zarr_config
+        )
         array = omz[f"{level}"]
 
         # Write each slice
@@ -165,7 +147,7 @@ def convert(
                 subdat_size[-2] < max_load and subdat_size[-1] < max_load
             ):
                 array[
-                    0, idx, top : top + subdat_size[-2], left : left + subdat_size[-1]
+                0, idx, top: top + subdat_size[-2], left: left + subdat_size[-1]
                 ] = data[...]
             else:
                 ni = ceildiv(subdat_size[-2], max_load)
@@ -173,17 +155,17 @@ def convert(
 
                 for i in range(ni):
                     for j in range(nj):
-                        print(f"\r{i+1}/{ni}, {j+1}/{nj}", end=" ")
+                        print(f"\r{i + 1}/{ni}, {j + 1}/{nj}", end=" ")
                         start_x, end_x = (i * max_load,)
                         min((i + 1) * max_load, subdat_size[-2])
 
                         start_y, end_y = (j * max_load,)
                         min((j + 1) * max_load, subdat_size[-1])
                         array[
-                            0,
-                            idx,
-                            top + start_x : top + end_x,
-                            left + start_y : left + end_y,
+                        0,
+                        idx,
+                        top + start_x: top + end_x,
+                        left + start_y: left + end_y,
                         ] = data[start_x:end_x, start_y:end_y]
                 print("")
 
@@ -209,7 +191,7 @@ def get_mask_name(level: int) -> str:
     if level == 0:
         return "1"
     else:
-        return f"{2**level}-{2**level}-1"
+        return f"{2 ** level}-{2 ** level}-1"
 
 
 def cal_distance(img: np.ndarray) -> int:
