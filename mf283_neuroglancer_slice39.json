@@ -1,0 +1,4334 @@
+{
+  "dimensions": {
+    "z": [
+      1e-06,
+      "m"
+    ],
+    "y": [
+      1e-06,
+      "m"
+    ],
+    "x": [
+      1e-06,
+      "m"
+    ]
+  },
+  "position": [
+    201.0,
+    44000.0,
+    22500.0
+  ],
+  "crossSectionScale": 50.0,
+  "projectionScale": 90000.0,
+  "layers": [
+    {
+      "type": "image",
+      "name": "camera01",
+      "source": [
+        {
+          "url": "zarr://https://dandiarchive.s3.amazonaws.com/zarr/27fa1779-29be-4fbc-823a-d639b5343d56/",
+          "transform": {
+            "outputDimensions": {
+              "z": [
+                1e-06,
+                "m"
+              ],
+              "y": [
+                1e-06,
+                "m"
+              ],
+              "x": [
+                1e-06,
+                "m"
+              ]
+            },
+            "matrix": [
+              [
+                1,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                1,
+                0
+              ]
+            ]
+          }
+        },
+        {
+          "url": "zarr://https://dandiarchive.s3.amazonaws.com/zarr/b7e202b4-e188-4a56-b114-e12c8de19b1b/",
+          "transform": {
+            "outputDimensions": {
+              "z": [
+                1e-06,
+                "m"
+              ],
+              "y": [
+                1e-06,
+                "m"
+              ],
+              "x": [
+                1e-06,
+                "m"
+              ]
+            },
+            "matrix": [
+              [
+                1,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0,
+                1600
+              ],
+              [
+                0,
+                0,
+                1,
+                0
+              ]
+            ]
+          }
+        },
+        {
+          "url": "zarr://https://dandiarchive.s3.amazonaws.com/zarr/c0f700da-d881-412e-b982-2ca76faf2b0d/",
+          "transform": {
+            "outputDimensions": {
+              "z": [
+                1e-06,
+                "m"
+              ],
+              "y": [
+                1e-06,
+                "m"
+              ],
+              "x": [
+                1e-06,
+                "m"
+              ]
+            },
+            "matrix": [
+              [
+                1,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0,
+                3200
+              ],
+              [
+                0,
+                0,
+                1,
+                0
+              ]
+            ]
+          }
+        },
+        {
+          "url": "zarr://https://dandiarchive.s3.amazonaws.com/zarr/5371f352-c358-4f46-9cc6-43a0e1bd8a54/",
+          "transform": {
+            "outputDimensions": {
+              "z": [
+                1e-06,
+                "m"
+              ],
+              "y": [
+                1e-06,
+                "m"
+              ],
+              "x": [
+                1e-06,
+                "m"
+              ]
+            },
+            "matrix": [
+              [
+                1,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0,
+                4800
+              ],
+              [
+                0,
+                0,
+                1,
+                0
+              ]
+            ]
+          }
+        },
+        {
+          "url": "zarr://https://dandiarchive.s3.amazonaws.com/zarr/816eec96-7ed1-45bc-ab5c-3515cd90d52e/",
+          "transform": {
+            "outputDimensions": {
+              "z": [
+                1e-06,
+                "m"
+              ],
+              "y": [
+                1e-06,
+                "m"
+              ],
+              "x": [
+                1e-06,
+                "m"
+              ]
+            },
+            "matrix": [
+              [
+                1,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0,
+                6400
+              ],
+              [
+                0,
+                0,
+                1,
+                0
+              ]
+            ]
+          }
+        },
+        {
+          "url": "zarr://https://dandiarchive.s3.amazonaws.com/zarr/3d7193a6-a26a-4e37-8f46-44e45decbc14/",
+          "transform": {
+            "outputDimensions": {
+              "z": [
+                1e-06,
+                "m"
+              ],
+              "y": [
+                1e-06,
+                "m"
+              ],
+              "x": [
+                1e-06,
+                "m"
+              ]
+            },
+            "matrix": [
+              [
+                1,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0,
+                8000
+              ],
+              [
+                0,
+                0,
+                1,
+                0
+              ]
+            ]
+          }
+        },
+        {
+          "url": "zarr://https://dandiarchive.s3.amazonaws.com/zarr/edfb1d65-e5f0-4a44-ba5d-faa8a50342d2/",
+          "transform": {
+            "outputDimensions": {
+              "z": [
+                1e-06,
+                "m"
+              ],
+              "y": [
+                1e-06,
+                "m"
+              ],
+              "x": [
+                1e-06,
+                "m"
+              ]
+            },
+            "matrix": [
+              [
+                1,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0,
+                9600
+              ],
+              [
+                0,
+                0,
+                1,
+                0
+              ]
+            ]
+          }
+        },
+        {
+          "url": "zarr://https://dandiarchive.s3.amazonaws.com/zarr/08fa0f5e-121e-48c1-a210-d49b33c6353d/",
+          "transform": {
+            "outputDimensions": {
+              "z": [
+                1e-06,
+                "m"
+              ],
+              "y": [
+                1e-06,
+                "m"
+              ],
+              "x": [
+                1e-06,
+                "m"
+              ]
+            },
+            "matrix": [
+              [
+                1,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0,
+                11200
+              ],
+              [
+                0,
+                0,
+                1,
+                0
+              ]
+            ]
+          }
+        },
+        {
+          "url": "zarr://https://dandiarchive.s3.amazonaws.com/zarr/6f2789b9-9a5d-4efe-ad13-5d1d699de3af/",
+          "transform": {
+            "outputDimensions": {
+              "z": [
+                1e-06,
+                "m"
+              ],
+              "y": [
+                1e-06,
+                "m"
+              ],
+              "x": [
+                1e-06,
+                "m"
+              ]
+            },
+            "matrix": [
+              [
+                1,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0,
+                12800
+              ],
+              [
+                0,
+                0,
+                1,
+                0
+              ]
+            ]
+          }
+        },
+        {
+          "url": "zarr://https://dandiarchive.s3.amazonaws.com/zarr/4613d31e-4f25-47d0-a1f0-c142dc76943e/",
+          "transform": {
+            "outputDimensions": {
+              "z": [
+                1e-06,
+                "m"
+              ],
+              "y": [
+                1e-06,
+                "m"
+              ],
+              "x": [
+                1e-06,
+                "m"
+              ]
+            },
+            "matrix": [
+              [
+                1,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0,
+                14400
+              ],
+              [
+                0,
+                0,
+                1,
+                0
+              ]
+            ]
+          }
+        },
+        {
+          "url": "zarr://https://dandiarchive.s3.amazonaws.com/zarr/d1c470ce-f27f-4281-bb30-1d410e428eca/",
+          "transform": {
+            "outputDimensions": {
+              "z": [
+                1e-06,
+                "m"
+              ],
+              "y": [
+                1e-06,
+                "m"
+              ],
+              "x": [
+                1e-06,
+                "m"
+              ]
+            },
+            "matrix": [
+              [
+                1,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0,
+                16000
+              ],
+              [
+                0,
+                0,
+                1,
+                0
+              ]
+            ]
+          }
+        },
+        {
+          "url": "zarr://https://dandiarchive.s3.amazonaws.com/zarr/2016dc32-e0d0-487b-a3dd-72f22de96ae4/",
+          "transform": {
+            "outputDimensions": {
+              "z": [
+                1e-06,
+                "m"
+              ],
+              "y": [
+                1e-06,
+                "m"
+              ],
+              "x": [
+                1e-06,
+                "m"
+              ]
+            },
+            "matrix": [
+              [
+                1,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0,
+                17600
+              ],
+              [
+                0,
+                0,
+                1,
+                0
+              ]
+            ]
+          }
+        },
+        {
+          "url": "zarr://https://dandiarchive.s3.amazonaws.com/zarr/204b55fb-8eca-48c9-bacb-468e9a62680f/",
+          "transform": {
+            "outputDimensions": {
+              "z": [
+                1e-06,
+                "m"
+              ],
+              "y": [
+                1e-06,
+                "m"
+              ],
+              "x": [
+                1e-06,
+                "m"
+              ]
+            },
+            "matrix": [
+              [
+                1,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0,
+                19200
+              ],
+              [
+                0,
+                0,
+                1,
+                0
+              ]
+            ]
+          }
+        },
+        {
+          "url": "zarr://https://dandiarchive.s3.amazonaws.com/zarr/bc2a59ad-8732-48f4-8c4f-a6fccc406863/",
+          "transform": {
+            "outputDimensions": {
+              "z": [
+                1e-06,
+                "m"
+              ],
+              "y": [
+                1e-06,
+                "m"
+              ],
+              "x": [
+                1e-06,
+                "m"
+              ]
+            },
+            "matrix": [
+              [
+                1,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0,
+                20800
+              ],
+              [
+                0,
+                0,
+                1,
+                0
+              ]
+            ]
+          }
+        },
+        {
+          "url": "zarr://https://dandiarchive.s3.amazonaws.com/zarr/602039ea-bf6b-4d45-895f-c4c9fb21a230/",
+          "transform": {
+            "outputDimensions": {
+              "z": [
+                1e-06,
+                "m"
+              ],
+              "y": [
+                1e-06,
+                "m"
+              ],
+              "x": [
+                1e-06,
+                "m"
+              ]
+            },
+            "matrix": [
+              [
+                1,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0,
+                22400
+              ],
+              [
+                0,
+                0,
+                1,
+                0
+              ]
+            ]
+          }
+        },
+        {
+          "url": "zarr://https://dandiarchive.s3.amazonaws.com/zarr/6040cb16-c9c9-4833-a275-7503f2172ae6/",
+          "transform": {
+            "outputDimensions": {
+              "z": [
+                1e-06,
+                "m"
+              ],
+              "y": [
+                1e-06,
+                "m"
+              ],
+              "x": [
+                1e-06,
+                "m"
+              ]
+            },
+            "matrix": [
+              [
+                1,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0,
+                24000
+              ],
+              [
+                0,
+                0,
+                1,
+                0
+              ]
+            ]
+          }
+        },
+        {
+          "url": "zarr://https://dandiarchive.s3.amazonaws.com/zarr/5ec1974b-ee84-4b89-b7aa-ae4cc86ca30f/",
+          "transform": {
+            "outputDimensions": {
+              "z": [
+                1e-06,
+                "m"
+              ],
+              "y": [
+                1e-06,
+                "m"
+              ],
+              "x": [
+                1e-06,
+                "m"
+              ]
+            },
+            "matrix": [
+              [
+                1,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0,
+                25600
+              ],
+              [
+                0,
+                0,
+                1,
+                0
+              ]
+            ]
+          }
+        },
+        {
+          "url": "zarr://https://dandiarchive.s3.amazonaws.com/zarr/00d1703f-0db0-42e7-b615-67c7e6d05434/",
+          "transform": {
+            "outputDimensions": {
+              "z": [
+                1e-06,
+                "m"
+              ],
+              "y": [
+                1e-06,
+                "m"
+              ],
+              "x": [
+                1e-06,
+                "m"
+              ]
+            },
+            "matrix": [
+              [
+                1,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0,
+                27200
+              ],
+              [
+                0,
+                0,
+                1,
+                0
+              ]
+            ]
+          }
+        },
+        {
+          "url": "zarr://https://dandiarchive.s3.amazonaws.com/zarr/822d53c2-4d9c-48e5-abfd-2d057c79300b/",
+          "transform": {
+            "outputDimensions": {
+              "z": [
+                1e-06,
+                "m"
+              ],
+              "y": [
+                1e-06,
+                "m"
+              ],
+              "x": [
+                1e-06,
+                "m"
+              ]
+            },
+            "matrix": [
+              [
+                1,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0,
+                28800
+              ],
+              [
+                0,
+                0,
+                1,
+                0
+              ]
+            ]
+          }
+        },
+        {
+          "url": "zarr://https://dandiarchive.s3.amazonaws.com/zarr/238b9658-4410-4cb9-a70c-66ad41794096/",
+          "transform": {
+            "outputDimensions": {
+              "z": [
+                1e-06,
+                "m"
+              ],
+              "y": [
+                1e-06,
+                "m"
+              ],
+              "x": [
+                1e-06,
+                "m"
+              ]
+            },
+            "matrix": [
+              [
+                1,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0,
+                30400
+              ],
+              [
+                0,
+                0,
+                1,
+                0
+              ]
+            ]
+          }
+        },
+        {
+          "url": "zarr://https://dandiarchive.s3.amazonaws.com/zarr/4dcadacd-3fe7-4c4f-ba2f-ad06599ca733/",
+          "transform": {
+            "outputDimensions": {
+              "z": [
+                1e-06,
+                "m"
+              ],
+              "y": [
+                1e-06,
+                "m"
+              ],
+              "x": [
+                1e-06,
+                "m"
+              ]
+            },
+            "matrix": [
+              [
+                1,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0,
+                32000
+              ],
+              [
+                0,
+                0,
+                1,
+                0
+              ]
+            ]
+          }
+        },
+        {
+          "url": "zarr://https://dandiarchive.s3.amazonaws.com/zarr/fe4f78fd-d098-479a-b2c6-e84e4839d565/",
+          "transform": {
+            "outputDimensions": {
+              "z": [
+                1e-06,
+                "m"
+              ],
+              "y": [
+                1e-06,
+                "m"
+              ],
+              "x": [
+                1e-06,
+                "m"
+              ]
+            },
+            "matrix": [
+              [
+                1,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0,
+                33600
+              ],
+              [
+                0,
+                0,
+                1,
+                0
+              ]
+            ]
+          }
+        },
+        {
+          "url": "zarr://https://dandiarchive.s3.amazonaws.com/zarr/359762bf-50c9-4bb2-9cc4-49c614abe8df/",
+          "transform": {
+            "outputDimensions": {
+              "z": [
+                1e-06,
+                "m"
+              ],
+              "y": [
+                1e-06,
+                "m"
+              ],
+              "x": [
+                1e-06,
+                "m"
+              ]
+            },
+            "matrix": [
+              [
+                1,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0,
+                35200
+              ],
+              [
+                0,
+                0,
+                1,
+                0
+              ]
+            ]
+          }
+        },
+        {
+          "url": "zarr://https://dandiarchive.s3.amazonaws.com/zarr/0be08302-e0ee-4f1c-ac5c-f65ad5e6daf7/",
+          "transform": {
+            "outputDimensions": {
+              "z": [
+                1e-06,
+                "m"
+              ],
+              "y": [
+                1e-06,
+                "m"
+              ],
+              "x": [
+                1e-06,
+                "m"
+              ]
+            },
+            "matrix": [
+              [
+                1,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0,
+                36800
+              ],
+              [
+                0,
+                0,
+                1,
+                0
+              ]
+            ]
+          }
+        },
+        {
+          "url": "zarr://https://dandiarchive.s3.amazonaws.com/zarr/d2af6d78-3ec0-4789-83fa-e36f2453d3d6/",
+          "transform": {
+            "outputDimensions": {
+              "z": [
+                1e-06,
+                "m"
+              ],
+              "y": [
+                1e-06,
+                "m"
+              ],
+              "x": [
+                1e-06,
+                "m"
+              ]
+            },
+            "matrix": [
+              [
+                1,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0,
+                38400
+              ],
+              [
+                0,
+                0,
+                1,
+                0
+              ]
+            ]
+          }
+        },
+        {
+          "url": "zarr://https://dandiarchive.s3.amazonaws.com/zarr/11f23406-c098-4441-975e-378ecbb26fe6/",
+          "transform": {
+            "outputDimensions": {
+              "z": [
+                1e-06,
+                "m"
+              ],
+              "y": [
+                1e-06,
+                "m"
+              ],
+              "x": [
+                1e-06,
+                "m"
+              ]
+            },
+            "matrix": [
+              [
+                1,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0,
+                40000
+              ],
+              [
+                0,
+                0,
+                1,
+                0
+              ]
+            ]
+          }
+        },
+        {
+          "url": "zarr://https://dandiarchive.s3.amazonaws.com/zarr/51cc0176-30dc-43cb-b158-2288e8095afb/",
+          "transform": {
+            "outputDimensions": {
+              "z": [
+                1e-06,
+                "m"
+              ],
+              "y": [
+                1e-06,
+                "m"
+              ],
+              "x": [
+                1e-06,
+                "m"
+              ]
+            },
+            "matrix": [
+              [
+                1,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0,
+                41600
+              ],
+              [
+                0,
+                0,
+                1,
+                0
+              ]
+            ]
+          }
+        },
+        {
+          "url": "zarr://https://dandiarchive.s3.amazonaws.com/zarr/85ef551e-364f-4de8-a5fc-eda4d4c2047d/",
+          "transform": {
+            "outputDimensions": {
+              "z": [
+                1e-06,
+                "m"
+              ],
+              "y": [
+                1e-06,
+                "m"
+              ],
+              "x": [
+                1e-06,
+                "m"
+              ]
+            },
+            "matrix": [
+              [
+                1,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0,
+                43200
+              ],
+              [
+                0,
+                0,
+                1,
+                0
+              ]
+            ]
+          }
+        },
+        {
+          "url": "zarr://https://dandiarchive.s3.amazonaws.com/zarr/a694fd22-a472-45b2-a873-a8a2f3be1a30/",
+          "transform": {
+            "outputDimensions": {
+              "z": [
+                1e-06,
+                "m"
+              ],
+              "y": [
+                1e-06,
+                "m"
+              ],
+              "x": [
+                1e-06,
+                "m"
+              ]
+            },
+            "matrix": [
+              [
+                1,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0,
+                44800
+              ],
+              [
+                0,
+                0,
+                1,
+                0
+              ]
+            ]
+          }
+        },
+        {
+          "url": "zarr://https://dandiarchive.s3.amazonaws.com/zarr/37262aff-490d-44e4-bff0-b8dc8ca48b56/",
+          "transform": {
+            "outputDimensions": {
+              "z": [
+                1e-06,
+                "m"
+              ],
+              "y": [
+                1e-06,
+                "m"
+              ],
+              "x": [
+                1e-06,
+                "m"
+              ]
+            },
+            "matrix": [
+              [
+                1,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0,
+                46400
+              ],
+              [
+                0,
+                0,
+                1,
+                0
+              ]
+            ]
+          }
+        },
+        {
+          "url": "zarr://https://dandiarchive.s3.amazonaws.com/zarr/0cbf7654-0b77-4b65-826e-fdf13bf584d7/",
+          "transform": {
+            "outputDimensions": {
+              "z": [
+                1e-06,
+                "m"
+              ],
+              "y": [
+                1e-06,
+                "m"
+              ],
+              "x": [
+                1e-06,
+                "m"
+              ]
+            },
+            "matrix": [
+              [
+                1,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0,
+                48000
+              ],
+              [
+                0,
+                0,
+                1,
+                0
+              ]
+            ]
+          }
+        },
+        {
+          "url": "zarr://https://dandiarchive.s3.amazonaws.com/zarr/6cb4b10c-ff2a-40eb-b054-ccd093098bc2/",
+          "transform": {
+            "outputDimensions": {
+              "z": [
+                1e-06,
+                "m"
+              ],
+              "y": [
+                1e-06,
+                "m"
+              ],
+              "x": [
+                1e-06,
+                "m"
+              ]
+            },
+            "matrix": [
+              [
+                1,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0,
+                49600
+              ],
+              [
+                0,
+                0,
+                1,
+                0
+              ]
+            ]
+          }
+        },
+        {
+          "url": "zarr://https://dandiarchive.s3.amazonaws.com/zarr/ed4a48a0-a3f5-4f99-9d44-544422bb675b/",
+          "transform": {
+            "outputDimensions": {
+              "z": [
+                1e-06,
+                "m"
+              ],
+              "y": [
+                1e-06,
+                "m"
+              ],
+              "x": [
+                1e-06,
+                "m"
+              ]
+            },
+            "matrix": [
+              [
+                1,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0,
+                51200
+              ],
+              [
+                0,
+                0,
+                1,
+                0
+              ]
+            ]
+          }
+        },
+        {
+          "url": "zarr://https://dandiarchive.s3.amazonaws.com/zarr/673f4e03-7cbc-4e94-8577-ca86be5888dd/",
+          "transform": {
+            "outputDimensions": {
+              "z": [
+                1e-06,
+                "m"
+              ],
+              "y": [
+                1e-06,
+                "m"
+              ],
+              "x": [
+                1e-06,
+                "m"
+              ]
+            },
+            "matrix": [
+              [
+                1,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0,
+                52800
+              ],
+              [
+                0,
+                0,
+                1,
+                0
+              ]
+            ]
+          }
+        },
+        {
+          "url": "zarr://https://dandiarchive.s3.amazonaws.com/zarr/9ab073fe-f81a-46ed-8733-c27071cdaa51/",
+          "transform": {
+            "outputDimensions": {
+              "z": [
+                1e-06,
+                "m"
+              ],
+              "y": [
+                1e-06,
+                "m"
+              ],
+              "x": [
+                1e-06,
+                "m"
+              ]
+            },
+            "matrix": [
+              [
+                1,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0,
+                54400
+              ],
+              [
+                0,
+                0,
+                1,
+                0
+              ]
+            ]
+          }
+        },
+        {
+          "url": "zarr://https://dandiarchive.s3.amazonaws.com/zarr/bb1ed7b5-9334-47af-82fd-d0d1795d90eb/",
+          "transform": {
+            "outputDimensions": {
+              "z": [
+                1e-06,
+                "m"
+              ],
+              "y": [
+                1e-06,
+                "m"
+              ],
+              "x": [
+                1e-06,
+                "m"
+              ]
+            },
+            "matrix": [
+              [
+                1,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0,
+                56000
+              ],
+              [
+                0,
+                0,
+                1,
+                0
+              ]
+            ]
+          }
+        },
+        {
+          "url": "zarr://https://dandiarchive.s3.amazonaws.com/zarr/6b3b9916-d7b3-4e98-924d-7a5e1e9c0563/",
+          "transform": {
+            "outputDimensions": {
+              "z": [
+                1e-06,
+                "m"
+              ],
+              "y": [
+                1e-06,
+                "m"
+              ],
+              "x": [
+                1e-06,
+                "m"
+              ]
+            },
+            "matrix": [
+              [
+                1,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0,
+                57600
+              ],
+              [
+                0,
+                0,
+                1,
+                0
+              ]
+            ]
+          }
+        },
+        {
+          "url": "zarr://https://dandiarchive.s3.amazonaws.com/zarr/097288ea-5a19-4231-8296-d59b5eb7e049/",
+          "transform": {
+            "outputDimensions": {
+              "z": [
+                1e-06,
+                "m"
+              ],
+              "y": [
+                1e-06,
+                "m"
+              ],
+              "x": [
+                1e-06,
+                "m"
+              ]
+            },
+            "matrix": [
+              [
+                1,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0,
+                59200
+              ],
+              [
+                0,
+                0,
+                1,
+                0
+              ]
+            ]
+          }
+        },
+        {
+          "url": "zarr://https://dandiarchive.s3.amazonaws.com/zarr/eee058fb-effb-4655-bb92-ab0f6bf869e8/",
+          "transform": {
+            "outputDimensions": {
+              "z": [
+                1e-06,
+                "m"
+              ],
+              "y": [
+                1e-06,
+                "m"
+              ],
+              "x": [
+                1e-06,
+                "m"
+              ]
+            },
+            "matrix": [
+              [
+                1,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0,
+                60800
+              ],
+              [
+                0,
+                0,
+                1,
+                0
+              ]
+            ]
+          }
+        },
+        {
+          "url": "zarr://https://dandiarchive.s3.amazonaws.com/zarr/bb89662d-a259-43ea-8739-035eeecdba0a/",
+          "transform": {
+            "outputDimensions": {
+              "z": [
+                1e-06,
+                "m"
+              ],
+              "y": [
+                1e-06,
+                "m"
+              ],
+              "x": [
+                1e-06,
+                "m"
+              ]
+            },
+            "matrix": [
+              [
+                1,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0,
+                62400
+              ],
+              [
+                0,
+                0,
+                1,
+                0
+              ]
+            ]
+          }
+        },
+        {
+          "url": "zarr://https://dandiarchive.s3.amazonaws.com/zarr/aacee7a2-7b25-4484-ad05-e692bc87438d/",
+          "transform": {
+            "outputDimensions": {
+              "z": [
+                1e-06,
+                "m"
+              ],
+              "y": [
+                1e-06,
+                "m"
+              ],
+              "x": [
+                1e-06,
+                "m"
+              ]
+            },
+            "matrix": [
+              [
+                1,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0,
+                64000
+              ],
+              [
+                0,
+                0,
+                1,
+                0
+              ]
+            ]
+          }
+        },
+        {
+          "url": "zarr://https://dandiarchive.s3.amazonaws.com/zarr/e1d44857-e332-4bdb-ac28-cd77e780fe42/",
+          "transform": {
+            "outputDimensions": {
+              "z": [
+                1e-06,
+                "m"
+              ],
+              "y": [
+                1e-06,
+                "m"
+              ],
+              "x": [
+                1e-06,
+                "m"
+              ]
+            },
+            "matrix": [
+              [
+                1,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0,
+                65600
+              ],
+              [
+                0,
+                0,
+                1,
+                0
+              ]
+            ]
+          }
+        },
+        {
+          "url": "zarr://https://dandiarchive.s3.amazonaws.com/zarr/b5df2213-9980-425b-8144-b8caa7af6c14/",
+          "transform": {
+            "outputDimensions": {
+              "z": [
+                1e-06,
+                "m"
+              ],
+              "y": [
+                1e-06,
+                "m"
+              ],
+              "x": [
+                1e-06,
+                "m"
+              ]
+            },
+            "matrix": [
+              [
+                1,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0,
+                67200
+              ],
+              [
+                0,
+                0,
+                1,
+                0
+              ]
+            ]
+          }
+        },
+        {
+          "url": "zarr://https://dandiarchive.s3.amazonaws.com/zarr/a1b8a428-7acf-4323-8eb2-3b2530c26467/",
+          "transform": {
+            "outputDimensions": {
+              "z": [
+                1e-06,
+                "m"
+              ],
+              "y": [
+                1e-06,
+                "m"
+              ],
+              "x": [
+                1e-06,
+                "m"
+              ]
+            },
+            "matrix": [
+              [
+                1,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0,
+                68800
+              ],
+              [
+                0,
+                0,
+                1,
+                0
+              ]
+            ]
+          }
+        },
+        {
+          "url": "zarr://https://dandiarchive.s3.amazonaws.com/zarr/ee038ec0-39ef-4b6c-a107-131b60947303/",
+          "transform": {
+            "outputDimensions": {
+              "z": [
+                1e-06,
+                "m"
+              ],
+              "y": [
+                1e-06,
+                "m"
+              ],
+              "x": [
+                1e-06,
+                "m"
+              ]
+            },
+            "matrix": [
+              [
+                1,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0,
+                70400
+              ],
+              [
+                0,
+                0,
+                1,
+                0
+              ]
+            ]
+          }
+        },
+        {
+          "url": "zarr://https://dandiarchive.s3.amazonaws.com/zarr/67ddb6e8-048f-445e-adad-cb3ddcc4e2b4/",
+          "transform": {
+            "outputDimensions": {
+              "z": [
+                1e-06,
+                "m"
+              ],
+              "y": [
+                1e-06,
+                "m"
+              ],
+              "x": [
+                1e-06,
+                "m"
+              ]
+            },
+            "matrix": [
+              [
+                1,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0,
+                72000
+              ],
+              [
+                0,
+                0,
+                1,
+                0
+              ]
+            ]
+          }
+        },
+        {
+          "url": "zarr://https://dandiarchive.s3.amazonaws.com/zarr/1cd06f68-23a2-48f2-af1a-4744426faca9/",
+          "transform": {
+            "outputDimensions": {
+              "z": [
+                1e-06,
+                "m"
+              ],
+              "y": [
+                1e-06,
+                "m"
+              ],
+              "x": [
+                1e-06,
+                "m"
+              ]
+            },
+            "matrix": [
+              [
+                1,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0,
+                73600
+              ],
+              [
+                0,
+                0,
+                1,
+                0
+              ]
+            ]
+          }
+        },
+        {
+          "url": "zarr://https://dandiarchive.s3.amazonaws.com/zarr/2d2a6e6b-910a-44ac-b466-654156d8958b/",
+          "transform": {
+            "outputDimensions": {
+              "z": [
+                1e-06,
+                "m"
+              ],
+              "y": [
+                1e-06,
+                "m"
+              ],
+              "x": [
+                1e-06,
+                "m"
+              ]
+            },
+            "matrix": [
+              [
+                1,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0,
+                75200
+              ],
+              [
+                0,
+                0,
+                1,
+                0
+              ]
+            ]
+          }
+        },
+        {
+          "url": "zarr://https://dandiarchive.s3.amazonaws.com/zarr/d49775f5-4db8-433c-b8da-46952743cc05/",
+          "transform": {
+            "outputDimensions": {
+              "z": [
+                1e-06,
+                "m"
+              ],
+              "y": [
+                1e-06,
+                "m"
+              ],
+              "x": [
+                1e-06,
+                "m"
+              ]
+            },
+            "matrix": [
+              [
+                1,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0,
+                76800
+              ],
+              [
+                0,
+                0,
+                1,
+                0
+              ]
+            ]
+          }
+        },
+        {
+          "url": "zarr://https://dandiarchive.s3.amazonaws.com/zarr/c8ca6843-a4e4-4adb-b375-cd9dff088593/",
+          "transform": {
+            "outputDimensions": {
+              "z": [
+                1e-06,
+                "m"
+              ],
+              "y": [
+                1e-06,
+                "m"
+              ],
+              "x": [
+                1e-06,
+                "m"
+              ]
+            },
+            "matrix": [
+              [
+                1,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0,
+                78400
+              ],
+              [
+                0,
+                0,
+                1,
+                0
+              ]
+            ]
+          }
+        },
+        {
+          "url": "zarr://https://dandiarchive.s3.amazonaws.com/zarr/d653ca30-3150-4e14-a6c5-254e52f0998c/",
+          "transform": {
+            "outputDimensions": {
+              "z": [
+                1e-06,
+                "m"
+              ],
+              "y": [
+                1e-06,
+                "m"
+              ],
+              "x": [
+                1e-06,
+                "m"
+              ]
+            },
+            "matrix": [
+              [
+                1,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0,
+                80000
+              ],
+              [
+                0,
+                0,
+                1,
+                0
+              ]
+            ]
+          }
+        },
+        {
+          "url": "zarr://https://dandiarchive.s3.amazonaws.com/zarr/b765a38a-b5cd-4782-925f-1ae3eb2aff02/",
+          "transform": {
+            "outputDimensions": {
+              "z": [
+                1e-06,
+                "m"
+              ],
+              "y": [
+                1e-06,
+                "m"
+              ],
+              "x": [
+                1e-06,
+                "m"
+              ]
+            },
+            "matrix": [
+              [
+                1,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0,
+                81600
+              ],
+              [
+                0,
+                0,
+                1,
+                0
+              ]
+            ]
+          }
+        },
+        {
+          "url": "zarr://https://dandiarchive.s3.amazonaws.com/zarr/6f428a7c-5471-4b61-95af-73d34f40f491/",
+          "transform": {
+            "outputDimensions": {
+              "z": [
+                1e-06,
+                "m"
+              ],
+              "y": [
+                1e-06,
+                "m"
+              ],
+              "x": [
+                1e-06,
+                "m"
+              ]
+            },
+            "matrix": [
+              [
+                1,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0,
+                83200
+              ],
+              [
+                0,
+                0,
+                1,
+                0
+              ]
+            ]
+          }
+        },
+        {
+          "url": "zarr://https://dandiarchive.s3.amazonaws.com/zarr/84647e9d-a397-46b7-87c2-395474d2307f/",
+          "transform": {
+            "outputDimensions": {
+              "z": [
+                1e-06,
+                "m"
+              ],
+              "y": [
+                1e-06,
+                "m"
+              ],
+              "x": [
+                1e-06,
+                "m"
+              ]
+            },
+            "matrix": [
+              [
+                1,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0,
+                84800
+              ],
+              [
+                0,
+                0,
+                1,
+                0
+              ]
+            ]
+          }
+        },
+        {
+          "url": "zarr://https://dandiarchive.s3.amazonaws.com/zarr/52c051e9-de19-4b15-a810-6673673b42a8/",
+          "transform": {
+            "outputDimensions": {
+              "z": [
+                1e-06,
+                "m"
+              ],
+              "y": [
+                1e-06,
+                "m"
+              ],
+              "x": [
+                1e-06,
+                "m"
+              ]
+            },
+            "matrix": [
+              [
+                1,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0,
+                86400
+              ],
+              [
+                0,
+                0,
+                1,
+                0
+              ]
+            ]
+          }
+        }
+      ],
+      "shader": "#uicontrol invlerp normalized(range=[100, 600], clamp=true)\n#uicontrol vec3 color color(default=\"green\")\nvoid main() {\n  emitRGB(color * normalized());\n}\n",
+      "opacity": 1.0,
+      "blend": "additive"
+    },
+    {
+      "type": "image",
+      "name": "camera02",
+      "source": [
+        {
+          "url": "zarr://https://dandiarchive.s3.amazonaws.com/zarr/59f65d8f-b235-4d46-a4aa-30aefb80a2e5/",
+          "transform": {
+            "outputDimensions": {
+              "z": [
+                1e-06,
+                "m"
+              ],
+              "y": [
+                1e-06,
+                "m"
+              ],
+              "x": [
+                1e-06,
+                "m"
+              ]
+            },
+            "matrix": [
+              [
+                1,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                1,
+                0
+              ]
+            ]
+          }
+        },
+        {
+          "url": "zarr://https://dandiarchive.s3.amazonaws.com/zarr/4c6a4920-eeaa-4e08-8463-732f03e3e7d4/",
+          "transform": {
+            "outputDimensions": {
+              "z": [
+                1e-06,
+                "m"
+              ],
+              "y": [
+                1e-06,
+                "m"
+              ],
+              "x": [
+                1e-06,
+                "m"
+              ]
+            },
+            "matrix": [
+              [
+                1,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0,
+                1600
+              ],
+              [
+                0,
+                0,
+                1,
+                0
+              ]
+            ]
+          }
+        },
+        {
+          "url": "zarr://https://dandiarchive.s3.amazonaws.com/zarr/5e20b50f-9e9f-4318-8f37-c1f2a37604be/",
+          "transform": {
+            "outputDimensions": {
+              "z": [
+                1e-06,
+                "m"
+              ],
+              "y": [
+                1e-06,
+                "m"
+              ],
+              "x": [
+                1e-06,
+                "m"
+              ]
+            },
+            "matrix": [
+              [
+                1,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0,
+                3200
+              ],
+              [
+                0,
+                0,
+                1,
+                0
+              ]
+            ]
+          }
+        },
+        {
+          "url": "zarr://https://dandiarchive.s3.amazonaws.com/zarr/2c546a26-c2cb-4172-96ca-192b8d3eddb5/",
+          "transform": {
+            "outputDimensions": {
+              "z": [
+                1e-06,
+                "m"
+              ],
+              "y": [
+                1e-06,
+                "m"
+              ],
+              "x": [
+                1e-06,
+                "m"
+              ]
+            },
+            "matrix": [
+              [
+                1,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0,
+                4800
+              ],
+              [
+                0,
+                0,
+                1,
+                0
+              ]
+            ]
+          }
+        },
+        {
+          "url": "zarr://https://dandiarchive.s3.amazonaws.com/zarr/c6f0abae-2f87-4ffb-9411-b88ba9c33768/",
+          "transform": {
+            "outputDimensions": {
+              "z": [
+                1e-06,
+                "m"
+              ],
+              "y": [
+                1e-06,
+                "m"
+              ],
+              "x": [
+                1e-06,
+                "m"
+              ]
+            },
+            "matrix": [
+              [
+                1,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0,
+                6400
+              ],
+              [
+                0,
+                0,
+                1,
+                0
+              ]
+            ]
+          }
+        },
+        {
+          "url": "zarr://https://dandiarchive.s3.amazonaws.com/zarr/022900b9-bca7-4ff8-b488-0c5742eea48a/",
+          "transform": {
+            "outputDimensions": {
+              "z": [
+                1e-06,
+                "m"
+              ],
+              "y": [
+                1e-06,
+                "m"
+              ],
+              "x": [
+                1e-06,
+                "m"
+              ]
+            },
+            "matrix": [
+              [
+                1,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0,
+                8000
+              ],
+              [
+                0,
+                0,
+                1,
+                0
+              ]
+            ]
+          }
+        },
+        {
+          "url": "zarr://https://dandiarchive.s3.amazonaws.com/zarr/f0bd41b8-1739-4781-8d40-e04630ecdd2c/",
+          "transform": {
+            "outputDimensions": {
+              "z": [
+                1e-06,
+                "m"
+              ],
+              "y": [
+                1e-06,
+                "m"
+              ],
+              "x": [
+                1e-06,
+                "m"
+              ]
+            },
+            "matrix": [
+              [
+                1,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0,
+                9600
+              ],
+              [
+                0,
+                0,
+                1,
+                0
+              ]
+            ]
+          }
+        },
+        {
+          "url": "zarr://https://dandiarchive.s3.amazonaws.com/zarr/ae69e584-e11e-45c1-9a07-a8d918cb250a/",
+          "transform": {
+            "outputDimensions": {
+              "z": [
+                1e-06,
+                "m"
+              ],
+              "y": [
+                1e-06,
+                "m"
+              ],
+              "x": [
+                1e-06,
+                "m"
+              ]
+            },
+            "matrix": [
+              [
+                1,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0,
+                11200
+              ],
+              [
+                0,
+                0,
+                1,
+                0
+              ]
+            ]
+          }
+        },
+        {
+          "url": "zarr://https://dandiarchive.s3.amazonaws.com/zarr/3e698a93-dc67-47c6-8f68-557f14781550/",
+          "transform": {
+            "outputDimensions": {
+              "z": [
+                1e-06,
+                "m"
+              ],
+              "y": [
+                1e-06,
+                "m"
+              ],
+              "x": [
+                1e-06,
+                "m"
+              ]
+            },
+            "matrix": [
+              [
+                1,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0,
+                12800
+              ],
+              [
+                0,
+                0,
+                1,
+                0
+              ]
+            ]
+          }
+        },
+        {
+          "url": "zarr://https://dandiarchive.s3.amazonaws.com/zarr/3a5b0418-5c7d-4a65-bce6-8e4631822e8b/",
+          "transform": {
+            "outputDimensions": {
+              "z": [
+                1e-06,
+                "m"
+              ],
+              "y": [
+                1e-06,
+                "m"
+              ],
+              "x": [
+                1e-06,
+                "m"
+              ]
+            },
+            "matrix": [
+              [
+                1,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0,
+                14400
+              ],
+              [
+                0,
+                0,
+                1,
+                0
+              ]
+            ]
+          }
+        },
+        {
+          "url": "zarr://https://dandiarchive.s3.amazonaws.com/zarr/9537009f-f51a-46e2-921f-90875a9ed864/",
+          "transform": {
+            "outputDimensions": {
+              "z": [
+                1e-06,
+                "m"
+              ],
+              "y": [
+                1e-06,
+                "m"
+              ],
+              "x": [
+                1e-06,
+                "m"
+              ]
+            },
+            "matrix": [
+              [
+                1,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0,
+                16000
+              ],
+              [
+                0,
+                0,
+                1,
+                0
+              ]
+            ]
+          }
+        },
+        {
+          "url": "zarr://https://dandiarchive.s3.amazonaws.com/zarr/2389c086-2791-4937-983c-256e0d9077f2/",
+          "transform": {
+            "outputDimensions": {
+              "z": [
+                1e-06,
+                "m"
+              ],
+              "y": [
+                1e-06,
+                "m"
+              ],
+              "x": [
+                1e-06,
+                "m"
+              ]
+            },
+            "matrix": [
+              [
+                1,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0,
+                17600
+              ],
+              [
+                0,
+                0,
+                1,
+                0
+              ]
+            ]
+          }
+        },
+        {
+          "url": "zarr://https://dandiarchive.s3.amazonaws.com/zarr/7d41de6d-38aa-467a-b2fd-802c588a7f80/",
+          "transform": {
+            "outputDimensions": {
+              "z": [
+                1e-06,
+                "m"
+              ],
+              "y": [
+                1e-06,
+                "m"
+              ],
+              "x": [
+                1e-06,
+                "m"
+              ]
+            },
+            "matrix": [
+              [
+                1,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0,
+                19200
+              ],
+              [
+                0,
+                0,
+                1,
+                0
+              ]
+            ]
+          }
+        },
+        {
+          "url": "zarr://https://dandiarchive.s3.amazonaws.com/zarr/09cb2a3a-518f-4d80-b8ca-e11e53f2b114/",
+          "transform": {
+            "outputDimensions": {
+              "z": [
+                1e-06,
+                "m"
+              ],
+              "y": [
+                1e-06,
+                "m"
+              ],
+              "x": [
+                1e-06,
+                "m"
+              ]
+            },
+            "matrix": [
+              [
+                1,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0,
+                20800
+              ],
+              [
+                0,
+                0,
+                1,
+                0
+              ]
+            ]
+          }
+        },
+        {
+          "url": "zarr://https://dandiarchive.s3.amazonaws.com/zarr/a5e8c0c0-6c54-4f9c-bf57-c86f7f32a522/",
+          "transform": {
+            "outputDimensions": {
+              "z": [
+                1e-06,
+                "m"
+              ],
+              "y": [
+                1e-06,
+                "m"
+              ],
+              "x": [
+                1e-06,
+                "m"
+              ]
+            },
+            "matrix": [
+              [
+                1,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0,
+                22400
+              ],
+              [
+                0,
+                0,
+                1,
+                0
+              ]
+            ]
+          }
+        },
+        {
+          "url": "zarr://https://dandiarchive.s3.amazonaws.com/zarr/605aad5c-197c-467e-ba75-f3a2e9d2b189/",
+          "transform": {
+            "outputDimensions": {
+              "z": [
+                1e-06,
+                "m"
+              ],
+              "y": [
+                1e-06,
+                "m"
+              ],
+              "x": [
+                1e-06,
+                "m"
+              ]
+            },
+            "matrix": [
+              [
+                1,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0,
+                24000
+              ],
+              [
+                0,
+                0,
+                1,
+                0
+              ]
+            ]
+          }
+        },
+        {
+          "url": "zarr://https://dandiarchive.s3.amazonaws.com/zarr/d3ffc483-4662-4325-8775-882913ee02ab/",
+          "transform": {
+            "outputDimensions": {
+              "z": [
+                1e-06,
+                "m"
+              ],
+              "y": [
+                1e-06,
+                "m"
+              ],
+              "x": [
+                1e-06,
+                "m"
+              ]
+            },
+            "matrix": [
+              [
+                1,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0,
+                25600
+              ],
+              [
+                0,
+                0,
+                1,
+                0
+              ]
+            ]
+          }
+        },
+        {
+          "url": "zarr://https://dandiarchive.s3.amazonaws.com/zarr/d1cb44bf-869a-4aa2-b96b-28dc9a074419/",
+          "transform": {
+            "outputDimensions": {
+              "z": [
+                1e-06,
+                "m"
+              ],
+              "y": [
+                1e-06,
+                "m"
+              ],
+              "x": [
+                1e-06,
+                "m"
+              ]
+            },
+            "matrix": [
+              [
+                1,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0,
+                27200
+              ],
+              [
+                0,
+                0,
+                1,
+                0
+              ]
+            ]
+          }
+        },
+        {
+          "url": "zarr://https://dandiarchive.s3.amazonaws.com/zarr/86bb3ba7-f84c-4384-8524-c94a9d93203f/",
+          "transform": {
+            "outputDimensions": {
+              "z": [
+                1e-06,
+                "m"
+              ],
+              "y": [
+                1e-06,
+                "m"
+              ],
+              "x": [
+                1e-06,
+                "m"
+              ]
+            },
+            "matrix": [
+              [
+                1,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0,
+                28800
+              ],
+              [
+                0,
+                0,
+                1,
+                0
+              ]
+            ]
+          }
+        },
+        {
+          "url": "zarr://https://dandiarchive.s3.amazonaws.com/zarr/4f21a011-1727-4384-bd0b-f648309f2ba8/",
+          "transform": {
+            "outputDimensions": {
+              "z": [
+                1e-06,
+                "m"
+              ],
+              "y": [
+                1e-06,
+                "m"
+              ],
+              "x": [
+                1e-06,
+                "m"
+              ]
+            },
+            "matrix": [
+              [
+                1,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0,
+                30400
+              ],
+              [
+                0,
+                0,
+                1,
+                0
+              ]
+            ]
+          }
+        },
+        {
+          "url": "zarr://https://dandiarchive.s3.amazonaws.com/zarr/5b5b9a67-f0e9-4ccb-855e-bc7c629b962b/",
+          "transform": {
+            "outputDimensions": {
+              "z": [
+                1e-06,
+                "m"
+              ],
+              "y": [
+                1e-06,
+                "m"
+              ],
+              "x": [
+                1e-06,
+                "m"
+              ]
+            },
+            "matrix": [
+              [
+                1,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0,
+                32000
+              ],
+              [
+                0,
+                0,
+                1,
+                0
+              ]
+            ]
+          }
+        },
+        {
+          "url": "zarr://https://dandiarchive.s3.amazonaws.com/zarr/a02e16da-f65d-439d-bd83-46760540ee3c/",
+          "transform": {
+            "outputDimensions": {
+              "z": [
+                1e-06,
+                "m"
+              ],
+              "y": [
+                1e-06,
+                "m"
+              ],
+              "x": [
+                1e-06,
+                "m"
+              ]
+            },
+            "matrix": [
+              [
+                1,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0,
+                33600
+              ],
+              [
+                0,
+                0,
+                1,
+                0
+              ]
+            ]
+          }
+        },
+        {
+          "url": "zarr://https://dandiarchive.s3.amazonaws.com/zarr/46b9d418-15c1-4873-a551-3587c4dd0ff7/",
+          "transform": {
+            "outputDimensions": {
+              "z": [
+                1e-06,
+                "m"
+              ],
+              "y": [
+                1e-06,
+                "m"
+              ],
+              "x": [
+                1e-06,
+                "m"
+              ]
+            },
+            "matrix": [
+              [
+                1,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0,
+                35200
+              ],
+              [
+                0,
+                0,
+                1,
+                0
+              ]
+            ]
+          }
+        },
+        {
+          "url": "zarr://https://dandiarchive.s3.amazonaws.com/zarr/66aea256-d649-40df-af9e-1c9841088d15/",
+          "transform": {
+            "outputDimensions": {
+              "z": [
+                1e-06,
+                "m"
+              ],
+              "y": [
+                1e-06,
+                "m"
+              ],
+              "x": [
+                1e-06,
+                "m"
+              ]
+            },
+            "matrix": [
+              [
+                1,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0,
+                36800
+              ],
+              [
+                0,
+                0,
+                1,
+                0
+              ]
+            ]
+          }
+        },
+        {
+          "url": "zarr://https://dandiarchive.s3.amazonaws.com/zarr/3a5aa1b3-48ff-40f9-b98e-e8096dbe827c/",
+          "transform": {
+            "outputDimensions": {
+              "z": [
+                1e-06,
+                "m"
+              ],
+              "y": [
+                1e-06,
+                "m"
+              ],
+              "x": [
+                1e-06,
+                "m"
+              ]
+            },
+            "matrix": [
+              [
+                1,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0,
+                38400
+              ],
+              [
+                0,
+                0,
+                1,
+                0
+              ]
+            ]
+          }
+        },
+        {
+          "url": "zarr://https://dandiarchive.s3.amazonaws.com/zarr/021c95ca-4f9f-4fbb-a712-f88f6c8530a4/",
+          "transform": {
+            "outputDimensions": {
+              "z": [
+                1e-06,
+                "m"
+              ],
+              "y": [
+                1e-06,
+                "m"
+              ],
+              "x": [
+                1e-06,
+                "m"
+              ]
+            },
+            "matrix": [
+              [
+                1,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0,
+                40000
+              ],
+              [
+                0,
+                0,
+                1,
+                0
+              ]
+            ]
+          }
+        },
+        {
+          "url": "zarr://https://dandiarchive.s3.amazonaws.com/zarr/8e8a3dc8-e9ad-44cb-9392-f6e7b3976f0c/",
+          "transform": {
+            "outputDimensions": {
+              "z": [
+                1e-06,
+                "m"
+              ],
+              "y": [
+                1e-06,
+                "m"
+              ],
+              "x": [
+                1e-06,
+                "m"
+              ]
+            },
+            "matrix": [
+              [
+                1,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0,
+                41600
+              ],
+              [
+                0,
+                0,
+                1,
+                0
+              ]
+            ]
+          }
+        },
+        {
+          "url": "zarr://https://dandiarchive.s3.amazonaws.com/zarr/1db78fed-9ff1-4216-b799-8babfa9e290e/",
+          "transform": {
+            "outputDimensions": {
+              "z": [
+                1e-06,
+                "m"
+              ],
+              "y": [
+                1e-06,
+                "m"
+              ],
+              "x": [
+                1e-06,
+                "m"
+              ]
+            },
+            "matrix": [
+              [
+                1,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0,
+                43200
+              ],
+              [
+                0,
+                0,
+                1,
+                0
+              ]
+            ]
+          }
+        },
+        {
+          "url": "zarr://https://dandiarchive.s3.amazonaws.com/zarr/c21e0be3-4e8a-46bc-80e1-e54563e4006a/",
+          "transform": {
+            "outputDimensions": {
+              "z": [
+                1e-06,
+                "m"
+              ],
+              "y": [
+                1e-06,
+                "m"
+              ],
+              "x": [
+                1e-06,
+                "m"
+              ]
+            },
+            "matrix": [
+              [
+                1,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0,
+                44800
+              ],
+              [
+                0,
+                0,
+                1,
+                0
+              ]
+            ]
+          }
+        },
+        {
+          "url": "zarr://https://dandiarchive.s3.amazonaws.com/zarr/cf60b273-557c-4baf-a64f-1fe1d5c7dbec/",
+          "transform": {
+            "outputDimensions": {
+              "z": [
+                1e-06,
+                "m"
+              ],
+              "y": [
+                1e-06,
+                "m"
+              ],
+              "x": [
+                1e-06,
+                "m"
+              ]
+            },
+            "matrix": [
+              [
+                1,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0,
+                46400
+              ],
+              [
+                0,
+                0,
+                1,
+                0
+              ]
+            ]
+          }
+        },
+        {
+          "url": "zarr://https://dandiarchive.s3.amazonaws.com/zarr/d19116f1-e212-419f-ac51-9edf05c4765a/",
+          "transform": {
+            "outputDimensions": {
+              "z": [
+                1e-06,
+                "m"
+              ],
+              "y": [
+                1e-06,
+                "m"
+              ],
+              "x": [
+                1e-06,
+                "m"
+              ]
+            },
+            "matrix": [
+              [
+                1,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0,
+                48000
+              ],
+              [
+                0,
+                0,
+                1,
+                0
+              ]
+            ]
+          }
+        },
+        {
+          "url": "zarr://https://dandiarchive.s3.amazonaws.com/zarr/2dde0030-f001-4e98-a9c9-6da741342b02/",
+          "transform": {
+            "outputDimensions": {
+              "z": [
+                1e-06,
+                "m"
+              ],
+              "y": [
+                1e-06,
+                "m"
+              ],
+              "x": [
+                1e-06,
+                "m"
+              ]
+            },
+            "matrix": [
+              [
+                1,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0,
+                49600
+              ],
+              [
+                0,
+                0,
+                1,
+                0
+              ]
+            ]
+          }
+        },
+        {
+          "url": "zarr://https://dandiarchive.s3.amazonaws.com/zarr/4f5cfb8b-dc62-4c23-923f-ecc232a1cb30/",
+          "transform": {
+            "outputDimensions": {
+              "z": [
+                1e-06,
+                "m"
+              ],
+              "y": [
+                1e-06,
+                "m"
+              ],
+              "x": [
+                1e-06,
+                "m"
+              ]
+            },
+            "matrix": [
+              [
+                1,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0,
+                51200
+              ],
+              [
+                0,
+                0,
+                1,
+                0
+              ]
+            ]
+          }
+        },
+        {
+          "url": "zarr://https://dandiarchive.s3.amazonaws.com/zarr/b357f578-e141-47bb-9e23-5fb9caf90e6a/",
+          "transform": {
+            "outputDimensions": {
+              "z": [
+                1e-06,
+                "m"
+              ],
+              "y": [
+                1e-06,
+                "m"
+              ],
+              "x": [
+                1e-06,
+                "m"
+              ]
+            },
+            "matrix": [
+              [
+                1,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0,
+                52800
+              ],
+              [
+                0,
+                0,
+                1,
+                0
+              ]
+            ]
+          }
+        },
+        {
+          "url": "zarr://https://dandiarchive.s3.amazonaws.com/zarr/e93c713a-74f3-4d35-bc8e-de9b1066535b/",
+          "transform": {
+            "outputDimensions": {
+              "z": [
+                1e-06,
+                "m"
+              ],
+              "y": [
+                1e-06,
+                "m"
+              ],
+              "x": [
+                1e-06,
+                "m"
+              ]
+            },
+            "matrix": [
+              [
+                1,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0,
+                54400
+              ],
+              [
+                0,
+                0,
+                1,
+                0
+              ]
+            ]
+          }
+        },
+        {
+          "url": "zarr://https://dandiarchive.s3.amazonaws.com/zarr/e5249792-e554-4d45-99d0-829e75a3ba03/",
+          "transform": {
+            "outputDimensions": {
+              "z": [
+                1e-06,
+                "m"
+              ],
+              "y": [
+                1e-06,
+                "m"
+              ],
+              "x": [
+                1e-06,
+                "m"
+              ]
+            },
+            "matrix": [
+              [
+                1,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0,
+                56000
+              ],
+              [
+                0,
+                0,
+                1,
+                0
+              ]
+            ]
+          }
+        },
+        {
+          "url": "zarr://https://dandiarchive.s3.amazonaws.com/zarr/229e313d-abde-48ff-853d-af8ec168e7e8/",
+          "transform": {
+            "outputDimensions": {
+              "z": [
+                1e-06,
+                "m"
+              ],
+              "y": [
+                1e-06,
+                "m"
+              ],
+              "x": [
+                1e-06,
+                "m"
+              ]
+            },
+            "matrix": [
+              [
+                1,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0,
+                57600
+              ],
+              [
+                0,
+                0,
+                1,
+                0
+              ]
+            ]
+          }
+        },
+        {
+          "url": "zarr://https://dandiarchive.s3.amazonaws.com/zarr/c5688dd4-902e-46b8-9c83-7dab92e9ea09/",
+          "transform": {
+            "outputDimensions": {
+              "z": [
+                1e-06,
+                "m"
+              ],
+              "y": [
+                1e-06,
+                "m"
+              ],
+              "x": [
+                1e-06,
+                "m"
+              ]
+            },
+            "matrix": [
+              [
+                1,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0,
+                59200
+              ],
+              [
+                0,
+                0,
+                1,
+                0
+              ]
+            ]
+          }
+        },
+        {
+          "url": "zarr://https://dandiarchive.s3.amazonaws.com/zarr/2ecf9eae-c617-49d1-be73-7b93e1339cdb/",
+          "transform": {
+            "outputDimensions": {
+              "z": [
+                1e-06,
+                "m"
+              ],
+              "y": [
+                1e-06,
+                "m"
+              ],
+              "x": [
+                1e-06,
+                "m"
+              ]
+            },
+            "matrix": [
+              [
+                1,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0,
+                60800
+              ],
+              [
+                0,
+                0,
+                1,
+                0
+              ]
+            ]
+          }
+        },
+        {
+          "url": "zarr://https://dandiarchive.s3.amazonaws.com/zarr/e6622637-71bc-4646-a3e0-5f7b875677ee/",
+          "transform": {
+            "outputDimensions": {
+              "z": [
+                1e-06,
+                "m"
+              ],
+              "y": [
+                1e-06,
+                "m"
+              ],
+              "x": [
+                1e-06,
+                "m"
+              ]
+            },
+            "matrix": [
+              [
+                1,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0,
+                62400
+              ],
+              [
+                0,
+                0,
+                1,
+                0
+              ]
+            ]
+          }
+        },
+        {
+          "url": "zarr://https://dandiarchive.s3.amazonaws.com/zarr/d0becd64-2eda-42c6-830d-753031af2cf0/",
+          "transform": {
+            "outputDimensions": {
+              "z": [
+                1e-06,
+                "m"
+              ],
+              "y": [
+                1e-06,
+                "m"
+              ],
+              "x": [
+                1e-06,
+                "m"
+              ]
+            },
+            "matrix": [
+              [
+                1,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0,
+                64000
+              ],
+              [
+                0,
+                0,
+                1,
+                0
+              ]
+            ]
+          }
+        },
+        {
+          "url": "zarr://https://dandiarchive.s3.amazonaws.com/zarr/1e1b40ea-a1eb-45a9-8399-45e5866d555e/",
+          "transform": {
+            "outputDimensions": {
+              "z": [
+                1e-06,
+                "m"
+              ],
+              "y": [
+                1e-06,
+                "m"
+              ],
+              "x": [
+                1e-06,
+                "m"
+              ]
+            },
+            "matrix": [
+              [
+                1,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0,
+                65600
+              ],
+              [
+                0,
+                0,
+                1,
+                0
+              ]
+            ]
+          }
+        },
+        {
+          "url": "zarr://https://dandiarchive.s3.amazonaws.com/zarr/bcf55e4e-96da-43cc-80d3-91b042963924/",
+          "transform": {
+            "outputDimensions": {
+              "z": [
+                1e-06,
+                "m"
+              ],
+              "y": [
+                1e-06,
+                "m"
+              ],
+              "x": [
+                1e-06,
+                "m"
+              ]
+            },
+            "matrix": [
+              [
+                1,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0,
+                67200
+              ],
+              [
+                0,
+                0,
+                1,
+                0
+              ]
+            ]
+          }
+        },
+        {
+          "url": "zarr://https://dandiarchive.s3.amazonaws.com/zarr/2b1af451-52f8-4195-91d9-2732738d888b/",
+          "transform": {
+            "outputDimensions": {
+              "z": [
+                1e-06,
+                "m"
+              ],
+              "y": [
+                1e-06,
+                "m"
+              ],
+              "x": [
+                1e-06,
+                "m"
+              ]
+            },
+            "matrix": [
+              [
+                1,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0,
+                68800
+              ],
+              [
+                0,
+                0,
+                1,
+                0
+              ]
+            ]
+          }
+        },
+        {
+          "url": "zarr://https://dandiarchive.s3.amazonaws.com/zarr/c57622df-bf94-4020-a752-6bcbd4dafd0f/",
+          "transform": {
+            "outputDimensions": {
+              "z": [
+                1e-06,
+                "m"
+              ],
+              "y": [
+                1e-06,
+                "m"
+              ],
+              "x": [
+                1e-06,
+                "m"
+              ]
+            },
+            "matrix": [
+              [
+                1,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0,
+                70400
+              ],
+              [
+                0,
+                0,
+                1,
+                0
+              ]
+            ]
+          }
+        },
+        {
+          "url": "zarr://https://dandiarchive.s3.amazonaws.com/zarr/aabaeda9-0ee0-45d4-b707-94038bcebc1d/",
+          "transform": {
+            "outputDimensions": {
+              "z": [
+                1e-06,
+                "m"
+              ],
+              "y": [
+                1e-06,
+                "m"
+              ],
+              "x": [
+                1e-06,
+                "m"
+              ]
+            },
+            "matrix": [
+              [
+                1,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0,
+                72000
+              ],
+              [
+                0,
+                0,
+                1,
+                0
+              ]
+            ]
+          }
+        },
+        {
+          "url": "zarr://https://dandiarchive.s3.amazonaws.com/zarr/5cd8e251-dc55-4b40-b77f-c3e90780baf6/",
+          "transform": {
+            "outputDimensions": {
+              "z": [
+                1e-06,
+                "m"
+              ],
+              "y": [
+                1e-06,
+                "m"
+              ],
+              "x": [
+                1e-06,
+                "m"
+              ]
+            },
+            "matrix": [
+              [
+                1,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0,
+                73600
+              ],
+              [
+                0,
+                0,
+                1,
+                0
+              ]
+            ]
+          }
+        },
+        {
+          "url": "zarr://https://dandiarchive.s3.amazonaws.com/zarr/0f8e1f33-aae6-4557-9c01-cc0c9645cb70/",
+          "transform": {
+            "outputDimensions": {
+              "z": [
+                1e-06,
+                "m"
+              ],
+              "y": [
+                1e-06,
+                "m"
+              ],
+              "x": [
+                1e-06,
+                "m"
+              ]
+            },
+            "matrix": [
+              [
+                1,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0,
+                75200
+              ],
+              [
+                0,
+                0,
+                1,
+                0
+              ]
+            ]
+          }
+        },
+        {
+          "url": "zarr://https://dandiarchive.s3.amazonaws.com/zarr/d2566bc0-1ae5-4424-9225-151a45d1c1c8/",
+          "transform": {
+            "outputDimensions": {
+              "z": [
+                1e-06,
+                "m"
+              ],
+              "y": [
+                1e-06,
+                "m"
+              ],
+              "x": [
+                1e-06,
+                "m"
+              ]
+            },
+            "matrix": [
+              [
+                1,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0,
+                76800
+              ],
+              [
+                0,
+                0,
+                1,
+                0
+              ]
+            ]
+          }
+        },
+        {
+          "url": "zarr://https://dandiarchive.s3.amazonaws.com/zarr/8bb66f4c-733b-4c09-a362-56228283ccca/",
+          "transform": {
+            "outputDimensions": {
+              "z": [
+                1e-06,
+                "m"
+              ],
+              "y": [
+                1e-06,
+                "m"
+              ],
+              "x": [
+                1e-06,
+                "m"
+              ]
+            },
+            "matrix": [
+              [
+                1,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0,
+                78400
+              ],
+              [
+                0,
+                0,
+                1,
+                0
+              ]
+            ]
+          }
+        },
+        {
+          "url": "zarr://https://dandiarchive.s3.amazonaws.com/zarr/f8fdad3d-cf61-4d17-a7c8-4d811d3d625a/",
+          "transform": {
+            "outputDimensions": {
+              "z": [
+                1e-06,
+                "m"
+              ],
+              "y": [
+                1e-06,
+                "m"
+              ],
+              "x": [
+                1e-06,
+                "m"
+              ]
+            },
+            "matrix": [
+              [
+                1,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0,
+                80000
+              ],
+              [
+                0,
+                0,
+                1,
+                0
+              ]
+            ]
+          }
+        },
+        {
+          "url": "zarr://https://dandiarchive.s3.amazonaws.com/zarr/af3d7339-f623-4641-b13d-801f2c8541f4/",
+          "transform": {
+            "outputDimensions": {
+              "z": [
+                1e-06,
+                "m"
+              ],
+              "y": [
+                1e-06,
+                "m"
+              ],
+              "x": [
+                1e-06,
+                "m"
+              ]
+            },
+            "matrix": [
+              [
+                1,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0,
+                81600
+              ],
+              [
+                0,
+                0,
+                1,
+                0
+              ]
+            ]
+          }
+        },
+        {
+          "url": "zarr://https://dandiarchive.s3.amazonaws.com/zarr/be51e1b4-1c0a-4291-b38f-65b58379c33e/",
+          "transform": {
+            "outputDimensions": {
+              "z": [
+                1e-06,
+                "m"
+              ],
+              "y": [
+                1e-06,
+                "m"
+              ],
+              "x": [
+                1e-06,
+                "m"
+              ]
+            },
+            "matrix": [
+              [
+                1,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0,
+                83200
+              ],
+              [
+                0,
+                0,
+                1,
+                0
+              ]
+            ]
+          }
+        },
+        {
+          "url": "zarr://https://dandiarchive.s3.amazonaws.com/zarr/469c201b-0227-46a9-9c9b-8bcefdacc970/",
+          "transform": {
+            "outputDimensions": {
+              "z": [
+                1e-06,
+                "m"
+              ],
+              "y": [
+                1e-06,
+                "m"
+              ],
+              "x": [
+                1e-06,
+                "m"
+              ]
+            },
+            "matrix": [
+              [
+                1,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0,
+                84800
+              ],
+              [
+                0,
+                0,
+                1,
+                0
+              ]
+            ]
+          }
+        },
+        {
+          "url": "zarr://https://dandiarchive.s3.amazonaws.com/zarr/41238d47-def0-42b4-aa09-54c357bec52e/",
+          "transform": {
+            "outputDimensions": {
+              "z": [
+                1e-06,
+                "m"
+              ],
+              "y": [
+                1e-06,
+                "m"
+              ],
+              "x": [
+                1e-06,
+                "m"
+              ]
+            },
+            "matrix": [
+              [
+                1,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0,
+                86400
+              ],
+              [
+                0,
+                0,
+                1,
+                0
+              ]
+            ]
+          }
+        }
+      ],
+      "shader": "#uicontrol invlerp normalized(range=[100, 600], clamp=true)\n#uicontrol vec3 color color(default=\"magenta\")\nvoid main() {\n  emitRGB(color * normalized());\n}\n",
+      "opacity": 1.0,
+      "blend": "additive"
+    }
+  ],
+  "layout": "4panel"
+}
