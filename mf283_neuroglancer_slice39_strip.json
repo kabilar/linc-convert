@@ -1,0 +1,74 @@
+{
+  "dimensions": {
+    "z": [
+      1e-06,
+      "m"
+    ],
+    "y": [
+      1e-06,
+      "m"
+    ],
+    "x": [
+      1e-06,
+      "m"
+    ]
+  },
+  "position": [
+    201.0,
+    44000.0,
+    22500.0
+  ],
+  "crossSectionScale": 50.0,
+  "projectionScale": 90000.0,
+  "layers": [
+    {
+      "type": "image",
+      "name": "camera01",
+      "source": [
+      {
+          "url": "zarr://https://dandiarchive.s3.amazonaws.com/zarr/a694fd22-a472-45b2-a873-a8a2f3be1a30/",
+          "transform": {
+            "outputDimensions": {
+              "z": [
+                1e-06,
+                "m"
+              ],
+              "y": [
+                1e-06,
+                "m"
+              ],
+              "x": [
+                1e-06,
+                "m"
+              ]
+            },
+            "matrix": [
+              [
+                1,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0,
+                44800
+              ],
+              [
+                0,
+                0,
+                1,
+                0
+              ]
+            ]
+          }
+      }   
+      ],
+      "shader": "#uicontrol invlerp normalized(range=[100, 600], clamp=true)\n#uicontrol vec3 color color(default=\"magenta\")\nvoid main() {\n  emitRGB(color * normalized());\n}\n",
+      "opacity": 1.0,
+      "blend": "additive"
+    }
+  ],
+  "layout": "4panel"
+}
